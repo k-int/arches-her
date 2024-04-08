@@ -26,7 +26,7 @@ import docx
 import textwrap
 from docx import Document
 from docx.text.paragraph import Paragraph
-from docx.oxml.xmlchemy import OxmlElement
+from docx.oxml.parser import OxmlElement
 from html.parser import HTMLParser
 from html.entities import name2codepoint
 from django.core.files.uploadedfile import UploadedFile
