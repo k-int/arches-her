@@ -37,6 +37,10 @@ SEARCH_COMPONENT_LOCATIONS.append('arches_her.search_components')
 
 LOCALE_PATHS.append(os.path.join(APP_ROOT, 'locale'))
 
+TEMPLATES[0]["OPTIONS"]["context_processors"].append(
+    "arches_her.utils.context_processors.project_settings"
+)
+
 FILE_TYPE_CHECKING = False
 FILE_TYPES = ["bmp", "gif", "jpg", "jpeg", "pdf", "png", "psd", "rtf", "tif", "tiff", "xlsx", "csv", "zip"]
 FILENAME_GENERATOR = "arches.app.utils.storage_filename_generator.generate_filename"
