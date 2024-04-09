@@ -1,14 +1,14 @@
 define(['knockout',
-        'knockout-mapping',
-        'views/list',
-        'viewmodels/function',
-        'bindings/chosen',
+    'knockout-mapping',
+    'views/list',
+    'viewmodels/function',
+    'bindings/chosen',
     'templates/views/components/functions/bngpoint-to-geojson-function.htm'],
-function (ko, koMapping, ListView, FunctionViewModel, chosen, bngpointToGeojsonFunctionTemplate) {
+function(ko, koMapping, ListView, FunctionViewModel, chosen, bngpointToGeojsonFunctionTemplate) {
     return ko.components.register('views/components/functions/bngpoint-to-geojson-function', {
         viewModel: function(params) {
             FunctionViewModel.apply(this, arguments);
-            console.log("Running a sample function")
+            console.log("Running a sample function");
             var self = this;
             this.nodesBNG = ko.observableArray();
             this.nodesGeoJSON = ko.observableArray();
@@ -26,7 +26,7 @@ function (ko, koMapping, ListView, FunctionViewModel, chosen, bngpointToGeojsonF
                         }
                         
                     }
-                })
+                });
             });
 
             this.geojson_node.subscribe(function(o_n){
@@ -40,10 +40,9 @@ function (ko, koMapping, ListView, FunctionViewModel, chosen, bngpointToGeojsonF
                         }
                     }
                     
-                })
+                });
                 
-                
-              })
+            });
 
 
 
@@ -61,16 +60,8 @@ function (ko, koMapping, ListView, FunctionViewModel, chosen, bngpointToGeojsonF
             }, this);
 
 
-
-
-
-
-            
-            
-            
-
-            window.setTimeout(function(){$("select[data-bind^=chosen]").trigger("chosen:updated")}, 300);
+            window.setTimeout(function(){$("select[data-bind^=chosen]").trigger("chosen:updated");}, 300);
         },
         template: bngpointToGeojsonFunctionTemplate
     });
-})
+});

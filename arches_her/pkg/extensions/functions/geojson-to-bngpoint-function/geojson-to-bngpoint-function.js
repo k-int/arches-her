@@ -1,14 +1,14 @@
 define(['knockout',
-        'knockout-mapping',
-        'views/list',
-        'viewmodels/function',
-        'bindings/chosen',
+    'knockout-mapping',
+    'views/list',
+    'viewmodels/function',
+    'bindings/chosen',
     'templates/views/components/functions/geojson-to-bngpoint-function.htm'],
-function (ko, koMapping, ListView, FunctionViewModel, chosen, geojsonToBngpointFunctionTemplate) {
+function(ko, koMapping, ListView, FunctionViewModel, chosen, geojsonToBngpointFunctionTemplate) {
     return ko.components.register('views/components/functions/geojson-to-bngpoint-function', {
         viewModel: function(params) {
             FunctionViewModel.apply(this, arguments);
-            console.log("Running a sample function")
+            console.log("Running a sample function");
             var self = this;
             this.nodesGeoJSON = ko.observableArray();
             this.nodesBNG = ko.observableArray();
@@ -43,13 +43,12 @@ function (ko, koMapping, ListView, FunctionViewModel, chosen, geojsonToBngpointF
                         }
                     }
                     
-                })
+                });
                 
-                
-            })
+            });
 
 
-            this.graph.nodes.forEach(function (node) {
+            this.graph.nodes.forEach(function(node) {
                 if (node.datatype != 'semantic'){
                     if (node.datatype === "geojson-feature-collection"){
                         this.nodesGeoJSON.push(node);
@@ -62,8 +61,8 @@ function (ko, koMapping, ListView, FunctionViewModel, chosen, geojsonToBngpointF
             }, this);
 
 
-            window.setTimeout(function(){$("select[data-bind^=chosen]").trigger("chosen:updated")}, 300);
+            window.setTimeout(function(){$("select[data-bind^=chosen]").trigger("chosen:updated");}, 300);
         },
         template: geojsonToBngpointFunctionTemplate
     });
-})
+});
