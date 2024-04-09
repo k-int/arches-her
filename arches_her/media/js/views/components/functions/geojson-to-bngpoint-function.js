@@ -1,10 +1,11 @@
-define(['knockout',
+define(['jquery',
+    'knockout',
     'knockout-mapping',
     'views/list',
     'viewmodels/function',
     'bindings/chosen',
     'templates/views/components/functions/geojson-to-bngpoint-function.htm'],
-function(ko, koMapping, ListView, FunctionViewModel, chosen, geojsonToBngpointFunctionTemplate) {
+function($, ko, koMapping, ListView, FunctionViewModel, chosen, geojsonToBngpointFunctionTemplate) {
     return ko.components.register('views/components/functions/geojson-to-bngpoint-function', {
         viewModel: function(params) {
             FunctionViewModel.apply(this, arguments);
