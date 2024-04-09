@@ -1,6 +1,6 @@
 define(['knockout',
     'templates/views/components/datatypes/bngcentrepoint.htm'
-], function (ko, bngCentrePointTemplate) {
+], function(ko, bngCentrePointTemplate) {
     var name = 'bngcentrepoint-datatype-config';
     ko.components.register(name, {
         viewModel: function(params) {
@@ -10,14 +10,14 @@ define(['knockout',
                 var filter = params.filterValue();
                 this.op = ko.observable(filter.op || '~');
                 this.searchValue = ko.observable(filter.val || '');
-                this.filterValue = ko.computed(function () {
+                this.filterValue = ko.computed(function() {
                     return {
                         op: self.op(),
                         val: self.searchValue()
-                    }
+                    };
                 }).extend({ throttle: 750 });
                 params.filterValue(this.filterValue());
-                this.filterValue.subscribe(function (val) {
+                this.filterValue.subscribe(function(val) {
                     params.filterValue(val);
                 });
             }
