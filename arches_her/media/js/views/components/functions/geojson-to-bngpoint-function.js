@@ -2,8 +2,9 @@ define(['knockout',
         'knockout-mapping',
         'views/list',
         'viewmodels/function',
-        'bindings/chosen'],
-function (ko, koMapping, ListView, FunctionViewModel, chosen) {
+        'bindings/chosen',
+    'templates/views/components/functions/geojson-to-bngpoint-function.htm'],
+function (ko, koMapping, ListView, FunctionViewModel, chosen, geojsonToBngpointFunctionTemplate) {
     return ko.components.register('views/components/functions/geojson-to-bngpoint-function', {
         viewModel: function(params) {
             FunctionViewModel.apply(this, arguments);
@@ -63,8 +64,6 @@ function (ko, koMapping, ListView, FunctionViewModel, chosen) {
 
             window.setTimeout(function(){$("select[data-bind^=chosen]").trigger("chosen:updated")}, 300);
         },
-        template: {
-            require: 'text!templates/views/components/functions/geojson-to-bngpoint-function.htm'
-        }
+        template: geojsonToBngpointFunctionTemplate
     });
 })
