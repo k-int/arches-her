@@ -23,6 +23,7 @@ function(ko, koMapping, ListView, FunctionViewModel, chosen, bngpointToGeojsonFu
                             params.config.bng_nodegroup = node.nodegroup_id;
                             console.log("bng_nodegroup", self.bng_nodegroup);
                         }   
+                    });
             });
 
             this.geojson_node.subscribe(function(o_n){
@@ -33,8 +34,8 @@ function(ko, koMapping, ListView, FunctionViewModel, chosen, bngpointToGeojsonFu
                             params.config.geojson_nodegroup = node.nodegroup_id;
                             console.log("geojson_nodegroup", self.geojson_nodegroup);
                         }
-                });
-            })
+                    });
+            });
 
 
 
