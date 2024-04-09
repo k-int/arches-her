@@ -5,10 +5,11 @@ define([
     'arches',
     'utils/resource',
     'utils/report',
+    'templates/views/components/reports/application-area.htm',
     'views/components/reports/scenes/name',
     'views/components/reports/scenes/referenced-by',
     'views/components/reports/scenes/json'
-], function($, _, ko, arches, resourceUtils, reportUtils) {
+], function($, _, ko, arches, resourceUtils, reportUtils, ApplicationAreaTemplate) {
     return ko.components.register('application-area-report', {
         viewModel: function(params) {
             var self = this;
@@ -128,6 +129,6 @@ define([
             }
 
         },
-        template: { require: 'text!templates/views/components/reports/application-area.htm' }
+        template: ApplicationAreaTemplate
     });
 });

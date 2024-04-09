@@ -3,8 +3,9 @@ define([
     'knockout',
     'arches',
     'utils/report',
+    'templates/views/components/reports/scenes/referenced-by.htm',
     'bindings/datatable'
-], function(_, ko, arches, reportUtils) {
+], function(_, ko, arches, reportUtils, ReferencedByTemplate) {
     return ko.components.register('views/components/reports/scenes/referenced-by', {
         viewModel: function(params) {
             const self = this;
@@ -73,6 +74,6 @@ define([
 
 
         },
-        template: { require: 'text!templates/views/components/reports/scenes/referenced-by.htm' }
+        template: ReferencedByTemplate
     });
 });
