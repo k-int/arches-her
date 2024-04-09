@@ -1,4 +1,6 @@
-define(['knockout'], function (ko) {
+define(['knockout',
+    'templates/views/components/datatypes/bngcentrepoint.htm'
+], function (ko, bngCentrePointTemplate) {
     var name = 'bngcentrepoint-datatype-config';
     ko.components.register(name, {
         viewModel: function(params) {
@@ -20,7 +22,7 @@ define(['knockout'], function (ko) {
                 });
             }
         },
-        template: { require: 'text!datatype-config-templates/bngcentrepoint' }
+        template: bngCentrePointTemplate
     });
     return name;
 });
