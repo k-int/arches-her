@@ -1,4 +1,9 @@
-define(['knockout', 'proj4','underscore', 'viewmodels/widget', 'templates/views/components/widgets/bngpoint.htm'], function (ko, proj4, _, WidgetViewModel, bngpointWidgetTemplate) {
+define(['knockout', 
+    'proj4',
+    'underscore', 
+    'viewmodels/widget', 
+    'templates/views/components/widgets/bngpoint.htm'
+], function(ko, proj4, _, WidgetViewModel, bngpointWidgetTemplate) {
     /**
     * registers a text-widget component for use in forms
     * @function external:"ko.components".text-widget
@@ -16,7 +21,7 @@ define(['knockout', 'proj4','underscore', 'viewmodels/widget', 'templates/views/
             WidgetViewModel.apply(this, [params]);
             var self = this;
             
-            this.coordOptions = ['Alphanumeric BNG','Absolute BNG','Long/Lat']
+            this.coordOptions = ['Alphanumeric BNG','Absolute BNG','Long/Lat'];
             this.coordFormat = ko.observable('Alphanumeric BNG');
             this.isSelected = ko.observable(false);
             this.errorMessage = ko.observable();
@@ -28,17 +33,17 @@ define(['knockout', 'proj4','underscore', 'viewmodels/widget', 'templates/views/
                 this.bngVal = ko.observable();
 
                 //console.log(this.coordFormat());
-            };
+            }
 
             this.finalGridNumber = function(numberIn){
                 // CS - This function adds zeros onto a number until the number's length is 5
-                var fullNumber = 5
+                var fullNumber = 5;
                 while(numberIn.length < fullNumber){
-                    numberIn = numberIn + "0"
+                    numberIn = numberIn + "0";
                     console.log(numberIn);
                 }
-                return numberIn
-            }
+                return numberIn;
+            };
 
             this.alphanumericTransform = function(alphaBNG,BNGKeys){
                 // CS - takes an alphanumeric value and ensures it has a valid grid square and 10 numbers in the value string.
@@ -46,7 +51,7 @@ define(['knockout', 'proj4','underscore', 'viewmodels/widget', 'templates/views/
                     var gridSquareLetters = alphaBNG.substring(0,2);
                     gridSquareLetters = gridSquareLetters.toUpperCase();
                     var gridSquareNumbers = alphaBNG.substring(2);
-                    var gridSquareNumbersSplit = (gridSquareNumbers.length)/2
+                    var gridSquareNumbersSplit = (gridSquareNumbers.length)/2;
                     console.log(BNGKeys);
 
                     if (BNGKeys.includes(gridSquareLetters)){
@@ -56,27 +61,27 @@ define(['knockout', 'proj4','underscore', 'viewmodels/widget', 'templates/views/
                         var finalGridSquareEasting = this.finalGridNumber(gridSquareEasting);
                         var finalGridSquareNorthing = this.finalGridNumber(gridSquareNorthing);
         
-                        var finalGridReference = gridSquareLetters + finalGridSquareEasting + finalGridSquareNorthing
-                        return finalGridReference
+                        var finalGridReference = gridSquareLetters + finalGridSquareEasting + finalGridSquareNorthing;
+                        return finalGridReference;
                     }
                     else{
-                        console.log('Could not return a correct Alphanumeric grid reference.  Please check your input absolute grid reference and try again.')
-                        return ""
+                        console.log('Could not return a correct Alphanumeric grid reference.  Please check your input absolute grid reference and try again.');
+                        return "";
                         
                     }
                 
                 }
             
                 catch(err){
-                    console.log(err + '\nCould not return a correct Alphanumeric grid reference.  Please check your input absolute grid reference and try again.')
-                    return ""
+                    console.log(err + '\nCould not return a correct Alphanumeric grid reference.  Please check your input absolute grid reference and try again.');
+                    return "";
                     
                 }
 
                 
 
 
-            }
+            };
 
             this.absoluteBNGTransform = function(absoluteBNG,gridSquareArray){
                 // CS - Takes an absolute grid reference, checks it only contains numbers, works out the 100km grid quare
@@ -90,7 +95,7 @@ define(['knockout', 'proj4','underscore', 'viewmodels/widget', 'templates/views/
                         return "";
                     }
                     else{
-                        var absoluteBNGSplit = (absoluteBNG.length)/2
+                        var absoluteBNGSplit = (absoluteBNG.length)/2;
                         var firstEastingAbsoluteBNG = absoluteBNG.substring(0,1);
                         var firstNorthingAbsoluteBNG = absoluteBNG.substring(absoluteBNGSplit,absoluteBNGSplit+1);
                         var firstValues = [Number(firstEastingAbsoluteBNG),Number(firstNorthingAbsoluteBNG)];
@@ -101,57 +106,57 @@ define(['knockout', 'proj4','underscore', 'viewmodels/widget', 'templates/views/
                         var finalMainEastingAbsoluteBNG = this.finalGridNumber(mainEastingAbsoluteBNG);
                         var finalMainNorthingAbsoluteBNG = this.finalGridNumber(mainNorthingAbsoluteBNG);
 
-                        var gridSquare = ""
+                        var gridSquare = "";
 
                         for (var key in gridSquareArray){
-                            var gridValueFromArray = (gridSquareArray[key]).toString()
+                            var gridValueFromArray = (gridSquareArray[key]).toString();
                             if (gridValueFromArray === firstValues.toString()){
-                                gridSquare = key
+                                gridSquare = key;
                                 break;
                             }
                         }
 
                         if (gridSquare !== ""){
-                            var finalOutputGridReference = gridSquare + finalMainEastingAbsoluteBNG + finalMainNorthingAbsoluteBNG
-                            return finalOutputGridReference
+                            var finalOutputGridReference = gridSquare + finalMainEastingAbsoluteBNG + finalMainNorthingAbsoluteBNG;
+                            return finalOutputGridReference;
                         }
                         else{
                             console.log('Grid square is not within the boundary of England.  Please check your input absolute grid reference and try again.');
-                            return ""
+                            return "";
                         }
                     }
                     
                     
                 }
                 catch(err){
-                    console.log(err + '\nIssue transforming input coordinates into an Alphanumeric grid reference.  Please check your value is in a correct format at try again.')
-                    return ""
+                    console.log(err + '\nIssue transforming input coordinates into an Alphanumeric grid reference.  Please check your value is in a correct format at try again.');
+                    return "";
                 }
 
-            }
+            };
 
             this.longLatTransform = function(latLong,gridSquareList){
                 // CS - uses the Proj4JS module to reproject long/lat values to an absolute BNG value and then calls upon the 
                 // absoluteBNGTransform function to create an Alphanumeric Grid Reference.
-                var OSGB36Proj4 = "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +datum=OSGB36 +units=m +no_defs"
-                var WGS1984Proj4 = "+proj=longlat +datum=WGS84 +no_defs"
+                var OSGB36Proj4 = "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +datum=OSGB36 +units=m +no_defs";
+                var WGS1984Proj4 = "+proj=longlat +datum=WGS84 +no_defs";
 
-                var latLongSplit = latLong.split(",")
-                var longValue = Number(latLongSplit[0])
-                var latValue = Number(latLongSplit[1])
-                var longLatCoord = [longValue,latValue]
+                var latLongSplit = latLong.split(",");
+                var longValue = Number(latLongSplit[0]);
+                var latValue = Number(latLongSplit[1]);
+                var longLatCoord = [longValue,latValue];
 
                 try{
-                    var reprojectOSGBCoords = proj4(WGS1984Proj4,OSGB36Proj4,longLatCoord)
-                    var reprojectOSGB_X = Math.round(reprojectOSGBCoords[0])
-                    var reprojectOSGB_Y = Math.round(reprojectOSGBCoords[1])
+                    var reprojectOSGBCoords = proj4(WGS1984Proj4,OSGB36Proj4,longLatCoord);
+                    var reprojectOSGB_X = Math.round(reprojectOSGBCoords[0]);
+                    var reprojectOSGB_Y = Math.round(reprojectOSGBCoords[1]);
 
-                    var reprojectOSGB = reprojectOSGB_X.toString() + "," + reprojectOSGB_Y.toString()
+                    var reprojectOSGB = reprojectOSGB_X.toString() + "," + reprojectOSGB_Y.toString();
 
-                    try{var reprojectAlphaOSGB = this.absoluteBNGTransform(reprojectOSGB,gridSquareList)
+                    try{var reprojectAlphaOSGB = this.absoluteBNGTransform(reprojectOSGB,gridSquareList);
 
 
-                        return reprojectAlphaOSGB}
+                        return reprojectAlphaOSGB;}
                     catch(err){
                         console.log(err);
                     }
@@ -159,12 +164,12 @@ define(['knockout', 'proj4','underscore', 'viewmodels/widget', 'templates/views/
                     
                 }
                 catch(err){
-                    console.log(err + '\nIssue reprojecting long/lat coordinates.  Please check your value is in a correct format at try again.')
-                    return ""
+                    console.log(err + '\nIssue reprojecting long/lat coordinates.  Please check your value is in a correct format at try again.');
+                    return "";
                 }
 
 
-            }
+            };
 
             this.validateInput = function(finalBNG,gridSquareValues){
                 // CS - Checks that the value to be added is a valid Alphanumeric BNG reference with length 12.
@@ -174,26 +179,26 @@ define(['knockout', 'proj4','underscore', 'viewmodels/widget', 'templates/views/
                     if (gridSquareValues.includes(firstTwoCharacters)){
                         if (!isNaN(Number(numberElement))){
                             if (finalBNG.length === 12){
-                                return true
+                                return true;
                             }
                             else{
-                                return false
+                                return false;
                             }
                         }
                         else{
-                            return false
+                            return false;
                         }
                     }
                     else{
-                        return false
+                        return false;
                     }
                 }
                 else{
-                    return false
+                    return false;
                 }
                 
 
-            }
+            };
 
 
 
@@ -269,7 +274,7 @@ define(['knockout', 'proj4','underscore', 'viewmodels/widget', 'templates/views/
                     "SY":[3,0],
                     "SZ":[4,0],
                     "TV":[5,0],
-                    "TW":[6,0]}
+                    "TW":[6,0]};
 
 
                 pre = this.bngVal();
@@ -295,38 +300,38 @@ define(['knockout', 'proj4','underscore', 'viewmodels/widget', 'templates/views/
     
                                 }
                                 else{
-                                    pre = this.alphanumericTransform(pre,gridLettersValueArray)
+                                    pre = this.alphanumericTransform(pre,gridLettersValueArray);
                                 }
     
                             }
     
                             else{
-                                pre = ""
+                                pre = "";
                             }
     
                         }
                         else if(this.coordFormat() === 'Absolute BNG' && pre){
                             pre = pre.replace(" ","");
-                            pre = this.absoluteBNGTransform(pre,gridSquare)
+                            pre = this.absoluteBNGTransform(pre,gridSquare);
     
                         }
                         else if(this.coordFormat() === 'Long/Lat' && pre){
                             pre = pre.replace(" ","");
-                            pre = this.longLatTransform(pre,gridSquare)
+                            pre = this.longLatTransform(pre,gridSquare);
     
                         }
                         else if(this.coordFormat() === undefined && pre){
                             this.errorMessage("You have not selected a coordinate format.  Please do so and enter the coordinate value again.");
-                            pre=""
+                            pre="";
                             return;
                         }
                         else{
-                            pre=""
+                            pre="";
     
                         }
                     
     
-                    // Final Validation
+                        // Final Validation
     
                     
                         if (this.validateInput(pre,gridLettersValueArray) === true){
@@ -337,7 +342,7 @@ define(['knockout', 'proj4','underscore', 'viewmodels/widget', 'templates/views/
                         }
                         else{
                             this.value("");
-                            this.errorMessage("Input coordinate did not pass validation.  Please check it is in one of the approved formats and try again.")
+                            this.errorMessage("Input coordinate did not pass validation.  Please check it is in one of the approved formats and try again.");
                             return "";
                         }
                     }
