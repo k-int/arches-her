@@ -68,7 +68,8 @@ define(['knockout',
                 }
             
                 catch(err){
-                    this.errorMessage(err + '\nCould not return a correct Alphanumeric grid reference.  Please check your input absolute grid reference and try again.');
+                    this.errorMessage('Could not return a correct Alphanumeric grid reference.  Please check your input absolute grid reference and try again.');
+                    console.error(err + '\nCould not return a correct Alphanumeric grid reference.  Check input absolute grid reference.');
                     return "";
                     
                 }
@@ -124,7 +125,8 @@ define(['knockout',
                     
                 }
                 catch(err){
-                    this.errorMessage(err + '\nIssue transforming input coordinates into an Alphanumeric grid reference.  Please check your value is in a correct format at try again.');
+                    this.errorMessage('Issue transforming input coordinates into an Alphanumeric grid reference.  Please check your value is in a correct format at try again.');
+                    console.error(err + '\nIssue transforming input coordinates into an Alphanumeric grid reference.  Please check your value is in a correct format at try again.');
                     return "";
                 }
 
@@ -159,14 +161,16 @@ define(['knockout',
                         }
                     }
                     catch(err){
-                        this.errorMessage(err);
+                        this.errorMessage('Issue reprojecting long/lat coordinates.  Please check your  value is in a correct format, and within the boundary of the UK.');
+                        console.error(err + '\nIssue reprojecting long/lat coordinates.  Check the value is in a correct format, and within the boundary of the UK.');
                     
                     }
 
                     
                 }
                 catch(err){
-                    this.errorMessage(err);
+                    this.errorMessage('Issue reprojecting long/lat coordinates.  Please check your  value is in a correct format, and within the boundary of the UK.');
+                    console.error(err + '\nIssue reprojecting long/lat coordinates.  Check the value is in a correct format, and within the boundary of the UK.');
                     return "";
                 }
 
