@@ -238,7 +238,7 @@
                                 {{ desc|val_from_key:"Activity Description"|val_from_key:"@display_value"|safe }}
                             </p>
                         </div>
-                        {% endifequal %}
+                        {% endif %}
                         {% endfor %}
                         {% for desc in resource_data|val_from_key:"Activity Descriptions" %}
                         {% if desc|val_from_key:"Activity Description Type"|val_from_key:"@display_value" != "Summary" %}

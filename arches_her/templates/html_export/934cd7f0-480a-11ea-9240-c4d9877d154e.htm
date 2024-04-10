@@ -108,7 +108,7 @@
                                  {{ desc|val_from_key:"Description"|val_from_key:"@display_value"|safe }}
                               </p>
                            </div>
-                           {% endifequal %}
+                           {% endif %}
                         {% endfor %}
                         {% for desc in resource_data|val_from_key:"Descriptions" %}
                            {% if desc|val_from_key:"Description Type"|val_from_key:"@display_value" != "Summary" %}
