@@ -5,8 +5,9 @@ define([
     'arches',
     'utils/resource',
     'utils/report',
+    'templates/views/components/reports/person.htm',
     'views/components/reports/scenes/name'
-], function($, _, ko, arches, resourceUtils, reportUtils) {
+], function($, _, ko, arches, resourceUtils, reportUtils, PersonTemplate) {
     return ko.components.register('person-report', {
         viewModel: function(params) {
             var self = this;
@@ -212,6 +213,6 @@ define([
             });
 
         },
-        template: { require: 'text!templates/views/components/reports/person.htm' }
+        template: PersonTemplate
     });
 });
