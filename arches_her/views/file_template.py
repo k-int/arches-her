@@ -224,6 +224,28 @@ class FileTemplateView(View):
             datatype = datatype_factory.get_instance(current_node.datatype)
             returnvalue = datatype.get_display_value(tile, current_node)
             return "" if returnvalue is None else returnvalue
+        
+        def remove_non_xml_compatible_chars(s: str) -> str:
+            """
+            Remove characters that are not compatible with XML.
+            XML 1.0 compatible characters:
+            - U+0009, U+000A, U+000D (whitespace characters)
+            - U+0020 to U+D7FF
+            - U+E000 to U+FFFD
+            XML 1.1 additionally allows:
+            - U+0001 to U+0008, U+000B to U+000C, U+000E to U+001F
+            But for broad compatibility, we'll target XML 1.0 here.
+            :param s: Input string
+            :return: String with non-XML-compatible characters removed
+            """
+            # For XML 1.0, adjust ranges if targeting XML 1.1
+            return "".join(
+                char
+                for char in s
+                if ord(char) in (0x9, 0xA, 0xD)
+                or 0x20 <= ord(char) <= 0xD7FF
+                or 0xE000 <= ord(char) <= 0xFFFD
+            )
 
         # Advice and Conditions.
         advice_nodegroup_id = "8d41e49f-a250-11e9-b6b3-00224800b26d"
@@ -393,7 +415,10 @@ class FileTemplateView(View):
             html = False
             if htmlTags.search(mapping_dict[key] if mapping_dict[key] is not None else ""):
                 html = True
-            self.replace_string(self.doc, key, mapping_dict[key], html)
+            xml_compatible_string = remove_non_xml_compatible_chars(mapping_dict[key])
+            self.replace_string(self.doc, key, xml_compatible_string, html)
+            
+            
 
     def replace_string(self, document, key, v, html=False):
         # Note that the intent here is to preserve how things are styled in the docx
