@@ -33,7 +33,7 @@ WEBPACK_LOADER = {
 DATATYPE_LOCATIONS.append('arches_her.datatypes')
 FUNCTION_LOCATIONS.append('arches_her.functions')
 ETL_MODULE_LOCATIONS.append('arches_her.etl_modules')
-SEARCH_COMPONENT_LOCATIONS.append('arches_her.search')
+SEARCH_COMPONENT_LOCATIONS.append('arches_her.search.components')
 
 LOCALE_PATHS.append(os.path.join(APP_ROOT, 'locale'))
 
