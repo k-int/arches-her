@@ -16,7 +16,7 @@ define([
             initialize: function(options) {
                 var self = this;
 
-                this.dependenciesLoaded = ko.observable(false)
+                this.dependenciesLoaded = ko.observable(false);
                 this.bng = ko.observable("");
                 this.bng_x = ko.observable(0);
                 this.bng_y = ko.observable(0);
@@ -210,7 +210,7 @@ define([
                     "SZ": [4, 0],
                     "TV": [5, 0],
                     "TW": [6, 0]
-                }
+                };
 
                 this.validateBng = function() {
                     self.bngMessageError("");
@@ -239,7 +239,7 @@ define([
                         }                      
 
                     }
-                }               
+                };               
 
                 this.validateXy = function() {
                     self.xyMessageError("");
@@ -261,7 +261,7 @@ define([
                         self.xyMessageError("X and Y must both be 6 digit coordinates");
                         return;
                     }
-                }
+                };
 
                 this.validateBuffer = function() {
                     var buffer = self.buffer();
@@ -283,12 +283,12 @@ define([
                                         
                     self.bufferMessageError("");
                     return;
-                }
+                };
                 
                 this.validate = function() {
                     self.validateBng();
                     self.validateBuffer();
-                }
+                };
 
                 this.xyFromBng = function(bng) {
                     let ret = {"x":0,"y":0};
@@ -308,7 +308,7 @@ define([
                     }
                     
                     return ret;
-                }
+                };
 
                 this.bngFromXY = function(x,y) {
                     let bng = "";
@@ -334,7 +334,7 @@ define([
                         }
                     }
                     return bng;
-                }
+                };
 
 
                 this.filters[componentName](this);
@@ -466,7 +466,7 @@ define([
                 this.setupMap = function(map){
                     self.map = ko.observable(map);
                     self.restoreState();
-                }
+                };
 
                 this.searchResults.timestamp.subscribe(function(timestamp) {
                     if(this.pageLoaded) {
@@ -488,7 +488,7 @@ define([
                     }
                 } 
                 else{
-                    queryObj = self.query()
+                    queryObj = self.query();
                     delete queryObj[componentName];
                     self.getFilter('term-filter').removeTag('BNG Filter');
                 }
@@ -523,7 +523,7 @@ define([
                 var geoJSON = {
                     "type": "FeatureCollection",
                     "features": []
-                }
+                };
 
                 if(!!self.searchResults[componentName]) {
                     var grid_square = self.searchResults[componentName].grid_square;
