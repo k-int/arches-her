@@ -13,7 +13,7 @@ from arches.app.search.components.base import BaseSearchFilter
 logger = logging.getLogger(__name__)
 
 details = {
-    "searchcomponentid": "",
+    "searchcomponentid": "8fc3d979-e51a-45d2-8136-6bcf207c9355",
     "name": "BNG Filter",
     "icon": "fa fa-compass",
     "modulename": "bng-filter.py",
