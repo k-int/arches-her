@@ -32,7 +32,7 @@ except ImportError:
 
 ```
 python manage.py setup_db`
-``
+```
 
 4. Follow the instructions in Install Core Arches to [Build a Frontend Asset Bundle](https://arches.readthedocs.io/en/latest/installing/installation/#build-a-frontend-asset-bundle).
 
