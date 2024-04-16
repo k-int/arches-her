@@ -31,7 +31,7 @@ except ImportError:
 3. Set up your database with the following command in the arches_her directory:
 
 ```
-python manage.py setup_db`
+python manage.py setup_db
 ```
 
 4. Follow the instructions in Install Core Arches to [Build a Frontend Asset Bundle](https://arches.readthedocs.io/en/latest/installing/installation/#build-a-frontend-asset-bundle).
