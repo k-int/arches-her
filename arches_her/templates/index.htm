@@ -19,6 +19,8 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 {% load static %}
 {% load template_tags %}
 {% load i18n %}
+{% load compress %}
+{% load webpack_static from webpack_loader %}
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
@@ -35,236 +37,393 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" />
+    <link rel="shortcut icon" href="{% webpack_static 'favicons/favicon.ico' %}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{% webpack_static 'favicons/apple-touch-icon.png' %}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{% webpack_static 'favicons/apple-touch-icon-76x76.png' %}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{% webpack_static 'favicons/apple-touch-icon-120x120.png' %}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{% webpack_static 'favicons/apple-touch-icon-152x152.png' %}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% webpack_static 'favicons/apple-touch-icon-180x180.png' %}" />
 
-    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css">
-
-    <link href="{% static 'css/unify.css' %}" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link href="{% static 'css/index.css' %}" rel="stylesheet">
-
+    {% block css %}
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="{% webpack_static 'css/index.css' %}">
+        {% compress css %}
+            <link rel="stylesheet" type="text/x-scss" href="{% webpack_static 'css/project.scss' %}" media="all">
+        {% endcompress %}
+        {% if app_settings.ACCESSIBILITY_MODE %}
+            {% compress css %}
+                <link rel="stylesheet" type="text/x-scss" href="{% webpack_static 'css/accessibility.scss' %}" media="screen">
+            {% endcompress %}
+        {% endif %}
+    {% endblock css%}
 </head>
 
-<!--
-The #page-top ID is part of the scrolling feature.
-The data-spy and data-target are part of the built-in Bootstrap scrollspy function.
--->
-
-<body id="body" data-spy="scroll" data-target=".splash-nav" class="demo-lightbox-gallery">
+<body class="landing-page">
+    <script src="{% webpack_static 'node_modules/requirejs/require.js' %}"></script>
+    {% include 'javascript.htm' %}
 
     <!--=== Header ===-->
-    <nav class="cons-splash-nav navbar" role="navigation">
-        <div class="nav-container">
-            <div class="navbar-brand-disco">
-                <div class="navbar-brand-disco-icon-container" style="">
-                    <img class="navbar-brand-disco-icon" src="{% static 'img/landing/arches_logo_dark.png' %}" style="" alt="Arches Logo">
+    <header>
+        <div class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button id="toggleBtn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="myNavbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="nav-brand-container">
+                        <a href="/" class="navbar-brand" aria-label="Link to homepage">
+                            <img class="navbar-brand-image" src="{% webpack_static 'img/landing/Arches_logo_white.png' %}" alt="Arches Logo">
+                        </a>
+                    </div>
                 </div>
-                <div class="application-name">
-                    <h2>{{app_title}}</h2>
-                    <!-- <span>Data Integration for Science and Conservation</span> -->
-                </div>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <div class="menu-container">
-                    <ul class="nav navbar-nav cons-splash-list">
-                        {% for p in plugins %}
-                        <li class="page-scroll">
-                            <a href="{% url p.slug %}">{{ p.name }}</a>
-                        </li>
-                        {% endfor %}
-                        
-                        <li class="page-scroll">
-                            <a href="{% url 'search_home' %}">{% trans "Find" %}</a>
-                        </li>
-                        
-                        {% if user|can_create_resource_instance and user.username != 'anonymous' %}
-                        <li class="page-scroll">
-                            <a href="{% url 'resource' %}" target="_blank">{% trans "Manage" %}</a>
-                        </li>
-                        {% endif %}
-
-                        {% if user|can_create_graph and user.username != 'anonymous' %}
-                        <li class="page-scroll">
-                            <a href="{% url 'graph' '' %}" target="_blank">{% trans "Graphs" %}</a>
-                        </li>
-                        {% endif %}
-                        
-                        <li class="page-scroll">
-                            {% if user.username == 'anonymous' %}
-                                <a class="application-login" id="auth-link" href="{% url 'auth' %}?next={% url 'home' %}{% if user.username != 'anonymous' %}&logout=true{% endif %}">{% trans "Login" %}</a>
-                            {% else %}
-                                <a class="auth-welcome" href="{% url 'user_profile_manager' %}">
-                                    {% trans "Welcome, " %} {{ user.first_name|default:user.username }}
-                                </a>
+                <nav id="myNavbar" class="navbar-collapse collapse no-transition" aria-label="{% trans 'Arches Application Navigation' %}">
+                    <div class="container">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active">
+                                <a href="/">Home</a>
                             </li>
                             <li>
-                                <a href="{% url 'auth' %}?next={% url 'home' %}{% if user.username != 'anonymous' %}&logout=true{% endif %}">({% trans 'logoff' %})</a>
+                                <a href="#info-block-1">{% trans "Arches Features" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'search_home' %}">{% trans "Search Arches" %}</a>
+                            </li>
+                            {% if user|can_create_resource_instance and user.username != 'anonymous' %}
+                                <li>
+                                    <a href="{% url 'resource' %}" target="_blank">{% trans "Manage" %}</a>
+                                </li>
                             {% endif %}
-                        </li>
-                    </ul>
-                </div>
+                            {% if user.username == 'anonymous' %}
+                                <li>
+                                    <a class="application-login" id="auth-link" href="{% url 'auth' %}?next={% url 'home' %}{% if user.username != 'anonymous' %}&logout=true{% endif %}">{% trans "Sign in" %}</a>
+                                </li>
+                            {% else %}
+                                <li>
+                                    <a class="auth-welcome" href="{% url 'user_profile_manager' %}" aria-label="{% trans 'Visit user profile' %}">
+                                        {% trans "Welcome, " %} {{ user.first_name|default:user.username }}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="application-login" href="{% url 'auth' %}?next={% url 'home' %}{% if user.username != 'anonymous' %}&logout=true{% endif %}">{% trans 'Log off' %}</a>
+                                </li>
+                            {% endif %}
+                            {% if show_language_swtich %}
+                                <li>
+                                    {% get_current_language as LANGUAGE_CODE %}
+                                    <div class="lang-switch" style="max-width: none;" data-bind='component: {
+                                        name: "views/components/language-switcher",
+                                        params: {
+                                            current_language: "{{LANGUAGE_CODE}}"
+                                        }
+                                    }'></div>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                    
+                </nav>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
-    </nav>
+    </header>
     <!--=== End Header ===-->
 
-    <!-- Intro Section -->
-    <section id="intro-cons" class="intro-section" style="">
-        <div class="fullscreenbanner-container">
-            <div class="fullscreenbanner">
-                <ul>
-                    <!-- SLIDE 1 -->
-                    <li data-transition="fade" data-slotamount="9" data-masterspeed="0" data-title="Slide 1">
-                        <!-- MAIN IMAGE -->
-                        <img src="{% static 'img/landing/the_shard.jpg' %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
-
-                        <!-- LAYERS -->
-                        <!-- NEW LAYER -->
-                        <div class="tp-caption sft start text-bold disco-caption" delay="4500" data-x="-50" data-hoffset="0" data-y="450" data-speed="800" data-start="100" data-easing="Back.easeInOut" data-endspeed="300">
-                            <h2><a href="#info-block-1">{% trans "Consultations at GLAAS..." %}</a></h2>
-                            <p>{% trans "How the Greater London Archaeology Advisory Service manages development" %}</p>
-                        </div>
-
-                        <!-- NEW LAYER -->
-                        <div class="tp-caption sft start text-bold disco-caption" delay="4500" data-x="450" data-hoffset="0" data-y="450" data-speed="800" data-start="100" data-easing="Back.easeInOut" data-endspeed="300">
-                            <h2><a href="#info-block-2">{% trans "Search and Discover..." %}</a></h2>
-                            <p>{% trans "Find and review information on our current and past consultations" %}</p>
-                        </div>
-
-                        <!-- NEW LAYER -->
-                        <div class="tp-caption sft start text-bold disco-caption" delay="4500" data-x="950" data-hoffset="0" data-y="450" data-speed="800" data-start="100" data-easing="Back.easeInOut" data-endspeed="300">
-                            <h2><a href="#info-block-3">{% trans "Get Involved..." %}</a></h2>
-                            <p>{% trans "Want to help?  Here's how you can participate" %}</p>
-                        </div>
-
-                        <!-- Gradient -->
-                        <div class="image-gradient"></div>
-
-                        <!-- Attribution -->
-                        <div class="image-attribution" style="">
-                            <span class="">{% trans "The Shard | https://www.flickr.com/photos/cathedraljack/ | Attribution 2.0 Generic (CC BY 2.0)" %}</span>
-                        </div>
-                    </li>
-
-                </ul>
-                <div class="tp-bannertimer tp-bottom"></div>
-            </div>
-        </div>
-    </section>
-    <!-- End Intro Section -->
-
-    <!-- Page Custom Content -->
-    <div class="custom-content-container">
-        <!-- Info Block 1 -->
-        <div id="info-block-1" class="app-info-block">
-          <h2 class="">{% trans "Consultations at GLAAS" %}</h2>
-
-        </div>
-        <!-- End Info Block 1 -->
-
-        <!-- Info Block 2 -->
-        <div id="info-block-2" class="app-info-block">
-          <h2 class="">{% trans "Find and Review Consultations" %}</h2>
-
-        </div>
-        <!-- End Info Block 2 -->
-
-        <!-- Info Block 3 -->
-        <div id="info-block-3" class="app-info-block">
-          <h2 class="">{% trans "Working with GLAAS" %}</h2>
-
-        </div>
-        <!-- End Info Block 3 -->
-
-    </div>
-    <!-- End Page Custome Content -->
-
-    <!-- Footer -->
-    <div class="app-footer">
-
-        <!-- footer content container -->
-        <div class="app-footer-content-container">
-
-            <!-- branding column -->
-            <div class="app-footer-branding">
-                <img class="app-footer-image" src='/media/img/projects/consultations/HE_Logo_White.svg' title="Historic England" alt="Historic England">
-
-                <div class="organization-address">
-                  Greater London Archaeological Advisory Service<br>
-                  Historic England<br>
-                  4th floor, Cannon Bridge House<br>
-                  25 Dowgate Hill<br>
-                  London<br>
-                  EC4R 2YA
+    <main>
+        <div class="container">
+            <div class="row featurette1">
+                <div class="featurette1-left-container">
+                    <h1><span class="bg-info">****</span> Historic Environment Record<br/>
+                        (<span class="bg-info">*HER</span>)</h1>
+                    <p class="lead">The online heritage information and management system for <span class="bg-info">****</span></p>
+                </div>
+                <div class="featurette1-right-container pull-right">
+                    <img src="{% static 'img/landing/landing-primary.jpg' %}" alt="Image courtesy of Luis Alfonso Orellana" class="img-rounded img-responsive">
                 </div>
             </div>
+            <div class="row featurette2">
+                <h2>On this page</h2>
+                <ol>
+                    <li><a href="#bm-about">About</a></li>
+                    <li><a href="#bm-how-to-use">How to use</a></li>
+                    <li><a href="#bm-volunteering">Volunteering with <span class="bg-info">*HER</span></a></li>
+                    <li><a href="#bm-themes">Heritage Themes</a></li>
+                </ol>
+            </div>
+            <div class="row featurette3">
+                <h2 id="bm-about">About</h2>
+                <p class="subtitle">What is the <span class="bg-info">****</span> Historic Environment Record (<span class="bg-info">*HER</span>)?</p>
+                <p>The <span class="bg-info">*HER</span> is a comprehensive and dynamic resource for the historic environment of
+                    <span class="bg-info">&lt;Your area&gt;</span>. From the earliest human occupation to the present day, <span class="bg-info">*HER</span> data promotes
+                    better understanding of <span class="bg-info">&lt;Your area's&gt;</span> rich heritage, and supports development and regeneration
+                    through the work of the <span class="bg-info">&lt;Your Heritage Team's Name here&gt;</span>.</p>
+                <p>The online <span class="bg-info">*HER</span> is constantly updated by the HER Team and <span class="bg-info">&lt;Volunteers&gt;</span>. It is suitable
+                    for general and basic research, and will be of interest to local residents, community
+                    groups, and visitors to <span class="bg-info">&lt;Your Area&gt;</span>.</p>
+                <p><span class="bg-info">&lt;General information about commercial search requests and anything else...&gt;</span></p>
+                <div class="row featurette3-row">
+                    <div class="thumbnail featurette-image-block featurette3-first-block">
+                        <img src="{% static 'img/landing/about-left.png' %}" alt="Photo of a London bridge over the river Thames">
+                        <div class="caption">
+                            <a href="https://historicengland.org.uk/services-skills/our-planning-services/greater-london-archaeology-advisory-service/greater-london-historic-environment-record/#Section1Text" target="_blank">
+                                Find out more about the role of the<br><span class="bg-info">&lt;Your HER&gt;</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="thumbnail featurette-image-block featurette3-second-block">
+                        <img src="{% static 'img/landing/about-right.png' %}" alt="Photo of the London skyline">
+                        <div class="caption">
+                            <a href="https://historicengland.org.uk/services-skills/our-planning-services/greater-london-archaeology-advisory-service/" target="_blank">
+                                To find out more about the work of the<br><span class="bg-info">&lt;Your Heritage Team&gt;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row featurette4">
+                <h2 id="bm-how-to-use">How to use the <span class="bg-info">*HER</span> online</h2>
+                <div class="row featurette4-row">
+                    <video controls poster="{% static 'img/landing/video-placeholder.png' %}">
+                        <source src="{% static 'img/landing/london.mp4' %}">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p>A detailed guide for general users is available to download here: <a href="#" target="_blank"><span class="bg-info">*HER</span> User Guide</a>.</p>
+            </div>
+            <div class="row featurette5">
+                <h2 id="bm-volunteering">Volunteering with <span class="bg-info">*HER</span></h2>
+                <p>We have opportunities for enthusiastic volunteers, of all ages and backgrounds, to enhance the
+                    <span class="bg-info">&lt;Your Authority&gt;</span>, and help protect and promote <span class="bg-info">&lt;Your Area&gt;</span>'s rich and diverse heritage.</p>
+                <p>Whether this is for work experience, starting out on a career in the cultural heritage sector, or just for fun,
+                    we can provide full training and support.</p>
+                <p>Past and current volunteer projects include:</p>
+                <ul>
+                    <li><span class="bg-info">&lt;Insert project examples&gt;</span></li>
+                    <li>...</li>
+                    <li>...</li>
+                </ul>
+                <p>Other projects are in development, and we are also interested to hear suggestions for future projects.</p>
+                <p>For more information please contact the HER Team.</p>
+            </div>
+            <div class="row featurette6">
+                <h2 id="bm-themes">Heritage Themes</h2>
+                <p>Find out more about <span class="bg-info">&lt;Your Area&gt;</span>'s heritage.</p>
+                <div class="row featurette6-row">
+                    <div class="thumbnail featurette-image-block">
+                        <img src="{% static 'img/landing/statue.png' %}" alt="Photo of Roman London">
+                        <div class="caption">
+                            <a href="#">Heritage Theme 1</a>
+                        </div>
+                    </div>
+                    <div class="thumbnail featurette-image-block featurette6-mid-block">
+                        <img src="{% static 'img/landing/bowie.png' %}" alt="Photo of Musical London">
+                        <div class="caption">
+                            <a href="#">Heritage Theme 2</a>
+                        </div>
+                    </div>
+                    <div class="thumbnail featurette-image-block">
+                        <img src="{% static 'img/landing/project.png' %}" alt="Image to be confirmed">
+                        <div class="caption">
+                            <a href="#"><span class="bg-info">&lt;*HER or Local Authority/community project&gt;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row featurette7">
+                <h2>Contact Us</h2>
+                <div class="jumbotron">
+                    <h3>The <span class="bg-info">&lt;Your Area&gt;</span> Historic Environment Record</h3>
+                    <div class="row website-details">
+                        <div class="col-xs-12">
+                            <div class="contact-icon hidden-xs">
+                                <img src="{% static 'img/landing/contact-website.svg' %}" width="25" height="25" alt="Website icon">
+                            </div>
+                            <div class="contact-details">
+                                <p><strong>Website</strong><br/>
+                                    <a href="#" target="_blank">Website <span class="bg-info">&lt;Your area website&gt;</span> Historic Environment Record</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row address-phone">
+                        <div class="col-sm-6">
+                            <div class="contact-icon hidden-xs">
+                                <img src="{% static 'img/landing/contact-address.svg' %}" width="25" height="25" alt="Address icon">
+                            </div>
+                            <div class="contact-details">
+                                <p><strong>Address</strong><br>
+                                    <span class="bg-info">&lt;Your address&gt;</span></p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="contact-icon hidden-xs">
+                                <img src="{% static 'img/landing/contact-phone.svg' %}" width="25" height="25" alt="Phone icon">
+                            </div>
+                            <div class="contact-details">
+                                <p><strong>Phone number</strong><br>
+                                    <span class="bg-info">&lt;Your telephone numbers&gt;</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">View on map</a></p>
+                </div>
+                <div>
+                    <p>The top photograph is courtesy of Luis Alfonso Orellana</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
-            <!-- Info Column -->
-            <div class="app-footer-info">
-                <h2 class="app-footer-heading">{% trans "Guides and Documentation" %}</h2>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row footer-top-first-row">
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img class="footer-your-logo" src="{% static 'img/landing/footer-your-logo.png' %}" alt="Your logo">
+                        </a>
+                    </div>
+                    <div class="col-sm-5">
+                        <a href="#">
+                            <img class="footer-getty-logo" src="{% static 'img/landing/footer-getty-logo-white.png' %}" alt="The Getty logo">
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#">
+                            <img class="footer-arches-logo" src="{% static 'img/landing/footer-arches-logo-white.png' %}" alt="Arches Project logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8 col-sm-9 glher-text-container">
+                        <p class="glaas-title"><span class="bg-info">&lt;Your HER/Heritage Team/Authority&gt;</span></p>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 footer-top-contact-details">
+                        <p><strong>Contact Us</strong></p>
+                        <p>For enquiry, please contact<br/>
+                            <a href="mailto:"><span class="bg-info">&lt;Your email address&gt;</span></a></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- End Footer -->
 
-    <!-- Copyright Panel -->
-    <div class="copyright-container">
-
-
-        <!-- Arches link -->
-        <div class="app-footer-links">
-            <a class="link-spacing" href="">{% trans "Terms & Conditions" %}</a>
-            <a class="link-spacing" href="">{% trans "Privacy Policy" %}</a>
-            <a class="app-footer-arches-link" href="www.archesproject.org">Powered by Arches</a>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="col-xs-12 col-sm-8 footer-links">
+                        <a href="#" target="_blank">Accessibility</a>
+                        <a href="#" target="_blank">Privacy Policy</a>
+                        <a href="#" target="_blank">Terms &amp; Conditions</a>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 footer-copyright">
+                        <p class="copyright">&copy; <span class="bg-info">&lt;Your authority&gt;</span> <script type="text/javascript">document.write(new Date().getFullYear());</script></p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- End Copyright Container -->
+    </footer>
+    <!-- End Footer -->
 
+<script>
 
+    require.config({
+        baseUrl: "{% webpack_static 'build/js' %}",
+        paths: {
+            'text': "{% webpack_static 'node_modules/requirejs-text/text' %}",
+            'jquery': "{% webpack_static 'node_modules/jquery/dist/jquery.min' %}",
+            'jquery-ui': "{% webpack_static 'node_modules/jqueryui/jquery-ui.min' %}",
+            'jquery-validate': "{% webpack_static 'node_modules/jquery-validation/dist/jquery.validate.min' %}",
+            'underscore': "{% webpack_static 'node_modules/underscore/underscore-min' %}",
+            'chosen': "{% webpack_static 'node_modules/chosen-js/chosen.jquery.min' %}",
+            'knockout': "{% webpack_static 'node_modules/knockout/build/output/knockout-latest' %}",
+            'bootstrap': "{% webpack_static 'node_modules/bootstrap/dist/js/bootstrap.min' %}",
+            'one-app': "{% webpack_static 'plugins/one.app' %}",
+        },
+        shim: {
+            'jquery': {
+                exports: '$'
+            },
+            'bootstrap': {
+                deps: ['jquery', 'jquery-ui']
+            },
+            'chosen': {
+                deps: ['jquery'],
+            },
+            'one-app': {
+                deps: ['jquery'],
+            }
+        }
+    });
+    require(
+        [
+            'jquery',
+            'knockout',
+            'bootstrap',
+            'one-app',
+            'bindings/chosen',
+            'bindings/key-events-click',
+            'views/components/language-switcher'
+        ], function ($, ko) {
+            $(document).ready(function () {
+                App.init();
+                
+                var contentSections = $('.app-info-block'),
+                    navigationItems = $('#cd-vertical-nav a');
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.0/jquery-migrate.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.3.8/SmoothScroll.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax-min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
-    <script src="{% static 'plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js' %}"></script>
-    <script src="{% static 'plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js' %}"></script>
-    <script src="{% static 'plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js' %}"></script>
-    <script src="{% static 'plugins/one.app.js' %}"></script>
-    <script src="{% static 'plugins/pace-loader.js' %}"></script>
-    <script src="{% static 'plugins/owl-carousel.js' %}"></script>
-    <script src="{% static 'plugins/style-switcher.js' %}"></script>
-    <script src="{% static 'plugins/revolution-slider.js' %}"></script>
-    <script src="{% static 'plugins/cube-portfolio-lightbox.js' %}"></script>
-    <script src="{% static 'packages/knockout/build/output/knockout-latest.js' %}"></script>
+                updateNavigation();
+                $(window).on('scroll', function () {
+                    updateNavigation();
+                });
 
+                //smooth scroll to the section
+                navigationItems.on('click', function (event) {
+                    event.preventDefault();
+                    smoothScroll($(this.hash));
+                });
 
-    <script>
-        jQuery(document).ready(function() {
-            App.init();
-            App.initCounter();
-            App.initParallaxBg();
-            OwlCarousel.initOwlCarousel();
-            StyleSwitcher.initStyleSwitcher();
-            RevolutionSlider.initRSfullScreen();
-        });
+                //reset expanded mobile menu on window resize
+                window.addEventListener('resize', (e)=>{
+                    if ($(window).width() > 1024) {
+                        $('#toggleBtn').addClass('collapsed');
+                        $('#myNavbar').removeClass('in');
+                        $('#toggleBtn, #myNavbar').attr('aria-expanded','false');
+                    }
+                });
 
-        var ViewModel = function(first, last) {
-            this.showAuthMenu = ko.observable(false);
-        };
-        ko.applyBindings(new ViewModel());
+                function updateNavigation() {
+                    contentSections.each(function () {
+                        $this = $(this);
+                        var activeSection = $('#cd-vertical-nav a[href="#' + $this.attr('id') + '"]').data('number') - 1;
+                        if (($this.offset().top - $(window).height() / 2 < $(window).scrollTop()) && ($this.offset().top + $this.height() - $(window).height() / 2 > $(window).scrollTop())) {
+                            navigationItems.eq(activeSection).addClass('is-selected');
+                        } else {
+                            navigationItems.eq(activeSection).removeClass('is-selected');
+                        }
+                    });
+                }
+
+                function smoothScroll(target) {
+                    $('body,html').animate(
+                        { 'scrollTop': target.offset().top },
+                        600
+                    );
+                }
+
+                var ViewModel = function () {
+                     // place observables here
+                };
+
+                // need to have this to prevent mismatched anonymous define error in require.js
+                setTimeout(function () {
+                    ko.applyBindings(new ViewModel());
+                }, 300);
+            });
 
     </script>
 
