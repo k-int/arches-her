@@ -142,7 +142,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                     <p class="lead">The online heritage information and management system for <span class="bg-info">****</span></p>
                 </div>
                 <div class="featurette1-right-container pull-right">
-                    <img src="{% static 'img/landing/landing-primary.jpg' %}" alt="Image courtesy of Luis Alfonso Orellana" class="img-rounded img-responsive">
+                    <img src="{% webpack_static 'img/landing/landing-primary.jpg' %}" alt="Image courtesy of Luis Alfonso Orellana" class="img-rounded img-responsive">
                 </div>
             </div>
             <div class="row featurette2">
@@ -167,17 +167,17 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                 <p><span class="bg-info">&lt;General information about commercial search requests and anything else...&gt;</span></p>
                 <div class="row featurette3-row">
                     <div class="thumbnail featurette-image-block featurette3-first-block">
-                        <img src="{% static 'img/landing/about-left.png' %}" alt="Photo of a London bridge over the river Thames">
+                        <img src="{% webpack_static 'img/landing/about-left.png' %}" alt="Photo of a London bridge over the river Thames">
                         <div class="caption">
-                            <a href="https://historicengland.org.uk/services-skills/our-planning-services/greater-london-archaeology-advisory-service/greater-london-historic-environment-record/#Section1Text" target="_blank">
+                            <a href="#" target="_blank">
                                 Find out more about the role of the<br><span class="bg-info">&lt;Your HER&gt;</span>
                             </a>
                         </div>
                     </div>
                     <div class="thumbnail featurette-image-block featurette3-second-block">
-                        <img src="{% static 'img/landing/about-right.png' %}" alt="Photo of the London skyline">
+                        <img src="{% webpack_static 'img/landing/about-right.png' %}" alt="Photo of the London skyline">
                         <div class="caption">
-                            <a href="https://historicengland.org.uk/services-skills/our-planning-services/greater-london-archaeology-advisory-service/" target="_blank">
+                            <a href="#" target="_blank">
                                 To find out more about the work of the<br><span class="bg-info">&lt;Your Heritage Team&gt;</span>
                             </a>
                         </div>
@@ -187,8 +187,8 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
             <div class="row featurette4">
                 <h2 id="bm-how-to-use">How to use the <span class="bg-info">*HER</span> online</h2>
                 <div class="row featurette4-row">
-                    <video controls poster="{% static 'img/landing/video-placeholder.png' %}">
-                        <source src="{% static 'img/landing/london.mp4' %}">
+                    <video controls poster="{% webpack_static 'img/landing/video-placeholder.png' %}">
+                        <source src="{% webpack_static 'img/landing/london.mp4' %}">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -214,19 +214,19 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                 <p>Find out more about <span class="bg-info">&lt;Your Area&gt;</span>'s heritage.</p>
                 <div class="row featurette6-row">
                     <div class="thumbnail featurette-image-block">
-                        <img src="{% static 'img/landing/statue.png' %}" alt="Photo of Roman London">
+                        <img src="{% webpack_static 'img/landing/statue.png' %}" alt="Photo of Roman London">
                         <div class="caption">
                             <a href="#">Heritage Theme 1</a>
                         </div>
                     </div>
                     <div class="thumbnail featurette-image-block featurette6-mid-block">
-                        <img src="{% static 'img/landing/bowie.png' %}" alt="Photo of Musical London">
+                        <img src="{% webpack_static 'img/landing/bowie.png' %}" alt="Photo of Musical London">
                         <div class="caption">
                             <a href="#">Heritage Theme 2</a>
                         </div>
                     </div>
                     <div class="thumbnail featurette-image-block">
-                        <img src="{% static 'img/landing/project.png' %}" alt="Image to be confirmed">
+                        <img src="{% webpack_static 'img/landing/project.png' %}" alt="Image to be confirmed">
                         <div class="caption">
                             <a href="#"><span class="bg-info">&lt;*HER or Local Authority/community project&gt;</span></a>
                         </div>
@@ -240,7 +240,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                     <div class="row website-details">
                         <div class="col-xs-12">
                             <div class="contact-icon hidden-xs">
-                                <img src="{% static 'img/landing/contact-website.svg' %}" width="25" height="25" alt="Website icon">
+                                <img src="{% webpack_static 'img/landing/contact-website.svg' %}" width="25" height="25" alt="Website icon">
                             </div>
                             <div class="contact-details">
                                 <p><strong>Website</strong><br/>
@@ -251,7 +251,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                     <div class="row address-phone">
                         <div class="col-sm-6">
                             <div class="contact-icon hidden-xs">
-                                <img src="{% static 'img/landing/contact-address.svg' %}" width="25" height="25" alt="Address icon">
+                                <img src="{% webpack_static 'img/landing/contact-address.svg' %}" width="25" height="25" alt="Address icon">
                             </div>
                             <div class="contact-details">
                                 <p><strong>Address</strong><br>
@@ -260,7 +260,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                         </div>
                         <div class="col-sm-6">
                             <div class="contact-icon hidden-xs">
-                                <img src="{% static 'img/landing/contact-phone.svg' %}" width="25" height="25" alt="Phone icon">
+                                <img src="{% webpack_static 'img/landing/contact-phone.svg' %}" width="25" height="25" alt="Phone icon">
                             </div>
                             <div class="contact-details">
                                 <p><strong>Phone number</strong><br>
@@ -284,17 +284,17 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                 <div class="row footer-top-first-row">
                     <div class="col-sm-4">
                         <a href="#">
-                            <img class="footer-your-logo" src="{% static 'img/landing/footer-your-logo.png' %}" alt="Your logo">
+                            <img class="footer-your-logo" src="{% webpack_static 'img/landing/footer-your-logo.png' %}" alt="Your logo">
                         </a>
                     </div>
                     <div class="col-sm-5">
                         <a href="#">
-                            <img class="footer-getty-logo" src="{% static 'img/landing/footer-getty-logo-white.png' %}" alt="The Getty logo">
+                            <img class="footer-getty-logo" src="{% webpack_static 'img/landing/footer-getty-logo-white.png' %}" alt="The Getty logo">
                         </a>
                     </div>
                     <div class="col-sm-3">
                         <a href="#">
-                            <img class="footer-arches-logo" src="{% static 'img/landing/footer-arches-logo-white.png' %}" alt="Arches Project logo">
+                            <img class="footer-arches-logo" src="{% webpack_static 'img/landing/footer-arches-logo-white.png' %}" alt="Arches Project logo">
                         </a>
                     </div>
                 </div>
