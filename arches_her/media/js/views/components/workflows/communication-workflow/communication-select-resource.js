@@ -16,7 +16,7 @@ define([
         this.graphid = params.graphid;
         var getValue = function(key) {
             return ko.unwrap(params.value) ? params.value()[key] : null; 
-        }
+        };
         this.date = ko.observable(getValue('date'));
         this.subject = ko.observable(getValue('subject'));
         this.type = ko.observable(getValue('type'));
@@ -36,7 +36,7 @@ define([
                     resourceXresourceId: ""
                 }]);
             }
-        })
+        });
 
         this.resourceid(getValue('resourceid'));
         if (this.resourceid()){
@@ -57,14 +57,14 @@ define([
             if (self.resourceid()) {
                 params.value(val);
             }
-        })
+        });
 
         var communicationTileData = ko.pureComputed(function(){
             return {
                 "caf5bff5-a3d7-11e9-8c7e-00224800b26d": ko.unwrap(self.date), //data node
                 "f4ea6a30-9378-11ea-a36d-f875a44e0e11": ko.unwrap(self.subject), //subject
                 "caf5bff4-a3d7-11e9-99c5-00224800b26d": ko.unwrap(self.type), //type
-            }
+            };
         });
 
         this.buildTile = function(tileDataObj, nodeGroupId, resourceid, tileid) {
@@ -102,7 +102,7 @@ define([
                         params.form.error(new Error("Missing Required Value"));
                         params.pageVm.alert(new AlertViewModel('ep-alert-red', result.title, result.message));
                         return;
-                    })
+                    });
                 }
             });
         };
@@ -119,7 +119,7 @@ define([
                             resourceid: self.resourceid(), ...self.updatedValue()
                         });
                     }
-                })
+                });
         };
     }
 

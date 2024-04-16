@@ -50,7 +50,7 @@ define([
                 "9c9f9dbe-83bf-11ea-aa43-f875a44e0e11": "2df285fa-9cf2-45e7-bc05-a67b7d7ddc2f",
                 "9c9f9dbf-83bf-11ea-b1a9-f875a44e0e11": "e987fb72-6fa6-43ab-8812-867c4813a2a2",
                 "9c9f9dc0-83bf-11ea-8d22-f875a44e0e11": self.applicationAreaName()
-            }
+            };
         });
 
         var addressTileDataObj = ko.pureComputed(function(){
@@ -89,7 +89,7 @@ define([
                 "7ee45beb-eeb5-11eb-8679-a87eeabdefba": self.county(),
                 "7ee43307-eeb5-11eb-99c7-a87eeabdefba": self.postcode(),
                 "7ee432ff-eeb5-11eb-8299-a87eeabdefba": self.fullAddress()
-            }
+            };
         });
 
         this.updatedValue = ko.pureComputed(function(){
@@ -183,7 +183,7 @@ define([
                     params.form.savedData(self.updatedValue());
                 });
         };
-    };
+    }
 
     return ko.components.register('app-area-address-step', {
         viewModel: viewModel,
