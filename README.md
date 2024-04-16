@@ -1,13 +1,13 @@
-#Arches for HERs
+# Arches for HERs
 
-##What is Arches for HERs
+## What is Arches for HERs
 
 Arches for HERs is a comprehensive data management platform for UK Historic Environment Records (HERs). Arches for HERs is purpose-built for HERs and any organization that conforms to the standards specified by the Forum for Information Standards in Heritage (FISH), including MIDAS Heritage.
 
 You can find out more about Arches for HERs at [https://www.archesproject.org/arches-for-hers/](https://www.archesproject.org/arches-for-hers/)
 
 
-##How Do I Set Up Arches for HERs
+## How Do I Set Up Arches for HERs
 
 Arches for HERs requires Arches 7.5.1
 
@@ -43,7 +43,7 @@ python manage.py packages -o load_package -s <path_to_arches_her_directory>/arch
 ```
 
 
-##How Do I Configure Arches for HERs
+## How Do I Configure Arches for HERs
 
 Administrators of an instance of Arches for HERs can configure their implementation having installed the out-of-the-box version.  Ways in which you can configure and customise an instance include:
 
