@@ -32,7 +32,6 @@ define([
                 $.get(
                     arches.urls.resource_descriptors + id,
                     function(descriptors) {
-                        //descriptors structure: [{language: "en", value: "Application Area"}, {language: "fr", value: "Domaine d'application"}]
                         descriptors.displayname.forEach(function(displayname) {
                             if (displayname.language === activeLang) {
                                 retStr == '' ? retStr = displayname.value : retStr += (', '+displayname.value);
