@@ -89,9 +89,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                                 <a href="/">Home</a>
                             </li>
                             <li>
-                                <a href="#info-block-1">{% trans "Arches Features" %}</a>
-                            </li>
-                            <li>
                                 <a href="{% url 'search_home' %}">{% trans "Search Arches" %}</a>
                             </li>
                             {% if user|can_create_resource_instance and user.username != 'anonymous' %}
