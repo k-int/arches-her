@@ -6,7 +6,6 @@ define([
     'viewmodels/alert',
     'templates/views/components/plugins/application-area.htm',
     'views/components/workflows/new-tile-step',
-    'views/components/workflows/application-area/app-area-address-step',
     'views/components/workflows/application-area/app-area-final-step'
 ], function(ko, $, arches, Workflow, AlertViewModel,ApplicationAreaTemplate) {
     return ko.components.register('application-area', {
