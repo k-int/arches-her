@@ -18,6 +18,39 @@ define([
                     return null;
                 }
             } 
+        },
+        createI18nString: (stringValue) => {
+            return {
+                [arches.activeLanguage]: {
+                    "value": stringValue,
+                    "direction": arches.languages.find(lang => lang.code == arches.activeLanguage).default_direction
+                }
+            };
+        },
+        getI18nString: (StringDatatypeValue) => {
+            try {
+                return StringDatatypeValue[arches.activeLanguage].value;
+            } catch{
+                return '';
+            }
+        },
+        setI18nString: (StringDatatypeValue, stringValue) => {
+            if (typeof StringDatatypeValue === 'object') {
+                StringDatatypeValue[arches.activeLanguage] = {
+                    "value": stringValue,
+                    "direction": arches.languages.find(lang => lang.code == arches.activeLanguage).default_direction
+                };
+                return StringDatatypeValue;
+            }
+            else{
+                return {
+                    [arches.activeLanguage]: {
+                        "value": stringValue,
+                        "direction": arches.languages.find(lang => lang.code == arches.activeLanguage).default_direction
+                    }
+                };
+            }
+
         }
     };
 });
