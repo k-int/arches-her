@@ -222,8 +222,11 @@ body {
                     .nav-brand-container {
                         padding: 0;
                         .navbar-brand {
+                            height: 80px;
+                            padding-top: 17px;
                             @include break-at(mobile-lg-max) {
-                                padding: 12px 15px;
+                                padding: 13px 15px;
+                                height: 60px;
                             }
                             .navbar-brand-image {
                                 width: 200px;
