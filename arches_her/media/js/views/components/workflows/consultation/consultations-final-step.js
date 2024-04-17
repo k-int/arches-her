@@ -42,7 +42,7 @@ define([
                         referenceType: {'name': 'Reference Type', 'value': self.getResourceValue(ref, ['Agency Identifier', 'Reference Type', '@value'])},
                         agency: {'name': 'Agency', 'value': self.getResourceValue(ref, ['Agency', '@value'])}
                     };
-                })
+                });
             } catch(e) {
                 this.reportVals.references = [];
             }
@@ -56,11 +56,11 @@ define([
                 } catch(e) {
                     //pass
                 }
-            };
+            }
             this.resourceLoading(false);
             if (!self.relatedResourceLoading()) {
                 self.loading(false);
-            };
+            }
             
             if (!val.resource['Status']) {
                 var statusNodegroupId = '6a773228-db20-11e9-b6dd-784f435179ea';
@@ -105,8 +105,8 @@ define([
             self.relatedResourceLoading(false);
             if (!self.resourceLoading()) {
                 self.loading(false);
-            };
-        })
+            }
+        });
     }
 
     ko.components.register('consultations-final-step', {
