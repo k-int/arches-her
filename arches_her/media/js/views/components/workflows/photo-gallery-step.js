@@ -29,6 +29,4 @@ define([
         viewModel: viewModel,
         template: PhotoGalleryStepTemplate
     });
-
-    return viewModel;
 });

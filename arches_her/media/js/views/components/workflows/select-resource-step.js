@@ -16,17 +16,17 @@ define([
             if (val){
                 self.tile().resourceinstance_id = val;
             }
-        })
+        });
         this.tile().transactionId = this.workflowId;
         this.tile().dirty.subscribe(function(dirty) {
-            self.dirty(dirty)
+            self.dirty(dirty);
         });
 
         this.initilize = function(){
             if (ko.unwrap(self.savedData)) {
                 self.resourceValue(ko.unwrap(self.savedData).resourceInstanceId);
             }
-        }
+        };
 
         params.form.save = function() {
             self.tile().save().then(
@@ -41,7 +41,7 @@ define([
                     params.form.complete(true);
                     params.form.saving(false);
                 }
-            )
+            );
         };
         this.initilize();
     }

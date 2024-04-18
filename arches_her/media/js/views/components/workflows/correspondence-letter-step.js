@@ -6,7 +6,7 @@ define([
     'views/components/workflows/new-tile-step',
     'viewmodels/alert',
     'templates/views/components/workflows/correspondence-letter-step.htm'
-], function($, arches, ko, koMapping, NewTileStep, AlertViewMode, CorrespondenceLetterStepTemplate) {
+], function($, arches, ko, koMapping, NewTileStep, AlertViewModel, CorrespondenceLetterStepTemplate) {
     function viewModel(params) {
 
         NewTileStep.apply(this, [params]);
