@@ -4,21 +4,23 @@ define([
     'uuid',
     'arches',
     'viewmodels/alert',
+    'utils/workflows',
     'templates/views/components/workflows/communication-workflow/communication-select-resource.htm'
-], function(_, ko, uuid, arches, AlertViewModel, CommunicationSelectResourceTemplate) {
+], function(_, ko, uuid, arches, AlertViewModel, workflowUtils, CommunicationSelectResourceTemplate) {
     function viewModel(params) {
         var self = this;
+        Object.assign(self, workflowUtils);
         this.resValue = ko.observable().extend({ deferred: true });
         this.resourceid = ko.observable();
         const communicationNodegroupId = 'caf5bff1-a3d7-11e9-aa28-00224800b26d';
         this.disableResourceSelection = ko.observable(false);
         this.loading = params.loading;
         this.graphid = params.graphid;
-        var getValue = function(key) {
-            return ko.unwrap(params.value) ? params.value()[key] : null; 
+        var getValue = function(key, isString=false) {
+            return self.getProp(params,key,'value',isString);
         };
         this.date = ko.observable(getValue('date'));
-        this.subject = ko.observable(getValue('subject'));
+        this.subject = ko.observable(getValue('subject', true));
         this.type = ko.observable(getValue('type'));
         this.tileid = ko.observable(getValue('tileid'));
 
