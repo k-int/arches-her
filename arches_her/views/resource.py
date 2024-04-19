@@ -57,15 +57,24 @@ class ResourceDescriptors(View):
                 document = se.search(index='resources', id=resourceid, doc_type='_doc')
                 datatype_factory = DataTypeFactory()
                 additional_data = {}
+                display_description = ''
+                display_name = ''
+                map_popup = ''
                 if document['_source']['graph_id'] == '8d41e49e-a250-11e9-9eab-00224800b26d':
                     tiles = build_resource_dict([resource], active_cons_node_list, datatype_factory)
                     additional_data = tiles[0]
+                if document['_source']['displaydescription'][0]['value']:
+                    display_description = document['_source']['displaydescription'][0]['value']
+                if document['_source']['displayname'][0]['value']:
+                    display_name = document['_source']['displayname'][0]['value']
+                if document['_source']['map_popup'][0]['value']:
+                    map_popup = document['_source']['map_popup'][0]['value']
                 ret = {
                     'graphid': document['_source']['graph_id'],
                     'graph_name': resource.graph.name,
-                    'displaydescription': document['_source']['displaydescription'],
-                    'map_popup': document['_source']['map_popup'],
-                    'displayname': document['_source']['displayname'],
+                    'displaydescription': display_description,
+                    'map_popup': map_popup,
+                    'displayname': display_name,
                     'geometries': document['_source']['geometries']
                 }
                 ret.update(additional_data)
