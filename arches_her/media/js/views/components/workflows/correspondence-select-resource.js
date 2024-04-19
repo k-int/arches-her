@@ -84,10 +84,10 @@ define([
                             'transaction_id': self.workflowId,
                         },
                     }).done(function(response) {
-                        console.log("Digital related resource updated")
+                        console.log("Digital related resource updated");
                     })
                         .fail(function(response) {
-                            console.log("Updating digital related resource failed: \n", response)
+                            console.log("Updating digital related resource failed: \n", response);
                         });
 
                     nameTemplate["resourceinstance_id"] = data.tile.resourceinstance_id;
