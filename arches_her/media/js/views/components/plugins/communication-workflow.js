@@ -28,6 +28,7 @@ define([
                                 { 
                                     componentName: 'communication-select-resource',
                                     uniqueInstanceName: 'communication-select-resource', /* unique to step */
+                                    tilesManaged: 'one',
                                     parameters: {
                                         graphid: '8d41e49e-a250-11e9-9eab-00224800b26d',
                                         nodegroupid: 'caf5bff1-a3d7-11e9-aa28-00224800b26d',
