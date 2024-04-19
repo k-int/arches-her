@@ -7,10 +7,12 @@ define([
     'knockout-mapping',
     'views/components/workflows/select-resource-step',
     'viewmodels/alert',
+    'utils/workflows',
     'templates/views/components/workflows/correspondence-select-resource.htm'
-], function(_, $, uuid, arches, ko, koMapping, SelectResourceStep, AlertViewModel, CorrespondenceSelectResourceTemplate) {
+], function(_, $, uuid, arches, ko, koMapping, SelectResourceStep, AlertViewModel, workflowUtils, CorrespondenceSelectResourceTemplate) {
     function viewModel(params) {
         var self = this;
+        Object.assign(self, workflowUtils);
         SelectResourceStep.apply(this, [params]);
 
         this.letterTypeNodeId = "8d41e4df-a250-11e9-af01-00224800b26d";
@@ -102,8 +104,7 @@ define([
                     }).done(function(data) {
                         let today = new Date().toLocaleDateString();
                         today = today.replaceAll("/", "_");
-                        nameTemplate.data["c61ab16c-9513-11ea-89a4-f875a44e0e11"] = today + " Letter for " + data.displayname;
-                        console.log(JSON.stringify(nameTemplate));
+                        nameTemplate.data["c61ab16c-9513-11ea-89a4-f875a44e0e11"] = self.createI18nString(today + " Letter for " + data.displayname);
 
                         $.ajax({ //saving the digital resource name
                             url: arches.urls.api_tiles(uuid.generate()),
