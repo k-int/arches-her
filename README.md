@@ -7,56 +7,52 @@ Arches for HERs is a comprehensive data management platform for UK Historic Envi
 You can find out more about Arches for HERs at [https://www.archesproject.org/arches-for-hers/](https://www.archesproject.org/arches-for-hers/)
 
 
-## How Do I Set Up Arches for HERs
-
-Arches for HERs requires Arches 7.5.1
-
-1. To install Core Arches clone the arches-her repo as **arches_her** and then run pip install:
-
-```
-git clone https://github.com/archesproject/arches-her.git arches_her
-pip install -r ./arches_her/arches_her/install/requirements.txt
-```
+## How do I get started with Arches for HERs
 
 
-**❗️ If you need to make changes to the Arches Core code, follow the [Installing Core Arches](https://arches.readthedocs.io/en/latest/installing/installation/) instructions in the Arches Documentation Guide to install Arches 7.5.1.
+1. Clone the arches-her repo, making sure to change the default target folder to **arches_her** and then run pip install:
 
-Once you have installed Core Arches at the correct version, clone the arches-her repo as a folder named arches_her
+   ```
+   pip install -r ./arches_her/arches_her/install/requirements.txt
+   ```
 
-``` 
-git clone https://github.com/archesproject/arches-her.git arches_her
-```
+   If you are installing Arches for HERs on Windows, follow the [instructions relating to the GDAL_LIBRARY_PATH](https://arches.readthedocs.io/en/latest/installing/installation/#common-errors) detailed in the Installing Core Arches documentation.  
 
-and comment out the arches=7.5.1 requirement in <path_to_arches_her_directory>/arches_her/arches_her/install/requirements.txt
+1. Set up your database and load the package with the following command in the arches_her directory:
 
-If you are installing Arches for HERs on Windows, follow the [instructions relating to the GDAL_LIBRARY_PATH](https://arches.readthedocs.io/en/latest/installing/installation/#common-errors) detailed in the Installing Core Arches documentation.  You will need to create a settings_local.py file with the following contents:
+   ```
+   python manage.py packages -o load_package -s <path_to_arches_her_directory>/arches_her/arches_her/pkg -db -y
+   ```
 
-```
-try:
-    from .arches_her.settings import *
-except ImportError:
-    pass
-```
+1. Start the Arches for HERs project
 
-2. Set up your database and load the package with the following command in the arches_her directory:
+   ```
+   python manage.py runserver
+   ```
 
-```
-python manage.py packages -o load_package -s <path_to_arches_her_directory>/arches_her/arches_her/pkg -db -y
-```
+1. Install and build front-end dependencies
 
-3. Start the Arches for HERs project
+   Before you can use browse the application you will need to build the front end asset bundle. From the directory containing the package.json file ([workspace]/arches_her/arches_her)
 
-```
-python manage.py runserver
-```
+   ```
+   yarn install
+   yarn build_development
+   ```
 
-4. Install and build front-end dependencies:
+This will allow you to run the application locally, but is not suitable for running on a web server. Please see the guidance for deploying an Arches project like Arches for HERs into a server environment.
 
-```
-cd arches_her
-yarn install
-yarn build_development
-```
+   https://arches.readthedocs.io/en/latest/deployment/
+   
+
+### Setting up a development environment
+
+If you are setting up a development enviornment then please see the Arches documentation on how to do this:
+
+   https://arches.readthedocs.io/en/latest/installing/installation/
+
+You will need to use the dev/7.5.x branch for the arches repository.
+
+The **arches_her/install/requirements.txt** file will also need to be edited in order to remove the `arches==7.5.1` requirement, as you will have cloned and installed the arches core code seperately.
 
 
 
