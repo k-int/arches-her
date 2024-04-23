@@ -70,6 +70,7 @@
                 }"></div>
             </div>
             <!-- Resources Tab -->
+            <div class="aher-report-page" data-bind="if: activeSection() === 'resources'">
 
                 <!-- Referenced By section -->
                 <div data-bind="component: {
@@ -80,7 +81,6 @@
                     }
                 }"></div>
 
-            <div class="aher-report-page" data-bind="if: activeSection() === 'resources'">
                 <div data-bind="component: {
                     name: 'views/components/reports/scenes/resources',
                     params: {
@@ -89,6 +89,7 @@
                         dataConfig: resourceDataConfig
                     }
                 }"></div>
+
                 <!-- Application Area section -->
                 <div class="aher-report-section">
                     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.applicationAreas)}, css: {'fa-angle-double-right': visible.applicationAreas(), 'fa-angle-double-up': !visible.applicationAreas()}" class="fa toggle"></i> {% trans "Associated Application Areas" %}</h2>
