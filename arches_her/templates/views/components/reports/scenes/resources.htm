@@ -191,7 +191,7 @@
 <!-- Associated Digital Files section -->
 <div class="aher-report-section" data-bind="visible: !!dataConfig.files">
     <h2 class="aher-report-section-title">
-        <i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.files)}, css: {'fa-angle-double-right': visible.files(), 'fa-angle-double-up': !visible.files()}, attr: {'aria-expanded': visible.files() ? 'false' : 'true' }" aria-label="Expand/collapse Associated Files section"></i>
+        <i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.files)}, css: {'fa-angle-double-right': visible.files(), 'fa-angle-double-up': !visible.files()}, attr: {'aria-expanded': visible.files() ? 'false' : 'true' }" class="fa toggle" aria-label="Expand/collapse Associated Files section"></i>
         {% trans "Associated Files" %}
     </h2>
     <!-- ko if: cards.files -->
