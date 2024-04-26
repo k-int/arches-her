@@ -17,12 +17,13 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 '''
 
 from django.http import HttpResponseNotFound
-from django.utils.translation import gettext as _
+from django.utils.translation import get_language, gettext as _
 from django.views.generic import View
 from arches.app.models.resource import Resource
 from arches.app.utils.response import JSONResponse
 from arches.app.search.search_engine_factory import SearchEngineFactory
 from arches.app.datatypes.datatypes import DataTypeFactory
+from arches.app.models import models
 from arches_her.views.active_consultations import build_resource_dict
 import logging
 
@@ -60,15 +61,19 @@ class ResourceDescriptors(View):
                 display_description = ''
                 display_name = ''
                 map_popup = ''
+                default_language = (models.Language.objects.get(code=get_language())).code
                 if document['_source']['graph_id'] == '8d41e49e-a250-11e9-9eab-00224800b26d':
                     tiles = build_resource_dict([resource], active_cons_node_list, datatype_factory)
                     additional_data = tiles[0]
-                if document['_source']['displaydescription'][0]['value']:
-                    display_description = document['_source']['displaydescription'][0]['value']
-                if document['_source']['displayname'][0]['value']:
-                    display_name = document['_source']['displayname'][0]['value']
-                if document['_source']['map_popup'][0]['value']:
-                    map_popup = document['_source']['map_popup'][0]['value']
+                check_display_description = self.return_descriptor_by_language(document['_source']['displaydescription'], default_language)
+                check_display_name = self.return_descriptor_by_language(document['_source']['displayname'], default_language)
+                check_map_popup = self.return_descriptor_by_language(document['_source']['map_popup'], default_language)
+                if check_display_description:
+                    display_description = check_display_description
+                if check_display_name:
+                    display_name = check_display_name
+                if check_map_popup:
+                    map_popup = check_map_popup
                 ret = {
                     'graphid': document['_source']['graph_id'],
                     'graph_name': resource.graph.name,
@@ -83,3 +88,9 @@ class ResourceDescriptors(View):
                 logger.exception(_('Failed to fetch resource instance descriptors'))
 
         return HttpResponseNotFound()
+    
+    def return_descriptor_by_language(self, descriptor_element, language):
+        for i in descriptor_element:
+            if i['language'] == language:
+                if i['value']:
+                    return i['value']
