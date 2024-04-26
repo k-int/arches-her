@@ -352,7 +352,7 @@ class FileTemplateView(View):
                             if mapping_dict["Name of person consulting"] == "" or contactTile.data[nameUseTypeNodeId] == primaryNameValueId:
                                 nameTitle = ConceptValue(contactTile.data[nameTitleNodeId]).value
                                 fullName = "{0} {1}".format(
-                                    get_value_from_tile(contactTile, firstnameNodeId), get_value_from_tile(contactTile, lastnameNodeId)
+                                    get_value_from_tile(contactTile, firstnameNodeId), get_value_from_tile(contactTile, contactNameForCorrespondenceNodeId)
                                 )
                                 mapping_dict["Name of person consulting"] = "{0} {1}".format(nameTitle, fullName) if nameTitle else fullName
                         elif contactTile.nodegroup.nodegroupid == uuid.UUID(contactDetailsNodegroupId):
