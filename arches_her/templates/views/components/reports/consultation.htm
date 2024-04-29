@@ -535,7 +535,7 @@
                 </div>
                 <div class="aher-report-section">
                     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.communications)}, css: {'fa-angle-double-right': visible.communications(), 'fa-angle-double-up': !visible.communications()}"  class="fa toggle"></i> {% trans "Communications" %}</h2>
-                    <a href="#" data-bind="{if: function(){addNewTile(cards.communications)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add communications" %}</a>
+                    <a href="#" data-bind="{if: cards.communications, click: function(){addNewTile(cards.communications)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add communications" %}</a>
 
                     <!-- Collapsible content -->
                     <div data-bind="visible: visible.communications" class="aher-report-collapsible-container pad-lft">
