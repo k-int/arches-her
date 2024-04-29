@@ -60,7 +60,7 @@
 <!-- ko ifnot: hideCrossReferences() -->
 <div data-bind="visible: !!dataConfig.xref" class="aher-report-section">
     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.crossReferences)}, css: {'fa-angle-double-right': visible.crossReferences(), 'fa-angle-double-up': !visible.crossReferences()}" class="fa toggle"></i> {% trans "External Cross References" %}</h2>
-    <a data-bind="{if: cards.externalCrossReferences, click: function(){addNewTile(cards.externalCrossReferences)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add Reference" %}</a>
+    <a href="#" data-bind="{if: cards.externalCrossReferences, click: function(){addNewTile(cards.externalCrossReferences)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add Reference" %}</a>
 
     <!-- Collapsible content -->
     <div data-bind="visible: visible.crossReferences" class="aher-report-collapsible-container pad-lft">
@@ -118,7 +118,7 @@
 <!-- System Reference Numbers section -->
 <div class="aher-report-section">
     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.systemReferenceNumbers)}, css: {'fa-angle-double-right': visible.systemReferenceNumbers(), 'fa-angle-double-up': !visible.systemReferenceNumbers()}" class="fa toggle"></i> {% trans "System Reference Numbers" %}</h2>
-    <a data-bind="{if: cards.systemReferenceNumbers, click: function(){ addNewTile(cards.systemReferenceNumbers) }}" class="aher-report-a">
+    <a href="#" data-bind="{if: cards.systemReferenceNumbers, click: function(){ addNewTile(cards.systemReferenceNumbers) }}" class="aher-report-a">
         <i class="fa fa-mail-reply"></i>
         <span data-bind="if: cards.systemReferenceNumbers.tiles().length">{% trans "Edit Identifier" %}</span>
         <span data-bind="ifnot: cards.systemReferenceNumbers.tiles().length">{% trans "Add Identifier" %}</span>

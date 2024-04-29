@@ -16,7 +16,7 @@
         <div class="aher-report-subsection">
             <div class="aher-report-subsection-container no-flex map-container">
                 <h3><i data-bind="css: {'fa-angle-double-right': visible.geometry(), 'fa-angle-double-up': !visible.geometry()}" class="fa toggle"></i> {% trans "Geometry " %}  <span data-bind="visible: observableValueSet([geometryShape])">(Shape type: <span data-bind="text: geometryShape"></span>)</span></h3>
-                <a class="aher-report-a" data-bind="{if: cards.locationGeometry, click: function(){addNewTile(cards.locationGeometry)}}"><i class="fa fa-mail-reply"></i> {% trans "Edit location" %}</a>
+                <a href="#" class="aher-report-a" data-bind="{if: cards.locationGeometry, click: function(){addNewTile(cards.locationGeometry)}}"><i class="fa fa-mail-reply"></i> {% trans "Edit location" %}</a>
                 <div data-bind="if: visible.geometry">
                     <div data-bind="component: {
                         name: 'views/components/reports/scenes/map',

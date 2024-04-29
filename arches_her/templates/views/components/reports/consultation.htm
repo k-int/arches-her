@@ -181,7 +181,8 @@
             <!-- Contacts Tab -->
             <div class="aher-report-page" data-bind="if: activeSection() === 'contacts'">
                 <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.contacts)}, css: {'fa-angle-double-right': visible.contacts(), 'fa-angle-double-up': !visible.contacts()}" class="fa toggle"></i> {% trans "Contacts" %}</h2>
-                <a data-bind="{if: cards.contacts, click: function(){ addNewTile(cards.contacts) }}" class="aher-report-a">
+                <a href="#" data-bind="{if: cards.contacts, click: function(){ addNewTile(cards.contacts) }}" class="aher-report-a">
+
                     <i class="fa fa-mail-reply"></i>
                     <span data-bind="if: cards.contacts.tiles().length">{% trans "Edit Contacts" %}</span>
                     <span data-bind="ifnot: cards.contacts.tiles().length">{% trans "Add Contacts" %}</span>
@@ -263,7 +264,7 @@
             <div class="aher-report-page" data-bind="if: activeSection() === 'progression'">
                 <div class="aher-report-section">
                     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.proposal)}, css: {'fa-angle-double-right': visible.proposal(), 'fa-angle-double-up': !visible.proposal()}"  class="fa toggle"></i> {% trans "Proposal" %}</h2>
-                    <a data-bind="{if: cards.proposal, click: function(){addNewTile(cards.proposal)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add proposal" %}</a>
+                    <a href="#" data-bind="{if: cards.proposal, click: function(){addNewTile(cards.proposal)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add proposal" %}</a>
 
                     <!-- Collapsible content -->
                     <div data-bind="visible: visible.proposal" class="aher-report-collapsible-container pad-lft">
@@ -310,7 +311,7 @@
                 </div>
                 <div class="aher-report-section">
                     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.advice)}, css: {'fa-angle-double-right': visible.advice(), 'fa-angle-double-up': !visible.advice()}"  class="fa toggle"></i> {% trans "Advice" %}</h2>
-                    <a data-bind="{if: cards.advice, click: function(){addNewTile(cards.advice)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add advice" %}</a>
+                    <a href="#" data-bind="{if: cards.advice, click: function(){addNewTile(cards.advice)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add advice" %}</a>
 
                     <!-- Collapsible content -->
                     <div data-bind="visible: visible.advice" class="aher-report-collapsible-container pad-lft">
@@ -358,7 +359,7 @@
                 </div>
                 <div class="aher-report-section">
                     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.action)}, css: {'fa-angle-double-right': visible.action(), 'fa-angle-double-up': !visible.action()}"  class="fa toggle"></i> {% trans "Action" %}</h2>
-                    <a data-bind="{if: cards.actions, click: function(){addNewTile(cards.actions)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add action" %}</a>
+                    <a href ="#" data-bind="{if: cards.actions, click: function(){addNewTile(cards.actions)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add action" %}</a>
 
                     <!-- Collapsible content -->
                     <div data-bind="visible: visible.action" class="aher-report-collapsible-container pad-lft">
@@ -407,7 +408,7 @@
                 </div>
                 <div class="aher-report-section">
                     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.outcomes)}, css: {'fa-angle-double-right': visible.outcomes(), 'fa-angle-double-up': !visible.outcomes()}" class="fa toggle"></i> {% trans "Outcomes" %}</h2>
-                    <a data-bind="{if: cards.outcomes, click: function(){ addNewTile(cards.outcomes) }}" class="aher-report-a">
+                    <a href="#" data-bind="{if: cards.outcomes, click: function(){ addNewTile(cards.outcomes) }}" class="aher-report-a">
                         <i class="fa fa-mail-reply"></i>
                         <span data-bind="if: cards.outcomes.tiles().length">{% trans "Edit outcomes" %}</span>
                         <span data-bind="ifnot: cards.outcomes.tiles().length">{% trans "Add outcomes" %}</span>
@@ -487,7 +488,7 @@
             <div class="aher-report-page" data-bind="if: activeSection() === 'correspondence'">
                 <div class="aher-report-section">
                     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.correspondence)}, css: {'fa-angle-double-right': visible.correspondence(), 'fa-angle-double-up': !visible.correspondence()}"  class="fa toggle"></i> {% trans "Correspondence" %}</h2>
-                    <a data-bind="{if: cards.correspondence, click: function(){addNewTile(cards.correspondence)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add Correspondence" %}</a>
+                    <a href="#" data-bind="{if: cards.correspondence, click: function(){addNewTile(cards.correspondence)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add Correspondence" %}</a>
 
                     <!-- Collapsible content -->
                     <div data-bind="visible: visible.correspondence" class="aher-report-collapsible-container pad-lft">
@@ -534,7 +535,7 @@
                 </div>
                 <div class="aher-report-section">
                     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.communications)}, css: {'fa-angle-double-right': visible.communications(), 'fa-angle-double-up': !visible.communications()}"  class="fa toggle"></i> {% trans "Communications" %}</h2>
-                    <a data-bind="{if: cards.communications, click: function(){addNewTile(cards.communications)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add communications" %}</a>
+                    <a href="#" data-bind="{: function(){addNewTile(cards.communications)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add communications" %}</a>
 
                     <!-- Collapsible content -->
                     <div data-bind="visible: visible.communications" class="aher-report-collapsible-container pad-lft">
@@ -833,7 +834,7 @@
 
     <div class="aher-report-section">
         <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.advice)}, css: {'fa-angle-double-right': visible.advice(), 'fa-angle-double-up': !visible.advice()}"  class="fa toggle"></i> {% trans "Advice" %}</h2>
-        <a data-bind="{if: cards.advice, click: function(){addNewTile(cards.advice)}}" class="aher-report-a" href="#"><i class="fa fa-mail-reply"></i> {% trans "Add advice" %}</a>
+        <a href="#" data-bind="{if: cards.advice, click: function(){addNewTile(cards.advice)}}" class="aher-report-a" href="#"><i class="fa fa-mail-reply"></i> {% trans "Add advice" %}</a>
 
         <!-- Collapsible content -->
         <div data-bind="visible: visible.advice" class="aher-report-collapsible-container pad-lft">
@@ -882,7 +883,7 @@
 
 
     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.contacts)}, css: {'fa-angle-double-right': visible.contacts(), 'fa-angle-double-up': !visible.contacts()}" class="fa toggle"></i> {% trans "Contacts" %}</h2>
-        <a data-bind="{if: cards.contacts, click: function(){ addNewTile(cards.contacts) }}" class="aher-report-a" href="#">
+    <a href="#" data-bind="{if: cards.contacts, click: function(){ addNewTile(cards.contacts) }}" class="aher-report-a" href="#">
             <i class="fa fa-mail-reply"></i>
             <span data-bind="if: cards.contacts.tiles().length">{% trans "Edit Contacts" %}</span>
             <span data-bind="ifnot: cards.contacts.tiles().length">{% trans "Add Contacts" %}</span>
