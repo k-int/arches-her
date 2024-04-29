@@ -32,8 +32,8 @@ function(_, ko, arches, reportUtils, DescriptionTemplate) {
             self.citationTableConfig = {
                 ...self.defaultTableConfig,
                 "columns": [
-                    { "width": "90%" },
-                    null,
+                    { "width": "70%" },
+                    { "width": "20%" },
                     null,
                     null,
                     null,
