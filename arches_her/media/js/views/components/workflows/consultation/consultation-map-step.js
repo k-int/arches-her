@@ -150,25 +150,31 @@ define([
 
         if (tiles.length > 0) {
             var resourceIds = koMapping.toJS(tiles[0].data[RelatedApplicationAreaNode]) || [];
-            $.getJSON({
-                url: arches.urls.geojson,
-                data: {
-                    resourceid:resourceIds.join(',')
-                }
-            }, function(geojson) {
-                if (geojson.features.length > 0) {
-                    if (!geoJSON || geoJSON.features.length === 0) {
-                        self.applicationAreaBounds(geojsonExtent(geojson));
+            if (resourceIds.length > 0){
+                var resourceIdsArray = resourceIds.map(function(resourceIdObject) {
+                    return resourceIdObject.resourceId;
+                });
+                var resourceIdsString = resourceIdsArray.join(',');
+                $.getJSON({
+                    url: arches.urls.geojson,
+                    data: {
+                        resourceid: resourceIdsString
                     }
-                    if (self.map()) {
-                        self.map().getSource('related-application-area').setData(geojson);
-                    } else {
-                        self.map.subscribe(function(map) {
-                            map.getSource('related-application-area').setData(geojson);
-                        });
+                }, function(geojson) {
+                    if (geojson.features.length > 0) {
+                        if (!geoJSON || geoJSON.features.length === 0) {
+                            self.applicationAreaBounds(geojsonExtent(geojson));
+                        }
+                        if (self.map()) {
+                            self.map().getSource('related-application-area').setData(geojson);
+                        } else {
+                            self.map.subscribe(function(map) {
+                                map.getSource('related-application-area').setData(geojson);
+                            });
+                        }
                     }
-                }
-            });
+                });
+            }
         }
 
     }
