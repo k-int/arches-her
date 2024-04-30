@@ -4,9 +4,10 @@ define([
     'arches',
     'knockout',
     'knockout-mapping',
+    'viewmodels/alert',
     'views/components/workflows/new-tile-step',
     'templates/views/components/workflows/new-tile-step.htm'
-], function(_, $, arches, ko, koMapping, NewTileStep, NewTileStepTemplate) {
+], function(_, $, arches, ko, koMapping, AlertViewModel, NewTileStep, NewTileStepTemplate) {
 
     function viewModel(params) {
 
@@ -29,12 +30,12 @@ define([
         
 
         params.defineStateProperties = function(){
-                return {
-                    resourceid: ko.unwrap(params.resourceid),
-                    tile: !!(params.tile) ? koMapping.toJS(params.tile().data) : undefined,
-                    tileid: !!(params.tile) ? ko.unwrap(params.tile().tileid): undefined
-                }
+            return {
+                resourceid: ko.unwrap(params.resourceid),
+                tile: !!(params.tile) ? koMapping.toJS(params.tile().data) : undefined,
+                tileid: !!(params.tile) ? ko.unwrap(params.tile().tileid): undefined
             };
+        };
 
         self.tile.subscribe(function(val) {
             if(val) {
@@ -77,11 +78,11 @@ define([
             }
             self.loading(false);
         };
-    };
+    }
 
     return ko.components.register('file-template', {
         viewModel: viewModel,
         template: NewTileStepTemplate
     });
-    return viewModel;
+
 });

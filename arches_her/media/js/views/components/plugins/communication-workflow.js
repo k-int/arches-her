@@ -1,12 +1,14 @@
 define([
     'knockout',
+    'jquery',
     'arches',
     'viewmodels/workflow',
+    'viewmodels/alert',
     'templates/views/components/plugins/communication-workflow.htm',
     'views/components/workflows/communication-workflow/communication-select-resource',
     'views/components/workflows/communication-workflow/upload-document-step',
     'views/components/workflows/communication-workflow/communication-final-step'
-], function(ko, arches, Workflow, CommunicationWorkflowTemplate) {
+], function(ko, $, arches, Workflow, AlertViewModel, CommunicationWorkflowTemplate) {
     return ko.components.register('communication-workflow', {
         viewModel: function(params) {
             this.componentName = 'communication-workflow';
@@ -26,6 +28,7 @@ define([
                                 { 
                                     componentName: 'communication-select-resource',
                                     uniqueInstanceName: 'communication-select-resource', /* unique to step */
+                                    tilesManaged: 'one',
                                     parameters: {
                                         graphid: '8d41e49e-a250-11e9-9eab-00224800b26d',
                                         nodegroupid: 'caf5bff1-a3d7-11e9-aa28-00224800b26d',
@@ -184,6 +187,31 @@ define([
             
             Workflow.apply(this, [params]);
             this.quitUrl = arches.urls.plugin('init-workflow');
+            this.reverseWorkflowTransactions = function() {
+                const quitUrl = this.quitUrl;
+                return $.ajax({
+                    type: "POST",
+                    url: arches.urls.transaction_reverse(this.id())
+                }).then(function() {
+                    params.loading(false);
+                    window.location.href = quitUrl;
+                });
+            };
+
+            this.quitWorkflow = function(){
+                this.alert(
+                    new AlertViewModel(
+                        'ep-alert-red',
+                        'Are you sure you would like to delete this workflow?',
+                        'All data created during the course of this workflow will be deleted.',
+                        function(){}, //does nothing when canceled
+                        () => {
+                            params.loading('Cleaning up...');
+                            this.reverseWorkflowTransactions();
+                        },
+                    )
+                );
+            };
         },
         template: CommunicationWorkflowTemplate
     });

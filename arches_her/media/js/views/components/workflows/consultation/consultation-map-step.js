@@ -28,7 +28,7 @@ define([
                     params.form.complete(true);
                     params.form.saving(false);
                 }
-            )
+            );
         };
         this.sources = {
             "related-application-area": {
@@ -139,7 +139,7 @@ define([
         this.map = ko.observable();
 
         self.tile().dirty.subscribe(function(dirty) {
-            params.dirty(dirty)
+            params.dirty(dirty);
         });
 
         const GeoJsonNode = 'b949053a-184f-11eb-ac4a-f875a44e0e11';
