@@ -149,16 +149,16 @@ define([
         var tiles = self.getTiles(ConsultationLocationNodegroup);
 
         if (tiles.length > 0) {
-            var resourceIds = koMapping.toJS(tiles[0].data[RelatedApplicationAreaNode]) || [];
-            if (resourceIds.length > 0){
-                var resourceIdsArray = resourceIds.map(function(resourceIdObject) {
+            var resourceObjects = koMapping.toJS(tiles[0].data[RelatedApplicationAreaNode]) || [];
+            if (resourceObjects.length > 0){
+                var resourceIdsArray = resourceObjects.map(function(resourceIdObject) {
                     return resourceIdObject.resourceId;
                 });
-                var resourceIdsString = resourceIdsArray.join(',');
+                var resourceIds = resourceIdsArray.join(',');
                 $.getJSON({
                     url: arches.urls.geojson,
                     data: {
-                        resourceid: resourceIdsString
+                        resourceid: resourceIds
                     }
                 }, function(geojson) {
                     if (geojson.features.length > 0) {
