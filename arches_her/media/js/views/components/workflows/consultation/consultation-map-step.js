@@ -151,8 +151,8 @@ define([
         if (tiles.length > 0) {
             var resourceObjects = koMapping.toJS(tiles[0].data[RelatedApplicationAreaNode]) || [];
             if (resourceObjects.length > 0){
-                var resourceIdsArray = resourceObjects.map(function(resourceIdObject) {
-                    return resourceIdObject.resourceId;
+                var resourceIdsArray = resourceObjects.map(function(resourceObject) {
+                    return resourceObject.resourceId;
                 });
                 var resourceIds = resourceIdsArray.join(',');
                 $.getJSON({
