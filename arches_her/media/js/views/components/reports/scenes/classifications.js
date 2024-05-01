@@ -368,6 +368,7 @@ function(_, ko, arches, reportUtils, ClassificationsTemplate) {
                             testPaths:[
                                 ['associated area phase'],
                                 ['associated asset construction phase'],
+                                ['associated monument construction phase'],
                             ]}
                         );
                         const component = self.getNodeValue(x, 'component', 'component type');
