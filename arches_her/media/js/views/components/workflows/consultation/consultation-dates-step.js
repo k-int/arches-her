@@ -32,11 +32,16 @@ define([
                 $.get(
                     arches.urls.resource_descriptors + id,
                     function(descriptors) {
-                        descriptors.displayname.forEach(function(displayname) {
-                            if (displayname.language === activeLang) {
-                                retStr == '' ? retStr = displayname.value : retStr += (', '+displayname.value);
-                            }
-                        });
+                        if (typeof descriptors.displayname === 'string') {
+                            retStr == '' ? retStr = descriptors.displayname : retStr += (', '+ descriptors.displayname);
+                        }
+                        else {
+                            descriptors.displayname.forEach(function(displayname) {
+                                if (displayname.language === activeLang) {
+                                    retStr == '' ? retStr = displayname.value : retStr += (', '+displayname.value);
+                                }
+                            });
+                        }   
                         self.displayName(retStr);
                     }
                 );
@@ -52,6 +57,10 @@ define([
                 nameCardTile = nameCard.getNewTile();
             } else {
                 nameCardTile = nameCard.tiles()[0];
+            }
+            
+            if (typeof nameCardTile.data[self.consultationNameNodeId] !== 'function'){
+                nameCardTile.data[self.consultationNameNodeId] = ko.observable(nameCardTile.data[self.consultationNameNodeId]);
             }
             nameCardTile.data[self.consultationNameNodeId](self.createI18nString(self.concatName()));
             nameCardTile.transactionId = self.workflowId;
