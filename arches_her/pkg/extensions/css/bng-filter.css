@@ -1,7 +1,3 @@
-.bng-search-container {
-    padding: 20px;
-}
-
 .bng-search-container .filter-title {
     margin-top: 3px;
     margin-bottom: 15px;
@@ -20,7 +16,7 @@
     margin-top: 5px;
 }
 
-.bng-search-info{
+.bng-search-info {
     padding: 5px;
     padding-left: 20px;
     font-size: 1.1rem;
