@@ -4,19 +4,24 @@ define([
 ], function(arches, ko) {
     return {
         getProp: (params, key, prop, isString=false) => {
+            
             if (ko.unwrap(params.value) && params.value()[key]) {
                 return prop ? params.value()[key][prop] : params.value()[key];
+            }
+            
+            if (ko.unwrap(params.value) && params.value()['data'] && params.value()['data'][key]) {
+                return prop ? params.value()['data'][key][prop] : params.value()['data'][key];
+            } 
+            
+            if (isString) {
+                const emptyStrObject = {};
+                emptyStrObject[arches.activeLanguage] = {
+                    "value":'',
+                    "direction": arches.languages.find(lang => lang.code == arches.activeLanguage).default_direction
+                };
+                return emptyStrObject;
             } else {
-                if (isString) {
-                    const emptyStrObject = {};
-                    emptyStrObject[arches.activeLanguage] = {
-                        "value":'',
-                        "direction": arches.languages.find(lang => lang.code == arches.activeLanguage).default_direction
-                    };
-                    return emptyStrObject;
-                } else {
-                    return null;
-                }
+                return null;
             } 
         },
         createI18nString: (stringValue) => {
