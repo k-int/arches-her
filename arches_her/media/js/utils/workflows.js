@@ -10,7 +10,7 @@ define([
             }
             
             if (ko.unwrap(params.value) && params.value()['data'] && params.value()['data'][key]) {
-                return prop ? params.value()['data'][key][prop] : params.value()['data'][key];
+                return (prop & params.value()['data'][key][prop]) ? params.value()['data'][key][prop] : params.value()['data'][key];
             } 
             
             if (isString) {
