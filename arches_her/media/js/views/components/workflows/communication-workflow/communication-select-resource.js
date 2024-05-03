@@ -1,12 +1,13 @@
 define([
     'underscore',
     'knockout',
+    'knockout-mapping',
     'uuid',
     'arches',
     'viewmodels/alert',
     'utils/workflows',
     'templates/views/components/workflows/communication-workflow/communication-select-resource.htm'
-], function(_, ko, uuid, arches, AlertViewModel, workflowUtils, CommunicationSelectResourceTemplate) {
+], function(_, ko, koMapping, uuid, arches, AlertViewModel, workflowUtils, CommunicationSelectResourceTemplate) {
     function viewModel(params) {
         var self = this;
         Object.assign(self, workflowUtils);
@@ -17,7 +18,7 @@ define([
         this.loading = params.loading;
         this.graphid = params.graphid;
         var getValue = function(key, isString=false) {
-            return self.getProp(params,key,'value',isString);
+            return self.getProp(params, key, 'value', isString);
         };
         this.date = ko.observable(getValue('date'));
         this.subject = ko.observable(getValue('subject', true));
@@ -30,13 +31,15 @@ define([
         }, this);
 
         this.resourceid.subscribe(function(val){
-            if (val) {
-                self.resValue([{
-                    resourceId: ko.observable(val),
-                    ontologyProperty: ko.observable(""),
-                    inverseOntologyProperty: ko.observable(""),
-                    resourceXresourceId: ""
-                }]);
+            if (val) { 
+                if (self.resValue() != val){
+                    self.resValue([{
+                        resourceId: ko.observable(val),
+                        ontologyProperty: ko.observable(""),
+                        inverseOntologyProperty: ko.observable(""),
+                        resourceXresourceId: ""
+                    }]);
+                }
             }
         });
 
@@ -117,8 +120,16 @@ define([
                         self.tileid(data.tileid);
                         self.disableResourceSelection(true);
                         params.form.complete(true);
+                        //params.form.savedData({
+                        //    resourceid: self.resourceid(), ...self.updatedValue()
+                        //});
                         params.form.savedData({
-                            resourceid: self.resourceid(), ...self.updatedValue()
+                            data: {
+                                resourceid: self.resourceid(), ...self.updatedValue()
+                            },
+                            resourceInstanceId: self.resourceid(),
+                            tileId: self.tileid(),
+                            nodegroupId: communicationNodegroupId
                         });
                     }
                 });
