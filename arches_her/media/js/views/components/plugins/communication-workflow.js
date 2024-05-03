@@ -138,9 +138,9 @@ define([
                                     parameters: {
                                         graphid: 'a535a235-8481-11ea-a6b9-f875a44e0e11',
                                         nodegroupid: '7db68c6c-8490-11ea-a543-f875a44e0e11',
-                                        resourceid: "['related-consultation']['communication-select-resource']['resourceInstanceId']",
-                                        tileid: "['related-consultation']['communication-select-resource']['tileId']",
-                                    },
+                                        consultationResourceid: "['related-consultation']['communication-select-resource']['resourceInstanceId']",
+                                        consultationTileid: "['related-consultation']['communication-select-resource']['tileId']"
+                                    }
                                 },
                             ], 
                         },
@@ -165,8 +165,8 @@ define([
                                     tilesManaged: 'none',
                                     parameters: {
                                         digitalObject: "['upload-documents']['upload-documents-step']",
-                                        resourceid: "['related-consultation']['communication-select-resource']['resourceInstanceId']",
-                                        tileid: "['related-consultation']['communication-select-resource']['tileId']",
+                                        consultationResourceid: "['related-consultation']['communication-select-resource']['resourceInstanceId']",
+                                        consultationTileid: "['related-consultation']['communication-select-resource']['tileId']"
                                     },
                                 },
                             ], 
