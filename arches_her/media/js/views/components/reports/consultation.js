@@ -436,7 +436,7 @@ define([
                                 type: 'kv'
                             },{
                                 key: 'Consultation Status',
-                                value: self.getNodeValue(self.resource(), 'status'),
+                                value: self.getNodeValue(self.resource(), 'status') == "True" ? "Active" : "Inactive",
                                 type: 'kv'
                             }]
                         }
