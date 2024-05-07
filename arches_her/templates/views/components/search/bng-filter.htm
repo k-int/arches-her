@@ -4,12 +4,18 @@
 
 
 <div class="search-container bng-search-container">
-    <div class="filter-title">{% trans "Filter by British National Grid" %}
-        <div class="pull-right">
-            <div class="btn-group">
-                <button class="btn btn-primary btn-active-primary dropdown-toggle" data-toggle="dropdown" type="button" aria-expanded="true" data-bind="click: function () { clear(); }"> <i class="fa fa-close"></i> {% trans "Clear" %}
-                </button>
-            </div>
+    <div class="close-popup-panel-container time-filter-title">
+        <span class="close-popup-panel" tabindex="0" role="button" id="bng-filter-close-btn"
+            data-bind="onEnterkeyClick, onSpaceClick, 
+                click: function(){selectedPopup(''); $root.shiftFocus('#bng-filter-open-btn');},
+                attr: {'aria-label': 'Filter by British National Grid'},
+                text: 'Filter by British National Grid',
+        "></span>
+        <div class="btn-group">
+            <button class="btn btn-primary btn-active-primary dropdown-toggle" data-toggle="dropdown" type="button" data-bind="click: function () { clear(); }"> 
+                <i class="fa fa-close"></i>
+                <span data-bind="text: $root.translations.clear"></span>
+            </button>
         </div>
     </div>
     <hr class="title-underline">
