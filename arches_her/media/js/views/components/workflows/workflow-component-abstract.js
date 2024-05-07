@@ -14,6 +14,14 @@ define([
     'templates/views/components/workflows/workflow-component-abstract.htm',
 ], function(_, $, ko, koMapping, workflowUtils, arches, GraphModel, CardViewModel, ProvisionalTileViewModel, AlertViewModel, uuid, Cookies, workflowComponentAbstractTemplate) {
     function NonTileBasedComponent() {
+
+        /*
+        /
+        / IMPORTANT!
+        / This file is included in the Arches for HERs project due to a hotfix at line 538
+        /
+        */
+
         var self = this;
         Object.assign(self, workflowUtils);
          
