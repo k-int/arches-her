@@ -499,7 +499,7 @@ h3.shim:hover {
 }
 
 .aher-block-attributes h4, .aher-block-attributes span {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
     margin: 2px 0px;
     display: inline-block;
@@ -845,10 +845,7 @@ a.aher-block-value-url {
     padding: 0px;
 }
 
-.aher-report-photo-caption .aher-block-key {
-    font-size: 1.2rem;
-}
-
+.aher-report-photo-caption .aher-block-key,
 .aher-report-photo-caption .aher-block-value {
     font-size: 1.2rem;
 }
