@@ -68,7 +68,7 @@
 }
 
 .aher-report-toolbar-title {
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 500;
     margin-top: 0px;
     padding: 15px 0 5px 25px;
@@ -83,7 +83,7 @@
 .aher-report-name {
     padding-right: 5px;
     color: #595959;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .aher-report-instance-name {
@@ -112,7 +112,7 @@
 
 .aher-report-a {
     color: #315B7D !important;
-    font-size: 13px;
+    font-size: 1.3rem;
     padding: 3px 8px;
 }
 
@@ -221,14 +221,14 @@ i.toggle:hover {
 }
 
 .aher-report-section-title {
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 500;
     margin: 5px 0px;
     display: inline-block;
 }
 
 .aher-report-section-subtitle {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     margin: 5px 0px 0px 0px;
     display: inline-block;
@@ -337,7 +337,7 @@ i.toggle:hover {
 
 .aher-table .table td {
     color: #595959;
-    font-size: 13px;
+    font-size: 1.3rem;
     padding: 3px 8px;
 }
 
@@ -379,7 +379,7 @@ i.toggle:hover {
 .aher-table-control i {
     padding: 7px 4px;
     color: steelblue;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .aher-table-control a:hover {
@@ -417,7 +417,7 @@ i.toggle:hover {
 }
 
 .aher-report-subsection h3 {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 500;
     margin: 5px 0px;
     display: inline-block;
@@ -426,7 +426,7 @@ i.toggle:hover {
 .aher-report-subsection h3 span {
     font-weight: 500;
     color: #555;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 h3.highlight {
@@ -499,14 +499,14 @@ h3.shim:hover {
 }
 
 .aher-block-attributes h4, .aher-block-attributes span {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
     margin: 2px 0px;
     display: inline-block;
 }
 
 .aher-block-attributes h6 {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 400;
     color: #2f527a;
     margin: 2px 0px;
@@ -558,7 +558,7 @@ h3.shim:hover {
 
 .aher-report-subsection-firstchild h4 {
     display: inline-block;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
     color: #454545;
     padding-bottom: 3px;
@@ -638,7 +638,7 @@ h3.shim:hover {
 }
 
 .aher-nodata-note {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #595959;
     margin-bottom: 20px;
     margin-left: 10px;
@@ -681,7 +681,7 @@ h3.shim:hover {
 }
 
 .aher-title-block h1 {
-    font-size: 17px;
+    font-size: 1.7rem;
     margin: 5px 0px 2px 0px;
     display: inline-block;
 }
@@ -706,7 +706,7 @@ h3.shim:hover {
 }
 
 .aher-block-attributes {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.25;
     padding-top: 10px;
 }
@@ -732,7 +732,7 @@ h3.shim:hover {
 .aher-block-value {
     color: #595959;
     display: inline-block;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .aher-block-value a {
@@ -741,7 +741,7 @@ h3.shim:hover {
 
 a.aher-block-value-url {
     color: #12548A;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 600;
     display: inline-block;
 }
@@ -751,20 +751,20 @@ a.aher-block-value-url {
 }
 
 .aher-summary-block-title h2 {
-    font-size: 15px;
+    font-size: 1.5rem;
     color: #727272;
     margin-bottom: 5px;
 }
 
 .aher-summary-block-content {
     color: #898989;
-    font-size: 14px;
+    font-size: 1.4rem;
     margin-top: -5px;
 }
 
 .aher-table .table th {
     border-bottom: none !important;
-    font-size: 13px !important;
+    font-size: 1.3rem !important;
 }
 
 .aher-table .table.dataTable > tbody > tr.child span.dtr-title {
@@ -845,12 +845,9 @@ a.aher-block-value-url {
     padding: 0px;
 }
 
-.aher-report-photo-caption .aher-block-key {
-    font-size: 12px;
-}
-
+.aher-report-photo-caption .aher-block-key,
 .aher-report-photo-caption .aher-block-value {
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .aher-report-json {
@@ -874,7 +871,7 @@ a.aher-block-value-url {
 }
 
 .aher-summary-report-title {
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 400;
     margin-left: 30px;
     margin-top: 20px;
