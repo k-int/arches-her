@@ -273,6 +273,24 @@ DATE_IMPORT_EXPORT_FORMAT = "%Y-%m-%d" # Custom date format for dates imported f
 # ordered as seen in the resource cards or not.
 EXPORT_DATA_FIELDS_IN_CARD_ORDER = False
 
+
+# British National Grid (BNG) and Latitude/Longitude set as preferred coordinate systems.  To revert to 
+# Geographic as the preferred coordinate system, comment out the preferred coordinate system setting below
+
+PREFERRED_COORDINATE_SYSTEMS = (
+    {
+        "name": "BNG",
+        "srid": "27700",
+        "proj4": "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +datum=OSGB36 +units=m +no_defs",
+        "default": True,
+    },
+    {"name": "LatLong", "srid": "4326", "proj4": "+proj=longlat +datum=WGS84 +no_defs", "default": False},  # Required
+)
+
+# Europe/London set as the default time zone.  To revert to "America/Chicago," comment out the time zone setting below
+
+TIME_ZONE = "Europe/London"
+
 #Identify the usernames and duration (seconds) for which you want to cache the time wheel
 CACHE_BY_USER = {
     "default": 3600 * 24, #24hrs
