@@ -72,7 +72,7 @@ class ConsultationStatusFunction(BaseFunction):
                     date_comp_tile_filter = Tile.objects.filter(resourceinstance_id=tile.resourceinstance_id,nodegroup_id=date_comp_node.nodegroup_id)
                     if len(date_comp_tile_filter) > 0:
                         date_comp_tile = date_comp_tile_filter[0]
-                if  date_comp_tile != None:
+                if  (date_comp_tile != None) and (tile.nodegroup_id == str(date_comp_tile.nodegroup_id)):
                     datatype_factory = DataTypeFactory()
                     datatype = datatype_factory.get_instance(date_comp_node.datatype)
                     date_comp_value = datatype.get_display_value(tile,date_comp_node)
@@ -85,11 +85,11 @@ class ConsultationStatusFunction(BaseFunction):
                             return
                     else:
                         return
+
             else:
                 self.handle_boolean_tile(tile,cons_status_bool_nodeid,cons_status_bool_nodeid,True)
                 return
 
-            return
         except Exception as e:
             self.logger.error(e,"Could not check boolean tile")
             return
