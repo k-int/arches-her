@@ -1009,3 +1009,16 @@ span.rp-tile-title {
 .ep-edits {
     z-index: 12000;
 }
+
+/* Makes side panels cover the whole height of the page when the UI stacks in mobile mode */
+.ep-help-panel{
+    height: 100%;
+}
+
+.ep-edits-panel{
+    height: 100%;
+}
+
+.ep-notifs-panel{
+    height: 100%;
+}
