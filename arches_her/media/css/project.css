@@ -807,6 +807,10 @@ table.report-tabular-card {
     margin-top: 10px;
 }
 
+.tabbed-workflow-step-body .workbench-card-sidepanel .install-buttons {
+    display: none;
+}
+
 .report-tabular-card td {
     padding: 4px;
     color: #a3a4a4;
