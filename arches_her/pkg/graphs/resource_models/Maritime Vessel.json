@@ -18052,7 +18052,7 @@
                     "sourcebranchpublication_id": null
                 },
                 {
-                    "alias": "association_type",
+                    "alias": "association_type_n1",
                     "config": {
                         "rdmCollection": "93362f59-3658-47d8-8781-253fcf06374e"
                     },
@@ -24684,7 +24684,7 @@
                     "sourcebranchpublication_id": null
                 },
                 {
-                    "alias": "association_type_n1",
+                    "alias": "association_type_n2",
                     "config": {
                         "rdmCollection": "93362f59-3658-47d8-8781-253fcf06374e"
                     },
