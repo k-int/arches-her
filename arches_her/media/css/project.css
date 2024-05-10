@@ -994,3 +994,18 @@ span.rp-tile-title {
     height: 100%;
     padding: 0px;
 }
+
+
+/* STOPS top level side panels being obscured by search filter popups in search*/
+
+.ep-notifs {
+    z-index: 12000;
+}
+
+.ep-help {
+    z-index: 12000;
+}
+
+.ep-edits {
+    z-index: 12000;
+}
