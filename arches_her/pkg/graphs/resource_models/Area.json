@@ -13084,7 +13084,7 @@
                     "parentnodegroup_id": null
                 },
                 {
-                    "cardinality": "1",
+                    "cardinality": "n",
                     "legacygroupid": null,
                     "nodegroupid": "d17a5392-28cd-11eb-9b38-f875a44e0e11",
                     "parentnodegroup_id": "d17a538f-28cd-11eb-ab77-f875a44e0e11"
