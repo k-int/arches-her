@@ -861,12 +861,9 @@ a.aher-block-value-url {
 }
 
 .aher-summary-report-header {
-    height: 50px;
+    min-height: 50px;
     background: #fff;
-    position: fixed;
-    top: 101px;
     width: 100%;
-    margin-bottom: 60px;
     z-index: 10;
 }
 
@@ -881,7 +878,10 @@ a.aher-block-value-url {
 
 .model-summary-report {
     background: #fff;
-    padding: 55px 30px 30px 30px;
+    padding: 30px;
+    min-height: calc(100vh - 100px);
+    border: 0;
+    outline: none;
 }
 
 .graph-designer .aher-report-toolbar {
@@ -928,15 +928,38 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child,table.dataTable.dtr
 .resource-report-abstract-container {
     height: calc(100vh - 50px);
     min-height: calc(100vh - 50px);
-    width: calc(100vw - 50px);
 }
 
 .resource-report-abstract-container footer {
     display: none !important;
 }
 
+.search-result-details {
+    height: auto;
+}
+
+.tab-pane.active {
+    outline: 0!important;
+}
+
 @media screen and (max-width: 1024px){
     .resource-report-abstract-container {
         height: auto;
     }
+
+    .search-result-details .resource-report {
+        display: block;
+    }
+    .aher-summary-report-title {
+        margin: 0;
+        padding: 10px 30px;
+    }
+
+    /*article.main-search-container .search-map-container .tab-content {
+        height: 100%;
+    }
+
+    article.main-search-container .search-map-container .tab-content .tab-content-component {
+        height: 100%;
+    }*/
 }
