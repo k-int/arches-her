@@ -998,3 +998,31 @@ span.rp-tile-title {
     height: 100%;
     padding: 0px;
 }
+
+
+/* STOPS top level side panels being obscured by search filter popups in search*/
+
+.ep-notifs {
+    z-index: 12000;
+}
+
+.ep-help {
+    z-index: 12000;
+}
+
+.ep-edits {
+    z-index: 12000;
+}
+
+/* Makes side panels cover the whole height of the page when the UI stacks in mobile mode */
+.ep-help-panel{
+    height: 100%;
+}
+
+.ep-edits-panel{
+    height: 100%;
+}
+
+.ep-notifs-panel{
+    height: 100%;
+}
