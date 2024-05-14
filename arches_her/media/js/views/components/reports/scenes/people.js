@@ -22,7 +22,7 @@ function(_, ko, arches, reportUtils, PeopleTemplate) {
 
             self.dataConfig = {
                 people: 'associated actors',
-            }
+            };
 
             self.cards = Object.assign({}, params.cards);
             self.edit = params.editTile || self.editTile;
@@ -31,11 +31,12 @@ function(_, ko, arches, reportUtils, PeopleTemplate) {
             self.people = ko.observableArray();
             self.visible = {
                 people: ko.observable(true),
-            }
+            };
             Object.assign(self.dataConfig, params.dataConfig || {});
 
             // if params.compiled is set and true, the user has compiled their own data.  Use as is.
             if(params?.compiled){
+                // do nothing
             } else {
                 const peopleNode = self.getRawNodeValue(params.data(), self.dataConfig.people); 
                 if(peopleNode?.length){
