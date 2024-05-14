@@ -16,7 +16,6 @@ function(_, ko, arches, reportUtils, DescriptionTemplate) {
                 ...self.defaultTableConfig,
                 "paging": true,
                 "searching": true,
-                "scrollY": "250px",
                 "columns": Array(2).fill(null)
             };
 

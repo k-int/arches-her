@@ -16,7 +16,6 @@ function(_, ko, arches, reportUtils, PeopleTemplate) {
                 ...self.defaultTableConfig,
                 paging: true,
                 searching: true,
-                scrollY: "250px",
                 columns: Array(7).fill(null)
             };
 
