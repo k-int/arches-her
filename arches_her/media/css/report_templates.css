@@ -5,6 +5,11 @@
     display: flex;
     flex: 1;
     flex-direction: column;
+    overflow-y: auto !important;
+}
+
+.resource-component-abstract.reportSummary {
+    overflow-y: inherit !important;
 }
 
 .aher-tabbed-report .fa-angle-double-right {
