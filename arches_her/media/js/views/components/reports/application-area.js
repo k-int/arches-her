@@ -30,7 +30,6 @@ define([
                 ...self.defaultTableConfig,
                 paging: true,
                 searching: true,
-                scrollY: "250px",
                 columns: Array(2).fill(null)
             };
 
@@ -42,7 +41,7 @@ define([
             self.activeSection = ko.observable('name');
             self.visible = {
                 applicationAreas: ko.observable(true)
-            }
+            };
 
             self.applicationAreas = ko.observableArray();
 
@@ -64,7 +63,7 @@ define([
                 location: [],
                 nationalGrid: undefined,
                 namedLocations: undefined
-            }
+            };
 
             self.protectionDataConfig = {
                 landUse: undefined,
@@ -92,11 +91,11 @@ define([
             if(params.report.cards){
                 const cards = params.report.cards;
 
-                self.cards = self.createCardDictionary(cards)
+                self.cards = self.createCardDictionary(cards);
 
                 Object.assign(self.cards, {
                     applicationAreas: self.cards?.['associated application areas']
-                })
+                });
 
                 self.resourcesCards = {
                     consultations: self.cards?.['associated consultations'],

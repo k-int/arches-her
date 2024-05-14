@@ -16,7 +16,6 @@ function(_, ko, arches, reportUtils, DescriptionTemplate) {
                 ...self.defaultTableConfig,
                 "paging": true,
                 "searching": true,
-                "scrollY": "250px",
                 "columns": Array(2).fill(null)
             };
 
@@ -44,7 +43,7 @@ function(_, ko, arches, reportUtils, DescriptionTemplate) {
 
             self.dataConfig = {
                 descriptions: 'descriptions'
-            }
+            };
 
             self.cards = Object.assign({}, params.cards);
             self.edit = params.editTile || self.editTile;
@@ -58,7 +57,7 @@ function(_, ko, arches, reportUtils, DescriptionTemplate) {
                 descriptions: ko.observable(true),
                 citation: ko.observable(true),
                 audience: ko.observable(true)
-            }
+            };
             Object.assign(self.dataConfig, params.dataConfig || {});
 
             // if params.compiled is set and true, the user has compiled their own data.  Use as is.
@@ -93,7 +92,7 @@ function(_, ko, arches, reportUtils, DescriptionTemplate) {
                         const pages = self.getNodeValue(x, 'pages', 'page(s)');
                         const figures = self.getNodeValue(x, 'figures', 'figs.');
                         const plates = self.getNodeValue(x, 'plates', 'plate(s)');
-                        const comment = self.getNodeValue(x, 'source comment', 'comment')
+                        const comment = self.getNodeValue(x, 'source comment', 'comment');
                         const tileid = self.getTileId(x);
                         return { link, linkText, sourceNumber, pages, figures, plates, comment, tileid };
                     }));
