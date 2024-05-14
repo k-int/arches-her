@@ -25,7 +25,6 @@ define([
                 ...self.defaultTableConfig,
                 "paging": true,
                 "searching": true,
-                "scrollY": "250px",
                 "columns": Array(2).fill(null),
                 "bDestroy": true
             };
@@ -39,7 +38,7 @@ define([
                     self.graphsList = [];
                     for(let g in self.graphsArray){
                         var graphFindResult = self.graphs.find((gr) => gr.name === self.graphsArray[g]);
-                        self.graphs_list.push(graphFindResult.graphid);
+                        self.graphsList.push(graphFindResult.graphid);
                     }
                     return;
                 }).fail(function() {
@@ -59,7 +58,7 @@ define([
                             self.relations.removeAll();
                             for(let r in responseRelatedResources){
                                 var responseRelatedResource = responseRelatedResources[r];
-                                if(self.graphs_list.includes(responseRelatedResource["graph_id"] )){
+                                if(self.graphsList.includes(responseRelatedResource["graph_id"] )){
                                     var graphName = (self.graphs.find((gr) => gr.graphid === responseRelatedResource["graph_id"]))["name"];
                                     self.relations.push({"related_resource_name": responseRelatedResource["displayname"], "related_resource_link": arches.urls.resource_report + responseRelatedResource["resourceinstanceid"], "related_resource_type": graphName});
                                 }
