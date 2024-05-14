@@ -2,6 +2,14 @@
 @import url(./bng-filter.css);
 @import url(./accessibility-plugin.css);
 
+header {
+    max-width: calc(100vw - 50px);
+}
+
+.search-inline-filters {
+    justify-content: left;
+}
+
 .workflow-panel.navbarclosed {
     min-width: 50px;
     width: 50px;
