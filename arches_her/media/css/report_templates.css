@@ -947,7 +947,26 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child,table.dataTable.dtr
     outline: 0!important;
 }
 
-@media screen and (max-width: 1024px){
+.aher-report-map .overlay-listing .overlay-name {
+    white-space: normal;
+    width: 100%;
+}
+
+.aher-report-map .overlay-listing .overlay-name span {
+    width: 70%;
+}
+
+.aher-report-map .basemap-listing,
+.aher-report-map .overlay-listing,
+.aher-report-map .legend-listing {
+    padding: 16px 0;
+}
+
+.aher-report-map .overlay-listing .overlay-opacity-control {
+    right: 0;
+}
+
+@media screen and (max-width: 1024px) {
     .resource-report-abstract-container {
         height: auto;
     }
