@@ -1,6 +1,7 @@
 {% extends "views/components/cards/default.htm" %}
 {% load i18n %}
 
+<!-- ADDS HOTFIX FOR LOADING CONSULTATION LOCATION CHILD CARDS IN EDITOR TREE -->
 <!-- ko if: state === 'editor-tree' && self.card.model.visible() -->
 {% block editor_tree %}
 <li role="treeitem card-treeitem" class="jstree-node" data-bind="css: {'jstree-open': (card.tiles().length > 0 && card.expanded()), 'jstree-closed' : (card.tiles().length > 0 && !card.expanded()), 'jstree-leaf': card.tiles().length === 0, 'hide-background': !self.showGrid()}, scrollTo: card.scrollTo, container: '.resource-editor-tree'">
@@ -65,8 +66,9 @@
                         data: cards,
                         as: 'card'
                     }">
+                    <!-- HOTFIX ADDED TO COMPONENT NAME PROPERTY: was self.form.cardComponentLookup[SELF.card.model.component_id()].componentname-->
                     <!-- ko component: {
-                        name: self.form.cardComponentLookup[self.card.model.component_id()].componentname,
+                        name: self.form.cardComponentLookup[card.model.component_id()].componentname,
                         params: {
                             state: 'editor-tree',
                             card: card,
