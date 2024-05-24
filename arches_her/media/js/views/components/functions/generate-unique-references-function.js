@@ -60,7 +60,7 @@ function($, ko, koMapping, ListView, FunctionViewModel, generateUniqueReferences
 
 
                 this.graph.nodegroups.forEach(function(nodegroup) {
-                    if (nodegroup.nodegroupid in self.triggering_nodegroups){
+                    if (self.triggering_nodegroups().includes(nodegroup.nodegroupid)){
                     } else {
                         self.triggering_nodegroups.push(nodegroup.nodegroupid);
                     }
