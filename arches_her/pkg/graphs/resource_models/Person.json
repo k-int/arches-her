@@ -628,7 +628,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Forename(s) (Mandatory)",
+                        "label": "Forename(s)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -638,7 +638,7 @@
                     },
                     "id": "087bc6b1-7b45-11ea-b7a8-f875a44e0e11",
                     "label": {
-                        "en": "Forename(s) (Mandatory)"
+                        "en": "Forename(s)"
                     },
                     "node_id": "2caeb5e7-7b44-11ea-a919-f875a44e0e11",
                     "sortorder": 6,
@@ -3225,7 +3225,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Surname (Mandatory)",
+                        "label": "Surname",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -3235,7 +3235,7 @@
                     },
                     "id": "ac6b9f3b-7e54-11ea-b391-f875a44e0e11",
                     "label": {
-                        "en": "Surname (Mandatory)"
+                        "en": "Surname"
                     },
                     "node_id": "96a3942a-7e53-11ea-8b5a-f875a44e0e11",
                     "sortorder": 12,

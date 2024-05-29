@@ -492,7 +492,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Bibliographic Source Name (Mandatory)",
+                        "label": "Bibliographic Source Name",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -502,7 +502,7 @@
                     },
                     "id": "03e29854-8ecf-11ea-b97a-f875a44e0e11",
                     "label": {
-                        "en": "Bibliographic Source Name (Mandatory)"
+                        "en": "Bibliographic Source Name"
                     },
                     "node_id": "03e2984e-8ecf-11ea-b95f-f875a44e0e11",
                     "sortorder": 0,
@@ -516,7 +516,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Bibliographic Source Type (Mandatory)",
+                        "label": "Bibliographic Source Type",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -524,7 +524,7 @@
                     },
                     "id": "0cd1ac75-8ed5-11ea-81a7-f875a44e0e11",
                     "label": {
-                        "en": "Bibliographic Source Type (Mandatory)"
+                        "en": "Bibliographic Source Type"
                     },
                     "node_id": "9f29bb76-8ed4-11ea-81d3-f875a44e0e11",
                     "sortorder": null,
@@ -563,7 +563,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Date of Publication (Mandatory)",
+                        "label": "Date of Publication",
                         "maxDate": false,
                         "minDate": null,
                         "placeholder": {
@@ -573,7 +573,7 @@
                     },
                     "id": "1987a826-8ed0-11ea-89b1-f875a44e0e11",
                     "label": {
-                        "en": "Date of Publication (Mandatory)"
+                        "en": "Date of Publication"
                     },
                     "node_id": "1987a821-8ed0-11ea-871c-f875a44e0e11",
                     "sortorder": 6,
@@ -657,7 +657,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Number of Pages (Mandatory)",
+                        "label": "Number of Pages",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -667,7 +667,7 @@
                     },
                     "id": "3260b9c7-96a1-11ea-834c-f875a44e0e11",
                     "label": {
-                        "en": "Number of Pages (Mandatory)"
+                        "en": "Number of Pages"
                     },
                     "node_id": "86ebe810-95e0-11ea-bb45-f875a44e0e11",
                     "sortorder": 0,
@@ -1505,7 +1505,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Language (Mandatory)",
+                        "label": "Language",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -1513,7 +1513,7 @@
                     },
                     "id": "aa519f4d-8ecf-11ea-a0d4-f875a44e0e11",
                     "label": {
-                        "en": "Language (Mandatory)"
+                        "en": "Language"
                     },
                     "node_id": "8cd5def1-8ecf-11ea-ade5-f875a44e0e11",
                     "sortorder": 0,
@@ -1669,7 +1669,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Editor Name (Mandatory)",
+                        "label": "Editor Name",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -1679,7 +1679,7 @@
                     },
                     "id": "c06e8e95-95ef-11ea-815c-f875a44e0e11",
                     "label": {
-                        "en": "Editor Name (Mandatory)"
+                        "en": "Editor Name"
                     },
                     "node_id": "c06e6768-95ef-11ea-bf92-f875a44e0e11",
                     "sortorder": 1,
@@ -1786,7 +1786,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Author Name (Mandatory)",
+                        "label": "Author Name",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -1796,7 +1796,7 @@
                     },
                     "id": "c06e8e9a-95ef-11ea-8894-f875a44e0e11",
                     "label": {
-                        "en": "Author Name (Mandatory)"
+                        "en": "Author Name"
                     },
                     "node_id": "c06e676e-95ef-11ea-a32a-f875a44e0e11",
                     "sortorder": 0,
@@ -1903,7 +1903,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Statement of Responsibility (Mandatory)",
+                        "label": "Statement of Responsibility",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -1913,7 +1913,7 @@
                     },
                     "id": "c06e8e9f-95ef-11ea-a0f6-f875a44e0e11",
                     "label": {
-                        "en": "Statement of Responsibility (Mandatory)"
+                        "en": "Statement of Responsibility"
                     },
                     "node_id": "c06e6760-95ef-11ea-b5a4-f875a44e0e11",
                     "sortorder": 3,
@@ -1976,7 +1976,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Contributor Name (Mandatory)",
+                        "label": "Contributor Name",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -1986,7 +1986,7 @@
                     },
                     "id": "c06e8ea2-95ef-11ea-bf91-f875a44e0e11",
                     "label": {
-                        "en": "Contributor Name (Mandatory)"
+                        "en": "Contributor Name"
                     },
                     "node_id": "c06e6773-95ef-11ea-8e2e-f875a44e0e11",
                     "sortorder": 2,
@@ -2264,7 +2264,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Publisher (Mandatory)",
+                        "label": "Publisher",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -2274,7 +2274,7 @@
                     },
                     "id": "e4d18981-95d1-11ea-8546-f875a44e0e11",
                     "label": {
-                        "en": "Publisher (Mandatory)"
+                        "en": "Publisher"
                     },
                     "node_id": "5785dbfb-95d1-11ea-8c9c-f875a44e0e11",
                     "sortorder": 0,

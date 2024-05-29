@@ -1647,14 +1647,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Associated Person or Organization (Mandatory)",
+                        "label": "Associated Person or Organization",
                         "placeholder": {
                             "en": null
                         }
                     },
                     "id": "805c7e9f-4513-11eb-85e7-f875a44e0e11",
                     "label": {
-                        "en": "Associated Person or Organization (Mandatory)"
+                        "en": "Associated Person or Organization"
                     },
                     "node_id": "e6ab4ed0-905b-11ea-8e3f-f875a44e0e11",
                     "sortorder": 0,
@@ -3587,7 +3587,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Organization Name (Mandatory)",
+                        "label": "Organization Name",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -3597,7 +3597,7 @@
                     },
                     "id": "e843442d-8098-11ea-97dc-f875a44e0e11",
                     "label": {
-                        "en": "Organization Name (Mandatory)"
+                        "en": "Organization Name"
                     },
                     "node_id": "e8431c61-8098-11ea-8b01-f875a44e0e11",
                     "sortorder": 0,
