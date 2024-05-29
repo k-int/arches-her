@@ -1228,7 +1228,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Association Type (Required)",
+                        "label": "Association Type",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -1236,7 +1236,7 @@
                     },
                     "id": "12e7c58a-1864-11eb-a0c4-f875a44e0e11",
                     "label": {
-                        "en": "Association Type (Required)"
+                        "en": "Association Type"
                     },
                     "node_id": "12e7c586-1864-11eb-a0b3-f875a44e0e11",
                     "sortorder": 1,
@@ -1589,7 +1589,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Source Number (Required)",
+                        "label": "Source Number",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -1599,7 +1599,7 @@
                     },
                     "id": "1c26049d-efaa-11eb-acf9-a87eeabdefba",
                     "label": {
-                        "en": "Source Number (Required)"
+                        "en": "Source Number"
                     },
                     "node_id": "1c260498-efaa-11eb-92dd-a87eeabdefba",
                     "sortorder": 1,
@@ -6039,7 +6039,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Local Heritage List Criteria Type (Required)",
+                        "label": "Local Heritage List Criteria Type",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -6047,7 +6047,7 @@
                     },
                     "id": "a4a82c1a-efa9-11eb-9fed-a87eeabdefba",
                     "label": {
-                        "en": "Local Heritage List Criteria Type (Required)"
+                        "en": "Local Heritage List Criteria Type"
                     },
                     "node_id": "a4a82b58-efa9-11eb-88ae-a87eeabdefba",
                     "sortorder": 10,
@@ -6723,7 +6723,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Date Qualifier (Required)",
+                        "label": "Date Qualifier",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -6731,7 +6731,7 @@
                     },
                     "id": "c34e2e72-1863-11eb-9a8d-f875a44e0e11",
                     "label": {
-                        "en": "Date Qualifier (Required)"
+                        "en": "Date Qualifier"
                     },
                     "node_id": "c34e0740-1863-11eb-8846-f875a44e0e11",
                     "sortorder": 8,
@@ -6743,7 +6743,7 @@
                     "config": {
                         "dateFormat": "YYYY-MM-DD",
                         "defaultValue": null,
-                        "label": "Association Start Date (Required)",
+                        "label": "Association Start Date",
                         "maxDate": null,
                         "minDate": null,
                         "placeholder": "Enter date",
@@ -6751,7 +6751,7 @@
                     },
                     "id": "c34e2e73-1863-11eb-bace-f875a44e0e11",
                     "label": {
-                        "en": "Association Start Date (Required)"
+                        "en": "Association Start Date"
                     },
                     "node_id": "c34e2e6a-1863-11eb-95d7-f875a44e0e11",
                     "sortorder": 6,
@@ -6763,7 +6763,7 @@
                     "config": {
                         "dateFormat": "YYYY-MM-DD",
                         "defaultValue": null,
-                        "label": "Association End Date (Required)",
+                        "label": "Association End Date",
                         "maxDate": null,
                         "minDate": null,
                         "placeholder": "Enter date",
@@ -6771,7 +6771,7 @@
                     },
                     "id": "c34e2e74-1863-11eb-9100-f875a44e0e11",
                     "label": {
-                        "en": "Association End Date (Required)"
+                        "en": "Association End Date"
                     },
                     "node_id": "c34e2e6b-1863-11eb-98e2-f875a44e0e11",
                     "sortorder": 7,
@@ -8858,14 +8858,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Parent Area (Required)",
+                        "label": "Parent Area",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "f5078bc1-f119-11eb-8b7f-a87eeabdefba",
                     "label": {
-                        "en": "Parent Area (Required)"
+                        "en": "Parent Area"
                     },
                     "node_id": "c961971c-12e8-11eb-96c5-f875a44e0e11",
                     "sortorder": 0,
