@@ -22,7 +22,7 @@
                     "instructions": {
                         "en": "Enter the resource name and its respective type."
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Bibliographic Source Names"
                     },
@@ -49,7 +49,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Publication"
                     },
@@ -76,7 +76,7 @@
                     "instructions": {
                         "en": "Use to record the page reference for an article or chapter in a serial, journal or monograph."
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Page Reference"
                     },
@@ -103,7 +103,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Associated Digital Files"
                     },
@@ -130,7 +130,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "System Reference Numbers"
                     },
@@ -213,7 +213,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Descriptions"
                     },
@@ -267,7 +267,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Pages"
                     },
@@ -294,7 +294,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Bibliographic Source Types"
                     },
@@ -321,7 +321,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Journal or Series"
                     },
@@ -348,7 +348,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Bibliographic Source Creation"
                     },
@@ -375,7 +375,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "External Cross References"
                     },
@@ -492,7 +492,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Bibliographic Source Name",
+                        "label": "Bibliographic Source Name (Mandatory)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -502,7 +502,7 @@
                     },
                     "id": "03e29854-8ecf-11ea-b97a-f875a44e0e11",
                     "label": {
-                        "en": "Bibliographic Source Name"
+                        "en": "Bibliographic Source Name (Mandatory)"
                     },
                     "node_id": "03e2984e-8ecf-11ea-b95f-f875a44e0e11",
                     "sortorder": 0,
@@ -516,7 +516,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Bibliographic Source Type",
+                        "label": "Bibliographic Source Type (Mandatory)",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -524,7 +524,7 @@
                     },
                     "id": "0cd1ac75-8ed5-11ea-81a7-f875a44e0e11",
                     "label": {
-                        "en": "Bibliographic Source Type"
+                        "en": "Bibliographic Source Type (Mandatory)"
                     },
                     "node_id": "9f29bb76-8ed4-11ea-81d3-f875a44e0e11",
                     "sortorder": null,
@@ -563,7 +563,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Date of Publication",
+                        "label": "Date of Publication (Mandatory)",
                         "maxDate": false,
                         "minDate": null,
                         "placeholder": {
@@ -573,7 +573,7 @@
                     },
                     "id": "1987a826-8ed0-11ea-89b1-f875a44e0e11",
                     "label": {
-                        "en": "Date of Publication"
+                        "en": "Date of Publication (Mandatory)"
                     },
                     "node_id": "1987a821-8ed0-11ea-871c-f875a44e0e11",
                     "sortorder": 6,
@@ -657,7 +657,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Number of Pages",
+                        "label": "Number of Pages (Mandatory)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -667,7 +667,7 @@
                     },
                     "id": "3260b9c7-96a1-11ea-834c-f875a44e0e11",
                     "label": {
-                        "en": "Number of Pages"
+                        "en": "Number of Pages (Mandatory)"
                     },
                     "node_id": "86ebe810-95e0-11ea-bb45-f875a44e0e11",
                     "sortorder": 0,
@@ -1505,7 +1505,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Language",
+                        "label": "Language (Mandatory)",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -1513,7 +1513,7 @@
                     },
                     "id": "aa519f4d-8ecf-11ea-a0d4-f875a44e0e11",
                     "label": {
-                        "en": "Language"
+                        "en": "Language (Mandatory)"
                     },
                     "node_id": "8cd5def1-8ecf-11ea-ade5-f875a44e0e11",
                     "sortorder": 0,
@@ -1669,7 +1669,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Editor Name",
+                        "label": "Editor Name (Mandatory)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -1679,7 +1679,7 @@
                     },
                     "id": "c06e8e95-95ef-11ea-815c-f875a44e0e11",
                     "label": {
-                        "en": "Editor Name"
+                        "en": "Editor Name (Mandatory)"
                     },
                     "node_id": "c06e6768-95ef-11ea-bf92-f875a44e0e11",
                     "sortorder": 1,
@@ -1786,7 +1786,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Author Name",
+                        "label": "Author Name (Mandatory)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -1796,7 +1796,7 @@
                     },
                     "id": "c06e8e9a-95ef-11ea-8894-f875a44e0e11",
                     "label": {
-                        "en": "Author Name"
+                        "en": "Author Name (Mandatory)"
                     },
                     "node_id": "c06e676e-95ef-11ea-a32a-f875a44e0e11",
                     "sortorder": 0,
@@ -1903,7 +1903,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Statement of Responsibility",
+                        "label": "Statement of Responsibility (Mandatory)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -1913,7 +1913,7 @@
                     },
                     "id": "c06e8e9f-95ef-11ea-a0f6-f875a44e0e11",
                     "label": {
-                        "en": "Statement of Responsibility"
+                        "en": "Statement of Responsibility (Mandatory)"
                     },
                     "node_id": "c06e6760-95ef-11ea-b5a4-f875a44e0e11",
                     "sortorder": 3,
@@ -1976,7 +1976,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Contributor Name",
+                        "label": "Contributor Name (Mandatory)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -1986,7 +1986,7 @@
                     },
                     "id": "c06e8ea2-95ef-11ea-bf91-f875a44e0e11",
                     "label": {
-                        "en": "Contributor Name"
+                        "en": "Contributor Name (Mandatory)"
                     },
                     "node_id": "c06e6773-95ef-11ea-8e2e-f875a44e0e11",
                     "sortorder": 2,
@@ -2264,7 +2264,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Publisher",
+                        "label": "Publisher (Mandatory)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -2274,7 +2274,7 @@
                     },
                     "id": "e4d18981-95d1-11ea-8546-f875a44e0e11",
                     "label": {
-                        "en": "Publisher"
+                        "en": "Publisher (Mandatory)"
                     },
                     "node_id": "5785dbfb-95d1-11ea-8c9c-f875a44e0e11",
                     "sortorder": 0,
@@ -4337,7 +4337,7 @@
             ],
             "graphid": "24d7b54f-5464-11e9-a86b-000d3ab1e588",
             "iconclass": "fa fa-file-text",
-            "is_editable": true,
+            "is_editable": false,
             "isresource": true,
             "jsonldcontext": null,
             "name": {
@@ -7689,7 +7689,12 @@
                 }
             ],
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd",
-            "publication": null,
+            "publication": {
+                "graph_id": "24d7b54f-5464-11e9-a86b-000d3ab1e588",
+                "notes": null,
+                "publicationid": "8cf01924-1dc8-11ef-83b5-0242ac130006",
+                "published_time": "2024-05-29T15:34:26.698"
+            },
             "relatable_resource_model_ids": [],
             "resource_2_resource_constraints": [],
             "root": {

@@ -24,7 +24,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Death"
                     },
@@ -78,7 +78,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Contact Details"
                     },
@@ -159,7 +159,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Names"
                     },
@@ -213,7 +213,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Descriptions"
                     },
@@ -321,7 +321,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "System Reference Numbers"
                     },
@@ -348,7 +348,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Associated People and Organizations"
                     },
@@ -375,7 +375,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Person Currency"
                     },
@@ -487,7 +487,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Birth"
                     },
@@ -628,7 +628,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Forename(s)",
+                        "label": "Forename(s) (Mandatory)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -638,7 +638,7 @@
                     },
                     "id": "087bc6b1-7b45-11ea-b7a8-f875a44e0e11",
                     "label": {
-                        "en": "Forename(s)"
+                        "en": "Forename(s) (Mandatory)"
                     },
                     "node_id": "2caeb5e7-7b44-11ea-a919-f875a44e0e11",
                     "sortorder": 6,
@@ -3225,7 +3225,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Surname",
+                        "label": "Surname (Mandatory)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -3235,7 +3235,7 @@
                     },
                     "id": "ac6b9f3b-7e54-11ea-b391-f875a44e0e11",
                     "label": {
-                        "en": "Surname"
+                        "en": "Surname (Mandatory)"
                     },
                     "node_id": "96a3942a-7e53-11ea-8b5a-f875a44e0e11",
                     "sortorder": 12,
@@ -6753,7 +6753,7 @@
             ],
             "graphid": "22477f01-1a44-11e9-b0a9-000d3ab1e588",
             "iconclass": "fa fa-user",
-            "is_editable": true,
+            "is_editable": false,
             "isresource": true,
             "jsonldcontext": null,
             "name": {
@@ -12043,7 +12043,12 @@
                 }
             ],
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd",
-            "publication": null,
+            "publication": {
+                "graph_id": "22477f01-1a44-11e9-b0a9-000d3ab1e588",
+                "notes": null,
+                "publicationid": "e5e5a478-1dcc-11ef-b972-0242ac130006",
+                "published_time": "2024-05-29T16:05:33.934"
+            },
             "relatable_resource_model_ids": [],
             "resource_2_resource_constraints": [],
             "root": {

@@ -976,7 +976,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Author Name",
+                        "label": "Author Name (Mandatory)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -986,7 +986,7 @@
                     },
                     "id": "3001d71d-b46a-11ea-95db-f875a44e0e11",
                     "label": {
-                        "en": "Author Name"
+                        "en": "Author Name (Mandatory)"
                     },
                     "node_id": "3001d70d-b46a-11ea-8401-f875a44e0e11",
                     "sortorder": 0,
@@ -1049,7 +1049,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Statement of Responsibility",
+                        "label": "Statement of Responsibility (Mandatory)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -1059,7 +1059,7 @@
                     },
                     "id": "3001d720-b46a-11ea-80a4-f875a44e0e11",
                     "label": {
-                        "en": "Statement of Responsibility"
+                        "en": "Statement of Responsibility (Mandatory)"
                     },
                     "node_id": "3001d715-b46a-11ea-9d99-f875a44e0e11",
                     "sortorder": 1,
@@ -2256,7 +2256,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Cross Reference Source",
+                        "label": "Cross Reference Source (Mandatory)",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -2264,7 +2264,7 @@
                     },
                     "id": "93e7e311-eeb7-11eb-b33e-a87eeabdefba",
                     "label": {
-                        "en": "Cross Reference Source"
+                        "en": "Cross Reference Source (Mandatory)"
                     },
                     "node_id": "93e7e310-eeb7-11eb-9489-a87eeabdefba",
                     "sortorder": 1,
@@ -2283,7 +2283,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Cross Reference",
+                        "label": "Cross Reference (Mandatory)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -2293,7 +2293,7 @@
                     },
                     "id": "93e7e312-eeb7-11eb-950d-a87eeabdefba",
                     "label": {
-                        "en": "Cross Reference"
+                        "en": "Cross Reference (Mandatory)"
                     },
                     "node_id": "93e7e30a-eeb7-11eb-b788-a87eeabdefba",
                     "sortorder": 0,
@@ -3403,7 +3403,7 @@
                             "prefix",
                             "suffix"
                         ],
-                        "label": "Quantity",
+                        "label": "Quantity (Mandatory)",
                         "max": "",
                         "min": "",
                         "placeholder": {
@@ -3422,7 +3422,7 @@
                     },
                     "id": "e31730e2-b469-11ea-ab58-f875a44e0e11",
                     "label": {
-                        "en": "Quantity"
+                        "en": "Quantity (Mandatory)"
                     },
                     "node_id": "e31730de-b469-11ea-b321-f875a44e0e11",
                     "sortorder": 2,
@@ -9320,7 +9320,12 @@
                 }
             ],
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd",
-            "publication": null,
+            "publication": {
+                "graph_id": "b07cfa6f-894d-11ea-82aa-f875a44e0e11",
+                "notes": null,
+                "publicationid": "3909c3d8-1dc7-11ef-8d1c-0242ac130006",
+                "published_time": "2024-05-29T15:24:56.441"
+            },
             "relatable_resource_model_ids": [],
             "resource_2_resource_constraints": [],
             "root": {

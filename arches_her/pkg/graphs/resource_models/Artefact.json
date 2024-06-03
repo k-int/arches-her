@@ -130,7 +130,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Discovery"
                     },
@@ -238,7 +238,7 @@
                     "instructions": {
                         "en": "Capture the measurements associated with this resource."
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Artefact Dimensions"
                     },
@@ -292,7 +292,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "External Cross References"
                     },
@@ -375,7 +375,7 @@
                     "instructions": {
                         "en": "Details the current location and keeper of the resource."
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Repository Storage Location"
                     },
@@ -460,7 +460,7 @@
                     "instructions": {
                         "en": "Enter the resource name and its respective type."
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Artefact Names"
                     },
@@ -568,7 +568,7 @@
                     "instructions": {
                         "en": "Where known use to record details of the date of production of the artefact and the techniques and methods used."
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Artefact Production"
                     },
@@ -676,7 +676,7 @@
                     "instructions": {
                         "en": "Used to record text descriptions associated with an artefact. Where appropriate different types of description may be recorded."
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Descriptions"
                     },
@@ -703,7 +703,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "System Reference Numbers"
                     },
@@ -759,7 +759,7 @@
                     "instructions": {
                         "en": "Administrative, geopolitical areas, localities, and other areas (e.g.: Research or zoning areas)  "
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Localities/Administrative Areas"
                     },
@@ -824,7 +824,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Geometry"
                     },
@@ -988,7 +988,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Location Data"
                     },
@@ -1479,14 +1479,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Monument, Area or Artefact",
+                        "label": "Monument, Area or Artefact (Mandatory)",
                         "placeholder": {
                             "en": null
                         }
                     },
                     "id": "1534a8f5-ff23-11ea-9e7a-f875a44e0e11",
                     "label": {
-                        "en": "Monument, Area or Artefact"
+                        "en": "Monument, Area or Artefact (Mandatory)"
                     },
                     "node_id": "b0a53628-b539-11ea-8b11-f875a44e0e11",
                     "sortorder": 0,
@@ -1655,7 +1655,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Artefact Type",
+                        "label": "Artefact Type (Mandatory)",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -1663,7 +1663,7 @@
                     },
                     "id": "250ff4c1-3bb5-11eb-9930-f875a44e0e11",
                     "label": {
-                        "en": "Artefact Type"
+                        "en": "Artefact Type (Mandatory)"
                     },
                     "node_id": "546b1630-3ba4-11eb-9030-f875a44e0e11",
                     "sortorder": 0,
@@ -2119,7 +2119,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Recovery Technique",
+                        "label": "Recovery Technique (Mandatory)",
                         "options": [
                             {
                                 "children": [],
@@ -2161,7 +2161,7 @@
                     },
                     "id": "3d4e7665-11f6-11eb-91da-f875a44e0e11",
                     "label": {
-                        "en": "Recovery Technique"
+                        "en": "Recovery Technique (Mandatory)"
                     },
                     "node_id": "aff6c6a5-11f4-11eb-9ae6-f875a44e0e11",
                     "sortorder": 3,
@@ -2846,7 +2846,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Cross Reference Source",
+                        "label": "Cross Reference Source (Mandatory)",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -2854,7 +2854,7 @@
                     },
                     "id": "4844c74c-eec7-11eb-8d90-a87eeabdefba",
                     "label": {
-                        "en": "Cross Reference Source"
+                        "en": "Cross Reference Source (Mandatory)"
                     },
                     "node_id": "4844c74b-eec7-11eb-9b35-a87eeabdefba",
                     "sortorder": 1,
@@ -2873,7 +2873,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Cross Reference",
+                        "label": "Cross Reference (Mandatory)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -2883,7 +2883,7 @@
                     },
                     "id": "4844c74d-eec7-11eb-aea8-a87eeabdefba",
                     "label": {
-                        "en": "Cross Reference"
+                        "en": "Cross Reference (Mandatory)"
                     },
                     "node_id": "4844c745-eec7-11eb-9089-a87eeabdefba",
                     "sortorder": 0,
@@ -3119,14 +3119,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Bibliographic Source",
+                        "label": "Bibliographic Source (Mandatory)",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "4c8a7b39-eec9-11eb-b466-a87eeabdefba",
                     "label": {
-                        "en": "Bibliographic Source"
+                        "en": "Bibliographic Source (Mandatory)"
                     },
                     "node_id": "4c8a656d-eec9-11eb-9936-a87eeabdefba",
                     "sortorder": 0,
@@ -3491,14 +3491,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Repository owner",
+                        "label": "Repository owner (Mandatory)",
                         "placeholder": {
                             "en": "Select the Organization or Person that is the current keeper of the resource."
                         }
                     },
                     "id": "55cc732f-afc9-11ea-9c0a-f875a44e0e11",
                     "label": {
-                        "en": "Repository owner"
+                        "en": "Repository owner (Mandatory)"
                     },
                     "node_id": "22e7c550-afc2-11ea-a4a8-f875a44e0e11",
                     "sortorder": 0,
@@ -3631,14 +3631,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Associated Activity",
+                        "label": "Associated Activity (Mandatory)",
                         "placeholder": {
                             "en": null
                         }
                     },
                     "id": "5c2d7913-863b-11ea-86a1-f875a44e0e11",
                     "label": {
-                        "en": "Associated Activity"
+                        "en": "Associated Activity (Mandatory)"
                     },
                     "node_id": "5625c865-2005-11ea-a123-c4d9877d154e",
                     "sortorder": 0,
@@ -4037,7 +4037,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Storage Building Name ",
+                        "label": "Storage Building Name  (Mandatory)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Where known, enter the name of the building in which the resource is stored. This may differ from the name of the organization or repository that owns the object."
@@ -4047,7 +4047,7 @@
                     },
                     "id": "6898c74b-afce-11ea-b051-f875a44e0e11",
                     "label": {
-                        "en": "Storage Building Name "
+                        "en": "Storage Building Name  (Mandatory)"
                     },
                     "node_id": "16d06fac-afba-11ea-a383-f875a44e0e11",
                     "sortorder": 1,
@@ -4132,7 +4132,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Storage Area Name",
+                        "label": "Storage Area Name (Mandatory)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Where known, enter the name of the storage area within the building, eg. Box 4, Shelf 3, Room 27"
@@ -4142,7 +4142,7 @@
                     },
                     "id": "74fb0f95-ab28-11ea-91a9-f875a44e0e11",
                     "label": {
-                        "en": "Storage Area Name"
+                        "en": "Storage Area Name (Mandatory)"
                     },
                     "node_id": "50edbf22-ab25-11ea-a258-f875a44e0e11",
                     "sortorder": 8,
@@ -4232,7 +4232,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Production Date: To",
+                        "label": "Production Date: To (Mandatory)",
                         "maxDate": null,
                         "minDate": null,
                         "placeholder": {
@@ -4242,7 +4242,7 @@
                     },
                     "id": "99d001b5-381d-11e8-a79a-dca90488358a",
                     "label": {
-                        "en": "Production Date: To"
+                        "en": "Production Date: To (Mandatory)"
                     },
                     "node_id": "99cff7f8-381d-11e8-a059-dca90488358a",
                     "sortorder": 4,
@@ -4649,7 +4649,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Production Date: From",
+                        "label": "Production Date: From (Mandatory)",
                         "maxDate": null,
                         "minDate": null,
                         "placeholder": {
@@ -4659,7 +4659,7 @@
                     },
                     "id": "99d00497-381d-11e8-bc10-dca90488358a",
                     "label": {
-                        "en": "Production Date: From"
+                        "en": "Production Date: From (Mandatory)"
                     },
                     "node_id": "99cfe72e-381d-11e8-882c-dca90488358a",
                     "sortorder": 3,
@@ -5117,14 +5117,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Scientific Date End Date",
+                        "label": "Scientific Date End Date (Mandatory)",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "a11e58f2-f118-11eb-8775-a87eeabdefba",
                     "label": {
-                        "en": "Scientific Date End Date"
+                        "en": "Scientific Date End Date (Mandatory)"
                     },
                     "node_id": "a11e58d9-f118-11eb-a91f-a87eeabdefba",
                     "sortorder": 4,
@@ -5419,7 +5419,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Dating Method",
+                        "label": "Dating Method (Mandatory)",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -5427,7 +5427,7 @@
                     },
                     "id": "a11e6cd1-f118-11eb-ad92-a87eeabdefba",
                     "label": {
-                        "en": "Dating Method"
+                        "en": "Dating Method (Mandatory)"
                     },
                     "node_id": "a11e58e1-f118-11eb-a799-a87eeabdefba",
                     "sortorder": 1,
@@ -5441,7 +5441,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Scientific Date Qualifier",
+                        "label": "Scientific Date Qualifier (Mandatory)",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -5449,7 +5449,7 @@
                     },
                     "id": "a11e6ee2-f118-11eb-855e-a87eeabdefba",
                     "label": {
-                        "en": "Scientific Date Qualifier"
+                        "en": "Scientific Date Qualifier (Mandatory)"
                     },
                     "node_id": "a11e58d7-f118-11eb-aa4b-a87eeabdefba",
                     "sortorder": 5,
@@ -5485,14 +5485,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Scientific Date Start Date",
+                        "label": "Scientific Date Start Date (Mandatory)",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "a11e6ee4-f118-11eb-9354-a87eeabdefba",
                     "label": {
-                        "en": "Scientific Date Start Date"
+                        "en": "Scientific Date Start Date (Mandatory)"
                     },
                     "node_id": "a11e58da-f118-11eb-80ac-a87eeabdefba",
                     "sortorder": 3,
@@ -6257,7 +6257,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Description",
+                        "label": "Description (Mandatory)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -6267,7 +6267,7 @@
                     },
                     "id": "c30977b3-991e-11ea-8593-f875a44e0e11",
                     "label": {
-                        "en": "Description"
+                        "en": "Description (Mandatory)"
                     },
                     "node_id": "c30977b0-991e-11ea-ba04-f875a44e0e11",
                     "sortorder": 1,
@@ -13656,7 +13656,7 @@
             ],
             "graphid": "343cc20c-2c5a-11e8-90fa-0242ac120005",
             "iconclass": "fa fa-beer",
-            "is_editable": true,
+            "is_editable": false,
             "isresource": true,
             "jsonldcontext": null,
             "name": {
@@ -20359,10 +20359,10 @@
                         },
                         "options": [
                             {
-                                "id": "f2e9e1b9-8493-4f43-9f49-b6c3ce8be8d9",
+                                "id": "91c9d738-2306-4f87-8300-0facfa417f0e",
                                 "selected": false,
                                 "text": {
-                                    "en": "Public"
+                                    "en": "State"
                                 }
                             },
                             {
@@ -20373,10 +20373,10 @@
                                 }
                             },
                             {
-                                "id": "91c9d738-2306-4f87-8300-0facfa417f0e",
+                                "id": "f2e9e1b9-8493-4f43-9f49-b6c3ce8be8d9",
                                 "selected": false,
                                 "text": {
-                                    "en": "State"
+                                    "en": "Public"
                                 }
                             }
                         ]
@@ -20568,10 +20568,10 @@
                         },
                         "options": [
                             {
-                                "id": "3620365b-6294-4356-93c0-52f53a2e4a49",
+                                "id": "d2d9a694-f6b0-4a41-9331-25a1d77ee1da",
                                 "selected": false,
                                 "text": {
-                                    "en": "Low"
+                                    "en": "High"
                                 }
                             },
                             {
@@ -20582,10 +20582,10 @@
                                 }
                             },
                             {
-                                "id": "d2d9a694-f6b0-4a41-9331-25a1d77ee1da",
+                                "id": "3620365b-6294-4356-93c0-52f53a2e4a49",
                                 "selected": false,
                                 "text": {
-                                    "en": "High"
+                                    "en": "Low"
                                 }
                             }
                         ]
@@ -23450,7 +23450,12 @@
                 }
             ],
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd",
-            "publication": null,
+            "publication": {
+                "graph_id": "343cc20c-2c5a-11e8-90fa-0242ac120005",
+                "notes": null,
+                "publicationid": "8b986eb0-1dc7-11ef-9f8f-0242ac130006",
+                "published_time": "2024-05-29T15:27:14.949"
+            },
             "relatable_resource_model_ids": [],
             "resource_2_resource_constraints": [],
             "root": {

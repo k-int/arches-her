@@ -130,7 +130,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Contact Details"
                     },
@@ -184,7 +184,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Organization Formation"
                     },
@@ -265,7 +265,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Addresses"
                     },
@@ -292,7 +292,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "System Reference Numbers"
                     },
@@ -375,7 +375,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Organization Currency"
                     },
@@ -402,7 +402,7 @@
                     "instructions": {
                         "en": "Use to record People and other Organizations associated with the Organization"
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Associated People and Organizations"
                     },
@@ -431,7 +431,7 @@
                     "instructions": {
                         "en": "Enter the resource name and its respective type."
                     },
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": {
                         "en": "Names"
                     },
@@ -1647,14 +1647,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Associated Person or Organization",
+                        "label": "Associated Person or Organization (Mandatory)",
                         "placeholder": {
                             "en": null
                         }
                     },
                     "id": "805c7e9f-4513-11eb-85e7-f875a44e0e11",
                     "label": {
-                        "en": "Associated Person or Organization"
+                        "en": "Associated Person or Organization (Mandatory)"
                     },
                     "node_id": "e6ab4ed0-905b-11ea-8e3f-f875a44e0e11",
                     "sortorder": 0,
@@ -3587,7 +3587,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Organization Name",
+                        "label": "Organization Name (Mandatory)",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -3597,7 +3597,7 @@
                     },
                     "id": "e843442d-8098-11ea-97dc-f875a44e0e11",
                     "label": {
-                        "en": "Organization Name"
+                        "en": "Organization Name (Mandatory)"
                     },
                     "node_id": "e8431c61-8098-11ea-8b01-f875a44e0e11",
                     "sortorder": 0,
@@ -5640,7 +5640,7 @@
             ],
             "graphid": "d4a88461-5463-11e9-90d9-000d3ab1e588",
             "iconclass": "fa fa-users",
-            "is_editable": true,
+            "is_editable": false,
             "isresource": true,
             "jsonldcontext": null,
             "name": {
@@ -9979,7 +9979,12 @@
                 }
             ],
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd",
-            "publication": null,
+            "publication": {
+                "graph_id": "d4a88461-5463-11e9-90d9-000d3ab1e588",
+                "notes": null,
+                "publicationid": "dae13bce-1dcb-11ef-a26d-0242ac130006",
+                "published_time": "2024-05-29T15:58:05.953"
+            },
             "relatable_resource_model_ids": [],
             "resource_2_resource_constraints": [],
             "root": {
