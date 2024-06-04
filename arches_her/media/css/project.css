@@ -2,6 +2,20 @@
 @import url(./bng-filter.css);
 @import url(./accessibility-plugin.css);
 
+/* Core styling overwrite for hotfixes */
+
+.card-form-preview-container {
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    background: #ebeef0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 100vh;
+    }
+
+/* End core styling overwrite for hotfixes*/
+
 header {
     max-width: calc(100vw - 50px);
 }
