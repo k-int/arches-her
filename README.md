@@ -73,4 +73,16 @@ Administrators of an instance of Arches for HERs can configure their implementat
 
 
 
+## Working with Letter Templates
 
+Field tag replacement in the templates can easily break if styling changes occur within the Word documents. The internal &ldquo;style runs&rdquo; provide rich formatting for the letters, but if a style partially touches a field tag (a field name surrounded by angle brackets), the field tag is physically split across several style runs. When this happens, it is no longer possible for the field to be substituted with its data value.
+
+It is good practice to run the docx management command after working on the letter templates and before committing to source control. The full command is:
+
+```
+python manage.py docx fix_style_runs --dest_dir docx
+```
+
+The `--dest_dir` parameter is optional and defaults to the `docx` folder.
+
+The Word files in the destination folder are processed in turn, and the command looks for pairs of angle brackets that may span multiple style runs. When this happens, they are joined together, thus restoring the full field tag.
