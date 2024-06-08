@@ -209,6 +209,33 @@
                 },
                 {
                     "active": true,
+                    "cardid": "45f69046-03d2-11ef-89f3-3736dd7ed53f",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": "",
+                    "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
+                    "helpenabled": false,
+                    "helptext": {
+                        "en": null
+                    },
+                    "helptitle": {
+                        "en": null
+                    },
+                    "instructions": {
+                        "en": null
+                    },
+                    "is_editable": true,
+                    "name": {
+                        "en": "Record Type"
+                    },
+                    "nodegroup_id": "45f69045-03d2-11ef-89f3-3736dd7ed53f",
+                    "sortorder": 21,
+                    "visible": true
+                },
+                {
+                    "active": true,
                     "cardid": "64be0913-3ee5-11eb-9d04-f875a44e0e11",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
@@ -2272,6 +2299,32 @@
                     "sortorder": 7,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "45f69046-03d2-11ef-89f3-3736dd7ed53f",
+                    "config": {
+                        "defaultValue": {
+                            "en": {
+                                "direction": "ltr",
+                                "value": ""
+                            }
+                        },
+                        "i18n_properties": [
+                            "placeholder"
+                        ],
+                        "label": "Record Type",
+                        "placeholder": {
+                            "en": "Select an option"
+                        }
+                    },
+                    "id": "45f69047-03d2-11ef-89f3-3736dd7ed53f",
+                    "label": {
+                        "en": "Record Type"
+                    },
+                    "node_id": "45f69045-03d2-11ef-89f3-3736dd7ed53f",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
                 },
                 {
                     "card_id": "b334ddde-4e87-11eb-ab31-f875a44e0e11",
@@ -9604,6 +9657,15 @@
                 },
                 {
                     "description": null,
+                    "domainnode_id": "979aaf0a-7042-11ea-8a93-287fcf6a5e72",
+                    "edgeid": "320df724-be18-40b2-ae32-ead3dddc7824",
+                    "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
+                    "name": null,
+                    "ontologyproperty": "http://www.ics.forth.gr/isl/CRMdig/L54i_is_same-as",
+                    "rangenode_id": "45f69045-03d2-11ef-89f3-3736dd7ed53f"
+                },
+                {
+                    "description": null,
                     "domainnode_id": "64be56e1-3ee5-11eb-b764-f875a44e0e11",
                     "edgeid": "64c18b00-3ee5-11eb-9287-f875a44e0e11",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
@@ -12942,6 +13004,12 @@
                 {
                     "cardinality": "1",
                     "legacygroupid": null,
+                    "nodegroupid": "45f69045-03d2-11ef-89f3-3736dd7ed53f",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
                     "nodegroupid": "64be0911-3ee5-11eb-87f4-f875a44e0e11",
                     "parentnodegroup_id": "64be2fdb-3ee5-11eb-9565-f875a44e0e11"
                 },
@@ -14629,6 +14697,43 @@
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P104_is_subject_to",
                     "sortorder": 0,
                     "sourcebranchpublication_id": null
+                },
+                {
+                    "alias": "record_type",
+                    "config": {
+                        "options": [
+                            {
+                                "id": "534aefb3-b5c2-45a5-a1c8-b96da19f4e93",
+                                "selected": false,
+                                "text": {
+                                    "en": "Monument"
+                                }
+                            },
+                            {
+                                "id": "5e5d6f01-fcd9-4ba0-b86d-564456a520b2",
+                                "selected": false,
+                                "text": {
+                                    "en": "Building"
+                                }
+                            }
+                        ]
+                    },
+                    "datatype": "domain-value",
+                    "description": "",
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Record Type",
+                    "nodegroup_id": "45f69045-03d2-11ef-89f3-3736dd7ed53f",
+                    "nodeid": "45f69045-03d2-11ef-89f3-3736dd7ed53f",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
+                    "parentproperty": "http://www.ics.forth.gr/isl/CRMdig/L54i_is_same-as",
+                    "sortorder": 0
                 },
                 {
                     "alias": "coordinate_system",

@@ -1015,6 +1015,33 @@
                 },
                 {
                     "active": true,
+                    "cardid": "ab469588-2671-4d7c-8b86-ae28694714b7",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "076f9381-7b00-11e9-8d6b-80000b44d1d9",
+                    "helpenabled": false,
+                    "helptext": {
+                        "en": null
+                    },
+                    "helptitle": {
+                        "en": null
+                    },
+                    "instructions": {
+                        "en": null
+                    },
+                    "is_editable": true,
+                    "name": {
+                        "en": "Record Type"
+                    },
+                    "nodegroup_id": "6ed65604-03d0-11ef-89f3-3736dd7ed53f",
+                    "sortorder": 21,
+                    "visible": true
+                },
+                {
+                    "active": true,
                     "cardid": "b2133e65-efdc-11eb-992a-a87eeabdefba",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
@@ -9230,6 +9257,27 @@
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
                 {
+                    "card_id": "ab469588-2671-4d7c-8b86-ae28694714b7",
+                    "config": {
+                        "defaultValue": "",
+                        "i18n_properties": [
+                            "placeholder"
+                        ],
+                        "label": "Record Type",
+                        "placeholder": {
+                            "en": "Select an option"
+                        }
+                    },
+                    "id": "c9341d94-1c66-403c-9b73-3908713fe7a1",
+                    "label": {
+                        "en": "Record Type"
+                    },
+                    "node_id": "6ed65604-03d0-11ef-89f3-3736dd7ed53f",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
                     "card_id": "e0991c1d-51b4-11eb-a935-f875a44e0e11",
                     "config": {
                         "defaultResourceInstance": [],
@@ -9790,6 +9838,15 @@
                     "name": null,
                     "ontologyproperty": "http://www.ics.forth.gr/isl/CRMsci/O18i_was_altered_by",
                     "rangenode_id": "55d6a53e-049c-11eb-8618-f875a44e0e11"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "076f9380-7b00-11e9-88c8-80000b44d1d9",
+                    "edgeid": "5d9080ac-6624-40a0-a09c-fc3e4b91eecd",
+                    "graph_id": "076f9381-7b00-11e9-8d6b-80000b44d1d9",
+                    "name": null,
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
+                    "rangenode_id": "6ed65604-03d0-11ef-89f3-3736dd7ed53f"
                 },
                 {
                     "description": null,
@@ -13493,6 +13550,12 @@
                     "parentnodegroup_id": null
                 },
                 {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "6ed65604-03d0-11ef-89f3-3736dd7ed53f",
+                    "parentnodegroup_id": null
+                },
+                {
                     "cardinality": "n",
                     "legacygroupid": null,
                     "nodegroupid": "77e8f287-efdc-11eb-a790-a87eeabdefba",
@@ -16890,6 +16953,43 @@
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P3_has_note",
                     "sortorder": 0,
                     "sourcebranchpublication_id": null
+                },
+                {
+                    "alias": "record_type",
+                    "config": {
+                        "options": [
+                            {
+                                "id": "534aefb3-b5c2-45a5-a1c8-b96da19f4e93",
+                                "selected": false,
+                                "text": {
+                                    "en": "Monument"
+                                }
+                            },
+                            {
+                                "id": "5e5d6f01-fcd9-4ba0-b86d-564456a520b2",
+                                "selected": false,
+                                "text": {
+                                    "en": "Building"
+                                }
+                            }
+                        ]
+                    },
+                    "datatype": "domain-value",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "076f9381-7b00-11e9-8d6b-80000b44d1d9",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Record Type",
+                    "nodegroup_id": "6ed65604-03d0-11ef-89f3-3736dd7ed53f",
+                    "nodeid": "6ed65604-03d0-11ef-89f3-3736dd7ed53f",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
+                    "sortorder": 0
                 },
                 {
                     "alias": "construction_phases",
