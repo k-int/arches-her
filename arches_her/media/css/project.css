@@ -21,7 +21,7 @@ header {
 }
 
 .search-inline-filters {
-    justify-content: left;
+    justify-content: right;
 }
 
 .workflow-panel.navbarclosed {
