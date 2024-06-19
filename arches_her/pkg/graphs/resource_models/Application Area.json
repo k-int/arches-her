@@ -54,7 +54,7 @@
                         "en": "Coordinate System"
                     },
                     "nodegroup_id": "190946a5-3a3b-11eb-b25f-f875a44e0e11",
-                    "sortorder": null,
+                    "sortorder": 4,
                     "visible": true
                 },
                 {
@@ -81,7 +81,7 @@
                         "en": "Spatial Record Authorization"
                     },
                     "nodegroup_id": "190946a8-3a3b-11eb-87a8-f875a44e0e11",
-                    "sortorder": null,
+                    "sortorder": 2,
                     "visible": true
                 },
                 {
@@ -108,7 +108,7 @@
                         "en": "Spatial Record Compilation"
                     },
                     "nodegroup_id": "190946ab-3a3b-11eb-862f-f875a44e0e11",
-                    "sortorder": null,
+                    "sortorder": 0,
                     "visible": true
                 },
                 {
@@ -135,7 +135,7 @@
                         "en": "Capture Scale"
                     },
                     "nodegroup_id": "190946ae-3a3b-11eb-9cee-f875a44e0e11",
-                    "sortorder": null,
+                    "sortorder": 3,
                     "visible": true
                 },
                 {
@@ -162,7 +162,7 @@
                         "en": "Spatial Record Update"
                     },
                     "nodegroup_id": "19096dc2-3a3b-11eb-9ab9-f875a44e0e11",
-                    "sortorder": null,
+                    "sortorder": 1,
                     "visible": true
                 },
                 {
@@ -246,7 +246,7 @@
                         "en": "Spatial Metadata Descriptions"
                     },
                     "nodegroup_id": "19096dc8-3a3b-11eb-af0e-f875a44e0e11",
-                    "sortorder": null,
+                    "sortorder": 7,
                     "visible": true
                 },
                 {
@@ -273,7 +273,7 @@
                         "en": "Current Base Map"
                     },
                     "nodegroup_id": "19096dcb-3a3b-11eb-bdc6-f875a44e0e11",
-                    "sortorder": null,
+                    "sortorder": 5,
                     "visible": true
                 },
                 {
@@ -300,7 +300,7 @@
                         "en": "Spatial Accuracy Qualifier"
                     },
                     "nodegroup_id": "19096dce-3a3b-11eb-b3fb-f875a44e0e11",
-                    "sortorder": null,
+                    "sortorder": 6,
                     "visible": true
                 },
                 {
@@ -7118,7 +7118,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "42ce82f6-83bf-11ea-b1e8-f875a44e0e11",
-                    "id": "84a33ce3-ec66-40a2-a303-c8164e0cecd5"
+                    "id": "cb3e25ac-a697-4634-8d7f-72475b06351c"
                 }
             ],
             "graphid": "42ce82f6-83bf-11ea-b1e8-f875a44e0e11",
@@ -12455,8 +12455,8 @@
             "publication": {
                 "graph_id": "42ce82f6-83bf-11ea-b1e8-f875a44e0e11",
                 "notes": null,
-                "publicationid": "efbc43de-2e35-11ef-a141-0242ac130006",
-                "published_time": "2024-06-19T13:17:46.201"
+                "publicationid": "1bee3108-2e4d-11ef-9a80-0242ac130006",
+                "published_time": "2024-06-19T16:03:38.773"
             },
             "relatable_resource_model_ids": [],
             "resource_2_resource_constraints": [],

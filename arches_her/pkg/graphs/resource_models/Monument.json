@@ -22,7 +22,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Associated Monuments, Areas and Artefacts"
                     },
@@ -49,12 +49,12 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Spatial Record Compilation"
                     },
                     "nodegroup_id": "87d3d7ec-f44f-11eb-bab9-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 0,
                     "visible": true
                 },
                 {
@@ -81,7 +81,7 @@
                         "en": "Spatial Record Authorization"
                     },
                     "nodegroup_id": "87d3c3f1-f44f-11eb-9d33-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 2,
                     "visible": true
                 },
                 {
@@ -103,7 +103,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "System Reference Numbers"
                     },
@@ -130,12 +130,12 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Spatial Record Update"
                     },
                     "nodegroup_id": "87d3d7d1-f44f-11eb-b908-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 1,
                     "visible": true
                 },
                 {
@@ -162,7 +162,7 @@
                         "en": "Spatial Accuracy Qualifier"
                     },
                     "nodegroup_id": "87d3c402-f44f-11eb-9f4e-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 6,
                     "visible": true
                 },
                 {
@@ -216,7 +216,7 @@
                         "en": "Current Base Map"
                     },
                     "nodegroup_id": "87d3d7f4-f44f-11eb-8904-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 5,
                     "visible": true
                 },
                 {
@@ -238,7 +238,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Components"
                     },
@@ -270,7 +270,7 @@
                         "en": "Coordinate System"
                     },
                     "nodegroup_id": "87d3c3fe-f44f-11eb-9ea3-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 4,
                     "visible": true
                 },
                 {
@@ -297,7 +297,7 @@
                         "en": "Spatial Metadata Descriptions"
                     },
                     "nodegroup_id": "87d3d7ee-f44f-11eb-8ba1-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 7,
                     "visible": true
                 },
                 {
@@ -402,7 +402,7 @@
                     "instructions": {
                         "en": "Summary of the data relating to the creation and amendment of the record."
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Audit Metadata"
                     },
@@ -429,7 +429,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Parent Monuments"
                     },
@@ -458,7 +458,7 @@
                     "instructions": {
                         "en": "Enter the resource name and its respective type."
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Monument Names"
                     },
@@ -490,7 +490,7 @@
                         "en": "Capture Scale"
                     },
                     "nodegroup_id": "87d3ff1b-f44f-11eb-8e30-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 3,
                     "visible": true
                 },
                 {
@@ -521,7 +521,7 @@
                     "instructions": {
                         "en": "Use to record any designation or protection regimes directly associated with the application area."
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Designation and Protection Assignment"
                     },
@@ -548,7 +548,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Construction Phases"
                     },
@@ -577,12 +577,12 @@
                     "instructions": {
                         "en": "Administrative, geopolitical areas, localities, and other areas (e.g.: Research or zoning areas)  "
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Localities/Administrative Areas"
                     },
                     "nodegroup_id": "87d38725-f44f-11eb-8d4b-a87eeabdefba",
-                    "sortorder": 1,
+                    "sortorder": 2,
                     "visible": true
                 },
                 {
@@ -642,12 +642,12 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Geometry"
                     },
                     "nodegroup_id": "87d3872b-f44f-11eb-bd0c-a87eeabdefba",
-                    "sortorder": 5,
+                    "sortorder": 0,
                     "visible": true
                 },
                 {
@@ -701,7 +701,7 @@
                         "en": "Area Assignments"
                     },
                     "nodegroup_id": "87d39b22-f44f-11eb-887e-a87eeabdefba",
-                    "sortorder": 4,
+                    "sortorder": 5,
                     "visible": true
                 },
                 {
@@ -723,12 +723,12 @@
                     "instructions": {
                         "en": "Used to record the postal address of a resource."
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Addresses"
                     },
                     "nodegroup_id": "87d39b25-f44f-11eb-95e5-a87eeabdefba",
-                    "sortorder": 3,
+                    "sortorder": 4,
                     "visible": true
                 },
                 {
@@ -750,12 +750,12 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Location Descriptions"
                     },
                     "nodegroup_id": "87d39b28-f44f-11eb-a8b6-a87eeabdefba",
-                    "sortorder": 0,
+                    "sortorder": 3,
                     "visible": true
                 },
                 {
@@ -779,12 +779,12 @@
                     "instructions": {
                         "en": "National Grid references, map names, and other common location identifiers for the resource"
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "National Grid References"
                     },
                     "nodegroup_id": "87d39b2b-f44f-11eb-af5e-a87eeabdefba",
-                    "sortorder": 2,
+                    "sortorder": 1,
                     "visible": true
                 },
                 {
@@ -806,7 +806,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Location Data"
                     },
@@ -833,7 +833,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Associated Archives"
                     },
@@ -860,7 +860,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Associated People and Organizations"
                     },
@@ -887,7 +887,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Bibliographic Source Citation"
                     },
@@ -914,7 +914,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Use Phase"
                     },
@@ -941,7 +941,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Descriptions"
                     },
@@ -995,7 +995,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "External Cross References"
                     },
@@ -1022,7 +1022,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Associated Digital File(s)"
                     },
@@ -13250,6 +13250,20 @@
             "functions_x_graphs": [
                 {
                     "config": {
+                        "bng_node": "87d3d7bd-f44f-11eb-b1e4-a87eeabdefba",
+                        "bng_nodegroup": "87d39b2b-f44f-11eb-af5e-a87eeabdefba",
+                        "geojson_node": "87d3d7dc-f44f-11eb-bee9-a87eeabdefba",
+                        "geojson_nodegroup": "87d3872b-f44f-11eb-bd0c-a87eeabdefba",
+                        "triggering_nodegroups": [
+                            "87d39b2b-f44f-11eb-af5e-a87eeabdefba"
+                        ]
+                    },
+                    "function_id": "0434df8d-b98a-4b41-9a0a-68cd9214ad73",
+                    "graph_id": "076f9381-7b00-11e9-8d6b-80000b44d1d9",
+                    "id": "3c08cbd5-eedb-49d0-b6db-3dc8f1bb8575"
+                },
+                {
+                    "config": {
                         "descriptor_types": {
                             "description": {
                                 "nodegroup_id": "ba342e69-b554-11ea-a027-f875a44e0e11",
@@ -13268,21 +13282,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "076f9381-7b00-11e9-8d6b-80000b44d1d9",
-                    "id": "1a0d89a5-1def-4269-8e75-080fe3d57c18"
-                },
-                {
-                    "config": {
-                        "bng_node": "87d3d7bd-f44f-11eb-b1e4-a87eeabdefba",
-                        "bng_nodegroup": "87d39b2b-f44f-11eb-af5e-a87eeabdefba",
-                        "geojson_node": "87d3d7dc-f44f-11eb-bee9-a87eeabdefba",
-                        "geojson_nodegroup": "87d3872b-f44f-11eb-bd0c-a87eeabdefba",
-                        "triggering_nodegroups": [
-                            "87d39b2b-f44f-11eb-af5e-a87eeabdefba"
-                        ]
-                    },
-                    "function_id": "0434df8d-b98a-4b41-9a0a-68cd9214ad73",
-                    "graph_id": "076f9381-7b00-11e9-8d6b-80000b44d1d9",
-                    "id": "2bc9d7f6-ce01-4c23-b653-d4f34da703ba"
+                    "id": "a0056d04-57da-4fb5-a895-9da16b18b35a"
                 },
                 {
                     "config": {
@@ -13296,12 +13296,12 @@
                     },
                     "function_id": "d9a01773-6092-4cad-b331-ae725ae8fa88",
                     "graph_id": "076f9381-7b00-11e9-8d6b-80000b44d1d9",
-                    "id": "7de88552-5389-4cd0-b643-b37184d782b3"
+                    "id": "e4f5693d-042c-414f-91fe-c2e2c86b37d9"
                 }
             ],
             "graphid": "076f9381-7b00-11e9-8d6b-80000b44d1d9",
             "iconclass": "fa fa-bank",
-            "is_editable": false,
+            "is_editable": true,
             "isresource": true,
             "jsonldcontext": null,
             "name": {
@@ -23468,8 +23468,8 @@
             "publication": {
                 "graph_id": "076f9381-7b00-11e9-8d6b-80000b44d1d9",
                 "notes": null,
-                "publicationid": "a86f6620-1dc6-11ef-9597-0242ac130006",
-                "published_time": "2024-05-29T15:20:53.837"
+                "publicationid": "2afe53e2-2e45-11ef-84a5-0242ac130006",
+                "published_time": "2024-06-19T15:06:48.070"
             },
             "relatable_resource_model_ids": [],
             "resource_2_resource_constraints": [],
@@ -23503,8 +23503,8 @@
     ],
     "metadata": {
         "db": "PostgreSQL 14.5 (Debian 14.5-1.pgdg110+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit",
-        "git hash": "fatal: not a git repository (or any of the parent directories): .git",
+        "git hash": "32a7ce75e 2024-06-14 08:59:44 +0000",
         "os": "Linux",
-        "os version": "5.15.146.1-microsoft-standard-WSL2"
+        "os version": "5.15.153.1-microsoft-standard-WSL2"
     }
 }

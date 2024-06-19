@@ -27,7 +27,7 @@
                         "en": "Spatial Metadata Descriptions"
                     },
                     "nodegroup_id": "9766b0e6-f450-11eb-85c5-a87eeabdefba",
-                    "sortorder": 0,
+                    "sortorder": 7,
                     "visible": true
                 },
                 {
@@ -354,7 +354,7 @@
                         "en": "Localities/Administrative Areas"
                     },
                     "nodegroup_id": "97663ac9-f450-11eb-b729-a87eeabdefba",
-                    "sortorder": 4,
+                    "sortorder": 2,
                     "visible": true
                 },
                 {
@@ -383,7 +383,7 @@
                         "en": "Land Use Classification Assignment"
                     },
                     "nodegroup_id": "97663acc-f450-11eb-8245-a87eeabdefba",
-                    "sortorder": 2,
+                    "sortorder": 6,
                     "visible": true
                 },
                 {
@@ -473,7 +473,7 @@
                         "en": "Area Assignments"
                     },
                     "nodegroup_id": "97666322-f450-11eb-8573-a87eeabdefba",
-                    "sortorder": 6,
+                    "sortorder": 5,
                     "visible": true
                 },
                 {
@@ -500,7 +500,7 @@
                         "en": "Addresses"
                     },
                     "nodegroup_id": "97666325-f450-11eb-8f8d-a87eeabdefba",
-                    "sortorder": 3,
+                    "sortorder": 4,
                     "visible": true
                 },
                 {
@@ -527,7 +527,7 @@
                         "en": "Location Descriptions"
                     },
                     "nodegroup_id": "97666328-f450-11eb-a50a-a87eeabdefba",
-                    "sortorder": 5,
+                    "sortorder": 3,
                     "visible": true
                 },
                 {
@@ -745,7 +745,7 @@
                         "en": "Spatial Record Compilation"
                     },
                     "nodegroup_id": "9766b0e4-f450-11eb-adab-a87eeabdefba",
-                    "sortorder": 1,
+                    "sortorder": 0,
                     "visible": true
                 },
                 {
@@ -772,7 +772,7 @@
                         "en": "Capture Scale"
                     },
                     "nodegroup_id": "9766b0f2-f450-11eb-8b9c-a87eeabdefba",
-                    "sortorder": 5,
+                    "sortorder": 3,
                     "visible": true
                 },
                 {
@@ -826,7 +826,7 @@
                         "en": "Spatial Record Authorization"
                     },
                     "nodegroup_id": "976689ca-f450-11eb-a5cd-a87eeabdefba",
-                    "sortorder": 4,
+                    "sortorder": 2,
                     "visible": true
                 },
                 {
@@ -882,7 +882,7 @@
                         "en": "Spatial Record Update"
                     },
                     "nodegroup_id": "976689ff-f450-11eb-9eaf-a87eeabdefba",
-                    "sortorder": 2,
+                    "sortorder": 1,
                     "visible": true
                 },
                 {
@@ -1044,7 +1044,7 @@
                         "en": "Current Base Map"
                     },
                     "nodegroup_id": "9766b0ec-f450-11eb-a632-a87eeabdefba",
-                    "sortorder": 3,
+                    "sortorder": 5,
                     "visible": true
                 },
                 {
@@ -1071,7 +1071,7 @@
                         "en": "Coordinate System"
                     },
                     "nodegroup_id": "976689d7-f450-11eb-b471-a87eeabdefba",
-                    "sortorder": 7,
+                    "sortorder": 4,
                     "visible": true
                 },
                 {
@@ -14555,7 +14555,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "b8032b00-594d-11e9-9cf0-18cf5eb368c4",
-                    "id": "0722c5ac-8f28-451b-bcc5-413ff0008b57"
+                    "id": "a24dc44e-2ce9-45aa-a6dd-ecf33fa26d98"
                 }
             ],
             "graphid": "b8032b00-594d-11e9-9cf0-18cf5eb368c4",
@@ -25620,8 +25620,8 @@
             "publication": {
                 "graph_id": "b8032b00-594d-11e9-9cf0-18cf5eb368c4",
                 "notes": null,
-                "publicationid": "73be6dbe-1dca-11ef-a26d-0242ac130006",
-                "published_time": "2024-05-29T15:48:03.423"
+                "publicationid": "90300610-2e41-11ef-9d70-0242ac130006",
+                "published_time": "2024-06-19T14:40:59.859"
             },
             "relatable_resource_model_ids": [],
             "resource_2_resource_constraints": [],
@@ -25655,8 +25655,8 @@
     ],
     "metadata": {
         "db": "PostgreSQL 14.5 (Debian 14.5-1.pgdg110+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit",
-        "git hash": "fatal: not a git repository (or any of the parent directories): .git",
+        "git hash": "32a7ce75e 2024-06-14 08:59:44 +0000",
         "os": "Linux",
-        "os version": "5.15.146.1-microsoft-standard-WSL2"
+        "os version": "5.15.153.1-microsoft-standard-WSL2"
     }
 }

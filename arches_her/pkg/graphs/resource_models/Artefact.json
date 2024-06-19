@@ -108,7 +108,7 @@
                         "en": "Spatial Record Compilation"
                     },
                     "nodegroup_id": "f7ccef4f-f447-11eb-a01e-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 0,
                     "visible": true
                 },
                 {
@@ -130,7 +130,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Discovery"
                     },
@@ -162,7 +162,7 @@
                         "en": "Spatial Record Authorization"
                     },
                     "nodegroup_id": "f7cca088-f447-11eb-ae3d-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 2,
                     "visible": true
                 },
                 {
@@ -189,7 +189,7 @@
                         "en": "Spatial Record Update"
                     },
                     "nodegroup_id": "f7ccc8ae-f447-11eb-8d86-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 1,
                     "visible": true
                 },
                 {
@@ -216,7 +216,7 @@
                         "en": "Spatial Accuracy Qualifier"
                     },
                     "nodegroup_id": "f7cca099-f447-11eb-8a56-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 6,
                     "visible": true
                 },
                 {
@@ -238,7 +238,7 @@
                     "instructions": {
                         "en": "Capture the measurements associated with this resource."
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Artefact Dimensions"
                     },
@@ -270,7 +270,7 @@
                         "en": "Current Base Map"
                     },
                     "nodegroup_id": "f7ccef59-f447-11eb-a858-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 5,
                     "visible": true
                 },
                 {
@@ -292,7 +292,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "External Cross References"
                     },
@@ -375,7 +375,7 @@
                     "instructions": {
                         "en": "Details the current location and keeper of the resource."
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Repository Storage Location"
                     },
@@ -436,7 +436,7 @@
                         "en": "Coordinate System"
                     },
                     "nodegroup_id": "f7cca095-f447-11eb-b171-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 4,
                     "visible": true
                 },
                 {
@@ -460,7 +460,7 @@
                     "instructions": {
                         "en": "Enter the resource name and its respective type."
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Artefact Names"
                     },
@@ -492,7 +492,7 @@
                         "en": "Spatial Metadata Descriptions"
                     },
                     "nodegroup_id": "f7ccef51-f447-11eb-8c32-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 7,
                     "visible": true
                 },
                 {
@@ -546,7 +546,7 @@
                         "en": "Capture Scale"
                     },
                     "nodegroup_id": "f7ccef5f-f447-11eb-8b98-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 3,
                     "visible": true
                 },
                 {
@@ -568,7 +568,7 @@
                     "instructions": {
                         "en": "Where known use to record details of the date of production of the artefact and the techniques and methods used."
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Artefact Production"
                     },
@@ -676,7 +676,7 @@
                     "instructions": {
                         "en": "Used to record text descriptions associated with an artefact. Where appropriate different types of description may be recorded."
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Descriptions"
                     },
@@ -703,7 +703,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "System Reference Numbers"
                     },
@@ -759,12 +759,12 @@
                     "instructions": {
                         "en": "Administrative, geopolitical areas, localities, and other areas (e.g.: Research or zoning areas)  "
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Localities/Administrative Areas"
                     },
                     "nodegroup_id": "f7cc6299-f447-11eb-b8a3-a87eeabdefba",
-                    "sortorder": 4,
+                    "sortorder": 2,
                     "visible": true
                 },
                 {
@@ -793,7 +793,7 @@
                         "en": "Land Use Classification Assignment"
                     },
                     "nodegroup_id": "f7cc629c-f447-11eb-902d-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 6,
                     "visible": true
                 },
                 {
@@ -824,7 +824,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Geometry"
                     },
@@ -856,7 +856,7 @@
                         "en": "Named Locations"
                     },
                     "nodegroup_id": "f7cc62a2-f447-11eb-9976-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 7,
                     "visible": true
                 },
                 {
@@ -883,7 +883,7 @@
                         "en": "Area Assignments"
                     },
                     "nodegroup_id": "f7cc62a5-f447-11eb-8daa-a87eeabdefba",
-                    "sortorder": 12,
+                    "sortorder": 5,
                     "visible": true
                 },
                 {
@@ -910,7 +910,7 @@
                         "en": "Addresses"
                     },
                     "nodegroup_id": "f7cc62a8-f447-11eb-9fae-a87eeabdefba",
-                    "sortorder": 5,
+                    "sortorder": 4,
                     "visible": true
                 },
                 {
@@ -966,7 +966,7 @@
                         "en": "National Grid References"
                     },
                     "nodegroup_id": "f7cc62ae-f447-11eb-87da-a87eeabdefba",
-                    "sortorder": 5,
+                    "sortorder": 1,
                     "visible": true
                 },
                 {
@@ -988,7 +988,7 @@
                     "instructions": {
                         "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Location Data"
                     },
@@ -13651,12 +13651,12 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "343cc20c-2c5a-11e8-90fa-0242ac120005",
-                    "id": "a8e730aa-3741-4f30-8b2f-593a3804024e"
+                    "id": "61cf4365-711c-45e3-a51d-daa466ad5e19"
                 }
             ],
             "graphid": "343cc20c-2c5a-11e8-90fa-0242ac120005",
             "iconclass": "fa fa-beer",
-            "is_editable": false,
+            "is_editable": true,
             "isresource": true,
             "jsonldcontext": null,
             "name": {
@@ -23453,8 +23453,8 @@
             "publication": {
                 "graph_id": "343cc20c-2c5a-11e8-90fa-0242ac120005",
                 "notes": null,
-                "publicationid": "8b986eb0-1dc7-11ef-9f8f-0242ac130006",
-                "published_time": "2024-05-29T15:27:14.949"
+                "publicationid": "7e48015c-2e3a-11ef-8150-0242ac130006",
+                "published_time": "2024-06-19T13:50:23.340"
             },
             "relatable_resource_model_ids": [],
             "resource_2_resource_constraints": [],
@@ -23490,8 +23490,8 @@
     ],
     "metadata": {
         "db": "PostgreSQL 14.5 (Debian 14.5-1.pgdg110+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit",
-        "git hash": "fatal: not a git repository (or any of the parent directories): .git",
+        "git hash": "32a7ce75e 2024-06-14 08:59:44 +0000",
         "os": "Linux",
-        "os version": "5.15.146.1-microsoft-standard-WSL2"
+        "os version": "5.15.153.1-microsoft-standard-WSL2"
     }
 }

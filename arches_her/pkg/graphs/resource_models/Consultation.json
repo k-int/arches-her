@@ -764,7 +764,7 @@
                         "en": "Spatial Record Update"
                     },
                     "nodegroup_id": "b948de3e-184f-11eb-9663-f875a44e0e11",
-                    "sortorder": 5,
+                    "sortorder": 1,
                     "visible": true
                 },
                 {
@@ -791,7 +791,7 @@
                         "en": "Spatial Record Authorization"
                     },
                     "nodegroup_id": "b948de3c-184f-11eb-8cdb-f875a44e0e11",
-                    "sortorder": 6,
+                    "sortorder": 2,
                     "visible": true
                 },
                 {
@@ -818,7 +818,7 @@
                         "en": "Spatial Record Compilation"
                     },
                     "nodegroup_id": "b9490519-184f-11eb-81e6-f875a44e0e11",
-                    "sortorder": 4,
+                    "sortorder": 0,
                     "visible": true
                 },
                 {
@@ -845,7 +845,7 @@
                         "en": "Capture Scale"
                     },
                     "nodegroup_id": "b9490532-184f-11eb-9877-f875a44e0e11",
-                    "sortorder": 1,
+                    "sortorder": 3,
                     "visible": true
                 },
                 {
@@ -1034,7 +1034,7 @@
                         "en": "Coordinate System"
                     },
                     "nodegroup_id": "b9490523-184f-11eb-bd34-f875a44e0e11",
-                    "sortorder": 2,
+                    "sortorder": 4,
                     "visible": true
                 },
                 {
@@ -1061,7 +1061,7 @@
                         "en": "Spatial Accuracy Qualifier"
                     },
                     "nodegroup_id": "b948de31-184f-11eb-87d5-f875a44e0e11",
-                    "sortorder": 3,
+                    "sortorder": 6,
                     "visible": true
                 },
                 {
@@ -1088,7 +1088,7 @@
                         "en": "Current Base Map"
                     },
                     "nodegroup_id": "b9490529-184f-11eb-9ada-f875a44e0e11",
-                    "sortorder": 0,
+                    "sortorder": 5,
                     "visible": true
                 },
                 {
@@ -2639,12 +2639,7 @@
                 {
                     "card_id": "f1e1224a-2f53-11eb-abb5-acde48001122",
                     "config": {
-                        "defaultValue": {
-                            "en": {
-                                "direction": "ltr",
-                                "value": ""
-                            }
-                        },
+                        "defaultValue": "",
                         "i18n_properties": [
                             "placeholder"
                         ],
@@ -7309,7 +7304,7 @@
                         "en": "Feature Shape Metatype"
                     },
                     "node_id": "b9490533-184f-11eb-afc3-f875a44e0e11",
-                    "sortorder": 2,
+                    "sortorder": 1,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -7330,7 +7325,7 @@
                         "en": "Related Application Area"
                     },
                     "node_id": "ba54228c-2f4e-11eb-abb5-acde48001122",
-                    "sortorder": 1,
+                    "sortorder": 3,
                     "visible": true,
                     "widget_id": "ff3c400a-76ec-11e7-a793-784f435179ea"
                 },
@@ -7352,7 +7347,7 @@
                         "en": "Feature Shape"
                     },
                     "node_id": "b949052a-184f-11eb-8b1d-f875a44e0e11",
-                    "sortorder": 3,
+                    "sortorder": 2,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -10358,6 +10353,16 @@
             "functions_x_graphs": [
                 {
                     "config": {
+                        "cons_comp_date_nodeid": "40eff4ce-893a-11ea-ae2e-f875a44e0e11",
+                        "cons_status_bool_nodeid": "6a773228-db20-11e9-b6dd-784f435179ea",
+                        "triggering_nodegroups": []
+                    },
+                    "function_id": "96efa95a-1e2c-4562-ac1f-b415796f9f75",
+                    "graph_id": "8d41e49e-a250-11e9-9eab-00224800b26d",
+                    "id": "8ade5d8b-8465-478a-9be9-a73eed5dc39b"
+                },
+                {
+                    "config": {
                         "descriptor_types": {
                             "description": {
                                 "nodegroup_id": "82f8a163-951a-11ea-b58e-f875a44e0e11",
@@ -10376,17 +10381,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "8d41e49e-a250-11e9-9eab-00224800b26d",
-                    "id": "6a3564fd-d8aa-4e1b-a996-e7188b2cbd1d"
-                },
-                {
-                    "config": {
-                        "cons_comp_date_nodeid": "40eff4ce-893a-11ea-ae2e-f875a44e0e11",
-                        "cons_status_bool_nodeid": "6a773228-db20-11e9-b6dd-784f435179ea",
-                        "triggering_nodegroups": []
-                    },
-                    "function_id": "96efa95a-1e2c-4562-ac1f-b415796f9f75",
-                    "graph_id": "8d41e49e-a250-11e9-9eab-00224800b26d",
-                    "id": "8aa35a56-3c0d-4ab1-9df1-54f480a41caa"
+                    "id": "e359db80-6dc9-4070-a0aa-ca117c8a3e84"
                 }
             ],
             "graphid": "8d41e49e-a250-11e9-9eab-00224800b26d",
@@ -17971,8 +17966,8 @@
             "publication": {
                 "graph_id": "8d41e49e-a250-11e9-9eab-00224800b26d",
                 "notes": null,
-                "publicationid": "bb5a4d7a-1dc8-11ef-83b5-0242ac130006",
-                "published_time": "2024-05-29T15:35:44.569"
+                "publicationid": "79868f96-2e3d-11ef-b9a8-0242ac130006",
+                "published_time": "2024-06-19T14:11:43.851"
             },
             "relatable_resource_model_ids": [],
             "resource_2_resource_constraints": [],
@@ -18006,8 +18001,8 @@
     ],
     "metadata": {
         "db": "PostgreSQL 14.5 (Debian 14.5-1.pgdg110+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit",
-        "git hash": "fatal: not a git repository (or any of the parent directories): .git",
+        "git hash": "32a7ce75e 2024-06-14 08:59:44 +0000",
         "os": "Linux",
-        "os version": "5.15.146.1-microsoft-standard-WSL2"
+        "os version": "5.15.153.1-microsoft-standard-WSL2"
     }
 }
