@@ -976,7 +976,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Author Name (Mandatory)",
+                        "label": "Author Name",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -986,7 +986,7 @@
                     },
                     "id": "3001d71d-b46a-11ea-95db-f875a44e0e11",
                     "label": {
-                        "en": "Author Name (Mandatory)"
+                        "en": "Author Name"
                     },
                     "node_id": "3001d70d-b46a-11ea-8401-f875a44e0e11",
                     "sortorder": 0,
@@ -1049,7 +1049,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Statement of Responsibility (Mandatory)",
+                        "label": "Statement of Responsibility",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -1059,7 +1059,7 @@
                     },
                     "id": "3001d720-b46a-11ea-80a4-f875a44e0e11",
                     "label": {
-                        "en": "Statement of Responsibility (Mandatory)"
+                        "en": "Statement of Responsibility"
                     },
                     "node_id": "3001d715-b46a-11ea-9d99-f875a44e0e11",
                     "sortorder": 1,
@@ -2256,7 +2256,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Cross Reference Source (Mandatory)",
+                        "label": "Cross Reference Source",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -2264,7 +2264,7 @@
                     },
                     "id": "93e7e311-eeb7-11eb-b33e-a87eeabdefba",
                     "label": {
-                        "en": "Cross Reference Source (Mandatory)"
+                        "en": "Cross Reference Source"
                     },
                     "node_id": "93e7e310-eeb7-11eb-9489-a87eeabdefba",
                     "sortorder": 1,
@@ -2283,7 +2283,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Cross Reference (Mandatory)",
+                        "label": "Cross Reference",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -2293,7 +2293,7 @@
                     },
                     "id": "93e7e312-eeb7-11eb-950d-a87eeabdefba",
                     "label": {
-                        "en": "Cross Reference (Mandatory)"
+                        "en": "Cross Reference"
                     },
                     "node_id": "93e7e30a-eeb7-11eb-b788-a87eeabdefba",
                     "sortorder": 0,
@@ -3403,7 +3403,7 @@
                             "prefix",
                             "suffix"
                         ],
-                        "label": "Quantity (Mandatory)",
+                        "label": "Quantity",
                         "max": "",
                         "min": "",
                         "placeholder": {
@@ -3422,7 +3422,7 @@
                     },
                     "id": "e31730e2-b469-11ea-ab58-f875a44e0e11",
                     "label": {
-                        "en": "Quantity (Mandatory)"
+                        "en": "Quantity"
                     },
                     "node_id": "e31730de-b469-11ea-b321-f875a44e0e11",
                     "sortorder": 2,

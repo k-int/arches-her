@@ -1902,14 +1902,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Digital Files (Required)",
+                        "label": "Digital Files",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "335f2565-5109-11eb-944b-f875a44e0e11",
                     "label": {
-                        "en": "Digital Files (Required)"
+                        "en": "Digital Files"
                     },
                     "node_id": "316c7d1e-8554-11ea-aed7-f875a44e0e11",
                     "sortorder": null,

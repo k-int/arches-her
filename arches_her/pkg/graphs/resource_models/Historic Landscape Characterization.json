@@ -1054,7 +1054,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Description (Mandatory)",
+                        "label": "Description",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -1064,7 +1064,7 @@
                     },
                     "id": "3d22bf2a-1aa8-11eb-9c96-f875a44e0e11",
                     "label": {
-                        "en": "Description (Mandatory)"
+                        "en": "Description"
                     },
                     "node_id": "3d22bf22-1aa8-11eb-a368-f875a44e0e11",
                     "sortorder": 1,
@@ -1527,7 +1527,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Name (Mandatory)",
+                        "label": "Name",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -1537,7 +1537,7 @@
                     },
                     "id": "4cf32ee4-07b5-11eb-a65e-f875a44e0e11",
                     "label": {
-                        "en": "Name (Mandatory)"
+                        "en": "Name"
                     },
                     "node_id": "4cf307e2-07b5-11eb-8253-f875a44e0e11",
                     "sortorder": 0,
@@ -3639,7 +3639,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Cross Reference Source (Mandatory)",
+                        "label": "Cross Reference Source",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -3647,7 +3647,7 @@
                     },
                     "id": "78dc1caa-f000-11eb-9c18-a87eeabdefba",
                     "label": {
-                        "en": "Cross Reference Source (Mandatory)"
+                        "en": "Cross Reference Source"
                     },
                     "node_id": "78dc1ca9-f000-11eb-9203-a87eeabdefba",
                     "sortorder": 1,
@@ -3691,7 +3691,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Cross Reference (Mandatory)",
+                        "label": "Cross Reference",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -3701,7 +3701,7 @@
                     },
                     "id": "78dc1cac-f000-11eb-87c5-a87eeabdefba",
                     "label": {
-                        "en": "Cross Reference (Mandatory)"
+                        "en": "Cross Reference"
                     },
                     "node_id": "78dc1b30-f000-11eb-a989-a87eeabdefba",
                     "sortorder": 0,
@@ -3876,14 +3876,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Associated Monument, Area or Artefact (Mandatory)",
+                        "label": "Associated Monument, Area or Artefact",
                         "placeholder": {
                             "en": null
                         }
                     },
                     "id": "86ceb205-4eaa-11eb-9203-f875a44e0e11",
                     "label": {
-                        "en": "Associated Monument, Area or Artefact (Mandatory)"
+                        "en": "Associated Monument, Area or Artefact"
                     },
                     "node_id": "86ceb202-4eaa-11eb-8dc6-f875a44e0e11",
                     "sortorder": 0,
