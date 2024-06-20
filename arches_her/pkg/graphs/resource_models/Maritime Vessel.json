@@ -1155,7 +1155,7 @@
                         "en": "Builder"
                     },
                     "node_id": "bc60a4c2-3ec7-11eb-aed9-f875a44e0e11",
-                    "sortorder": 23,
+                    "sortorder": 25,
                     "visible": true,
                     "widget_id": "ff3c400a-76ec-11e7-a793-784f435179ea"
                 },
@@ -1177,7 +1177,7 @@
                         "en": "Fixtures and Fittings Type"
                     },
                     "node_id": "a388b365-3ec4-11eb-adb5-f875a44e0e11",
-                    "sortorder": 8,
+                    "sortorder": 10,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000012"
                 },
@@ -1199,7 +1199,7 @@
                         "en": "Fixtures and Fittings Metatype"
                     },
                     "node_id": "a388b368-3ec4-11eb-8c54-f875a44e0e11",
-                    "sortorder": 9,
+                    "sortorder": 11,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -1636,7 +1636,7 @@
                         "en": "Ordnance Metatype"
                     },
                     "node_id": "bcae0c66-3ec3-11eb-a9d3-f875a44e0e11",
-                    "sortorder": 7,
+                    "sortorder": 9,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -1658,7 +1658,7 @@
                         "en": "Ordnance Type"
                     },
                     "node_id": "bcae0c63-3ec3-11eb-ab4f-f875a44e0e11",
-                    "sortorder": 6,
+                    "sortorder": 8,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000012"
                 },
@@ -1968,7 +1968,7 @@
                         "en": "Construction Phase Start Date"
                     },
                     "node_id": "dcd1a180-535c-11ec-8227-a87eeabdefba",
-                    "sortorder": 11,
+                    "sortorder": 13,
                     "visible": true,
                     "widget_id": "adfd15ce-dbab-11e7-86d1-0fcf08612b27"
                 },
@@ -1989,7 +1989,7 @@
                         "en": "Construction Phase End Date"
                     },
                     "node_id": "0557783e-535d-11ec-b437-a87eeabdefba",
-                    "sortorder": 12,
+                    "sortorder": 14,
                     "visible": true,
                     "widget_id": "adfd15ce-dbab-11e7-86d1-0fcf08612b27"
                 },
@@ -2808,7 +2808,7 @@
                         "en": "Construction Phase Type"
                     },
                     "node_id": "0e8f8b5a-3ec3-11eb-ada0-f875a44e0e11",
-                    "sortorder": 32,
+                    "sortorder": 2,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -2830,7 +2830,7 @@
                         "en": "Construction Phase Metatype"
                     },
                     "node_id": "34220ebe-3ec3-11eb-b924-f875a44e0e11",
-                    "sortorder": 33,
+                    "sortorder": 3,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -2874,7 +2874,7 @@
                         "en": "Covering Material Metatype"
                     },
                     "node_id": "656c68c2-3ec0-11eb-b3c5-f875a44e0e11",
-                    "sortorder": 27,
+                    "sortorder": 29,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -2896,7 +2896,7 @@
                         "en": "Construction Technique"
                     },
                     "node_id": "656c68ca-3ec0-11eb-a712-f875a44e0e11",
-                    "sortorder": 30,
+                    "sortorder": 32,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000012"
                 },
@@ -2918,7 +2918,7 @@
                         "en": "Covering Material"
                     },
                     "node_id": "656c41b7-3ec0-11eb-b0ff-f875a44e0e11",
-                    "sortorder": 26,
+                    "sortorder": 28,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000012"
                 },
@@ -2940,7 +2940,7 @@
                         "en": "Confidence of Interpretation Metatype"
                     },
                     "node_id": "656c41ac-3ec0-11eb-8a4f-f875a44e0e11",
-                    "sortorder": 22,
+                    "sortorder": 24,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -2969,7 +2969,7 @@
                         "en": "Phase Description"
                     },
                     "node_id": "656c68c9-3ec0-11eb-9ce8-f875a44e0e11",
-                    "sortorder": 16,
+                    "sortorder": 18,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000005"
                 },
@@ -2991,7 +2991,7 @@
                         "en": "Construction Method"
                     },
                     "node_id": "656c68cc-3ec0-11eb-bfb8-f875a44e0e11",
-                    "sortorder": 28,
+                    "sortorder": 30,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000012"
                 },
@@ -3013,7 +3013,7 @@
                         "en": "Construction Method Metatype"
                     },
                     "node_id": "656c41b8-3ec0-11eb-a75c-f875a44e0e11",
-                    "sortorder": 29,
+                    "sortorder": 31,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -3026,7 +3026,7 @@
                         ],
                         "label": "Cultural Period",
                         "placeholder": {
-                            "en": null
+                            "en": ""
                         }
                     },
                     "id": "656c68d7-3ec0-11eb-85b7-f875a44e0e11",
@@ -3034,7 +3034,7 @@
                         "en": "Cultural Period"
                     },
                     "node_id": "656c41b0-3ec0-11eb-8d87-f875a44e0e11",
-                    "sortorder": 10,
+                    "sortorder": 12,
                     "visible": true,
                     "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
                 },
@@ -3056,7 +3056,7 @@
                         "en": "Construction Phase Evidence Metatype"
                     },
                     "node_id": "656c68c7-3ec0-11eb-9089-f875a44e0e11",
-                    "sortorder": 20,
+                    "sortorder": 22,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -3078,7 +3078,7 @@
                         "en": "Construction Phase Evidence Type"
                     },
                     "node_id": "656c68c3-3ec0-11eb-b525-f875a44e0e11",
-                    "sortorder": 19,
+                    "sortorder": 21,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000012"
                 },
@@ -3100,7 +3100,7 @@
                         "en": "Construction Technique Metatype"
                     },
                     "node_id": "656c68c8-3ec0-11eb-b16d-f875a44e0e11",
-                    "sortorder": 31,
+                    "sortorder": 33,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -3156,7 +3156,7 @@
                         "en": "Confidence of Interpretation"
                     },
                     "node_id": "656c68cd-3ec0-11eb-9cd9-f875a44e0e11",
-                    "sortorder": 21,
+                    "sortorder": 23,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000009"
                 },
@@ -3200,7 +3200,7 @@
                         "en": "Main Construction Material"
                     },
                     "node_id": "656c68cf-3ec0-11eb-90fd-f875a44e0e11",
-                    "sortorder": 24,
+                    "sortorder": 26,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000012"
                 },
@@ -3222,7 +3222,7 @@
                         "en": "Phase Desctiption Metatype"
                     },
                     "node_id": "656c68c5-3ec0-11eb-bcbb-f875a44e0e11",
-                    "sortorder": 18,
+                    "sortorder": 20,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -3266,7 +3266,7 @@
                         "en": "Main Construction Material Metatype"
                     },
                     "node_id": "656c41b3-3ec0-11eb-bba2-f875a44e0e11",
-                    "sortorder": 25,
+                    "sortorder": 27,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -3288,7 +3288,7 @@
                         "en": "Phase Description Type"
                     },
                     "node_id": "656c41af-3ec0-11eb-b7cb-f875a44e0e11",
-                    "sortorder": 17,
+                    "sortorder": 19,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -3907,7 +3907,7 @@
                         "en": "Propulsion Type"
                     },
                     "node_id": "3df074b5-3ec4-11eb-b129-f875a44e0e11",
-                    "sortorder": 2,
+                    "sortorder": 4,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -3929,7 +3929,7 @@
                         "en": "Propulsion Metatype"
                     },
                     "node_id": "3df09ba5-3ec4-11eb-a037-f875a44e0e11",
-                    "sortorder": 3,
+                    "sortorder": 5,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -8440,7 +8440,7 @@
                         "en": "Type of Rigging"
                     },
                     "node_id": "4797c07b-50f7-11eb-a2fd-f875a44e0e11",
-                    "sortorder": 4,
+                    "sortorder": 6,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -8462,7 +8462,7 @@
                         "en": "Type of Rigging Metatype"
                     },
                     "node_id": "4797c07e-50f7-11eb-9dc7-f875a44e0e11",
-                    "sortorder": 5,
+                    "sortorder": 7,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -10266,12 +10266,7 @@
                 {
                     "card_id": "656c41ab-3ec0-11eb-8060-f875a44e0e11",
                     "config": {
-                        "defaultValue": {
-                            "en": {
-                                "direction": "ltr",
-                                "value": ""
-                            }
-                        },
+                        "defaultValue": "",
                         "i18n_properties": [
                             "placeholder"
                         ],
@@ -10288,7 +10283,7 @@
                         "en": "Construction Phase Display Date"
                     },
                     "node_id": "cf98efeb-50ee-11eb-8963-f875a44e0e11",
-                    "sortorder": 13,
+                    "sortorder": 15,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
@@ -10310,7 +10305,7 @@
                         "en": "Construction Phase Date Qualifier"
                     },
                     "node_id": "cf98efed-50ee-11eb-9e4f-f875a44e0e11",
-                    "sortorder": 14,
+                    "sortorder": 16,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -10332,7 +10327,7 @@
                         "en": "Construction Phase Date Qualifier Metatype"
                     },
                     "node_id": "cf98efec-50ee-11eb-947e-f875a44e0e11",
-                    "sortorder": 15,
+                    "sortorder": 17,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -15626,7 +15621,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "49bac32e-5464-11e9-a6e2-000d3ab1e588",
-                    "id": "396c548e-e8c2-40bf-b97e-f846811139d3"
+                    "id": "30c25879-f8c8-4612-8af8-c2b3bb253621"
                 }
             ],
             "graphid": "49bac32e-5464-11e9-a6e2-000d3ab1e588",
@@ -27276,8 +27271,8 @@
             "publication": {
                 "graph_id": "49bac32e-5464-11e9-a6e2-000d3ab1e588",
                 "notes": null,
-                "publicationid": "647ba274-2e44-11ef-84a5-0242ac130006",
-                "published_time": "2024-06-19T15:01:15.025"
+                "publicationid": "29036cb4-2ee8-11ef-a6ef-0242ac130006",
+                "published_time": "2024-06-20T10:33:32.715"
             },
             "relatable_resource_model_ids": [],
             "resource_2_resource_constraints": [],

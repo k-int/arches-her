@@ -1527,7 +1527,7 @@
                         "en": "Aircraft Type"
                     },
                     "node_id": "446d5c4c-3e14-11eb-8095-f875a44e0e11",
-                    "sortorder": 2,
+                    "sortorder": 0,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -1549,7 +1549,7 @@
                         "en": "Aircraft Metatype"
                     },
                     "node_id": "446d5c4f-3e14-11eb-b0c2-f875a44e0e11",
-                    "sortorder": 3,
+                    "sortorder": 1,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -2408,7 +2408,7 @@
                         "en": "Construction Phase Metatype"
                     },
                     "node_id": "12380800-4f39-11eb-bb1d-f875a44e0e11",
-                    "sortorder": 1,
+                    "sortorder": 3,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -3684,12 +3684,7 @@
                 {
                     "card_id": "daa1dd33-5a08-11e9-9cfd-18cf5eb368c4",
                     "config": {
-                        "defaultValue": {
-                            "en": {
-                                "direction": "ltr",
-                                "value": ""
-                            }
-                        },
+                        "defaultValue": "",
                         "i18n_properties": [
                             "placeholder"
                         ],
@@ -8606,12 +8601,7 @@
                 {
                     "card_id": "daa1dd33-5a08-11e9-9cfd-18cf5eb368c4",
                     "config": {
-                        "defaultValue": {
-                            "en": {
-                                "direction": "ltr",
-                                "value": ""
-                            }
-                        },
+                        "defaultValue": "",
                         "i18n_properties": [
                             "placeholder"
                         ],
@@ -8692,7 +8682,7 @@
                         "en": "Construction Phase Type"
                     },
                     "node_id": "daa20447-5a08-11e9-9df1-18cf5eb368c4",
-                    "sortorder": 0,
+                    "sortorder": 2,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -14555,7 +14545,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "b8032b00-594d-11e9-9cf0-18cf5eb368c4",
-                    "id": "a24dc44e-2ce9-45aa-a6dd-ecf33fa26d98"
+                    "id": "b67f013e-fc14-41fe-914e-8d76b88e2f3c"
                 }
             ],
             "graphid": "b8032b00-594d-11e9-9cf0-18cf5eb368c4",
@@ -25620,8 +25610,8 @@
             "publication": {
                 "graph_id": "b8032b00-594d-11e9-9cf0-18cf5eb368c4",
                 "notes": null,
-                "publicationid": "90300610-2e41-11ef-9d70-0242ac130006",
-                "published_time": "2024-06-19T14:40:59.859"
+                "publicationid": "33ae0e60-2ee5-11ef-b998-0242ac130006",
+                "published_time": "2024-06-20T10:12:22.120"
             },
             "relatable_resource_model_ids": [],
             "resource_2_resource_constraints": [],

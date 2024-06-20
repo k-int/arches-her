@@ -2145,7 +2145,7 @@
                         "en": "Construction Phase Date Qualifier"
                     },
                     "node_id": "6c2b6c22-4e8a-11eb-82fe-f875a44e0e11",
-                    "sortorder": 5,
+                    "sortorder": 7,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -2167,7 +2167,7 @@
                         "en": "Construction Phase Date Qualifier Metatype"
                     },
                     "node_id": "6c2b6c1e-4e8a-11eb-944b-f875a44e0e11",
-                    "sortorder": 6,
+                    "sortorder": 8,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -2188,7 +2188,7 @@
                         "en": "Construction Phase End Date"
                     },
                     "node_id": "6c2b6c21-4e8a-11eb-95d9-f875a44e0e11",
-                    "sortorder": 4,
+                    "sortorder": 6,
                     "visible": true,
                     "widget_id": "adfd15ce-dbab-11e7-86d1-0fcf08612b27"
                 },
@@ -2209,7 +2209,7 @@
                         "en": "Construction Phase Start Date"
                     },
                     "node_id": "6c2b6c20-4e8a-11eb-bd7f-f875a44e0e11",
-                    "sortorder": 3,
+                    "sortorder": 5,
                     "visible": true,
                     "widget_id": "adfd15ce-dbab-11e7-86d1-0fcf08612b27"
                 },
@@ -2238,7 +2238,7 @@
                         "en": "Construction Phase Display Date"
                     },
                     "node_id": "6c2b6c1f-4e8a-11eb-bc8b-f875a44e0e11",
-                    "sortorder": 7,
+                    "sortorder": 9,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
@@ -5566,7 +5566,7 @@
                         "en": "Confidence of Dating Metatype"
                     },
                     "node_id": "f5711baa-4e8a-11eb-b98a-f875a44e0e11",
-                    "sortorder": 9,
+                    "sortorder": 11,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -5622,7 +5622,7 @@
                         "en": "Confidence of Dating"
                     },
                     "node_id": "f5711ba7-4e8a-11eb-97c3-f875a44e0e11",
-                    "sortorder": 8,
+                    "sortorder": 10,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000009"
                 },
@@ -6116,7 +6116,7 @@
                         "en": "Construction Phase Evidence Metatype"
                     },
                     "node_id": "b334ddef-4e87-11eb-94ea-f875a44e0e11",
-                    "sortorder": 14,
+                    "sortorder": 16,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6138,7 +6138,7 @@
                         "en": "Construction Phase Evidence Type"
                     },
                     "node_id": "b334ddf0-4e87-11eb-9f89-f875a44e0e11",
-                    "sortorder": 13,
+                    "sortorder": 15,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000012"
                 },
@@ -6159,7 +6159,7 @@
                         "en": "Cultural Period"
                     },
                     "node_id": "b334dde5-4e87-11eb-9576-f875a44e0e11",
-                    "sortorder": 2,
+                    "sortorder": 4,
                     "visible": true,
                     "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
                 },
@@ -6181,7 +6181,7 @@
                         "en": "Construction Method Metatype"
                     },
                     "node_id": "b33504fd-4e87-11eb-bbd5-f875a44e0e11",
-                    "sortorder": 22,
+                    "sortorder": 24,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6254,7 +6254,7 @@
                         "en": "Phase Description"
                     },
                     "node_id": "b3350500-4e87-11eb-8d87-f875a44e0e11",
-                    "sortorder": 10,
+                    "sortorder": 12,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000005"
                 },
@@ -6276,7 +6276,7 @@
                         "en": "Phase Description Type"
                     },
                     "node_id": "b334dde1-4e87-11eb-9b8a-f875a44e0e11",
-                    "sortorder": 11,
+                    "sortorder": 13,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6298,7 +6298,7 @@
                         "en": "Phase Desctiption Metatype"
                     },
                     "node_id": "b334ddeb-4e87-11eb-80d4-f875a44e0e11",
-                    "sortorder": 12,
+                    "sortorder": 14,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6354,7 +6354,7 @@
                         "en": "Confidence of Interpretation"
                     },
                     "node_id": "b334dddf-4e87-11eb-830e-f875a44e0e11",
-                    "sortorder": 15,
+                    "sortorder": 17,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000009"
                 },
@@ -6376,7 +6376,7 @@
                         "en": "Confidence of Interpretation Metatype"
                     },
                     "node_id": "b334ddea-4e87-11eb-b9a1-f875a44e0e11",
-                    "sortorder": 16,
+                    "sortorder": 18,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6398,7 +6398,7 @@
                         "en": "Main Construction Material"
                     },
                     "node_id": "b334dde8-4e87-11eb-845e-f875a44e0e11",
-                    "sortorder": 17,
+                    "sortorder": 19,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000012"
                 },
@@ -6420,7 +6420,7 @@
                         "en": "Main Construction Material Metatype"
                     },
                     "node_id": "b334dded-4e87-11eb-a39b-f875a44e0e11",
-                    "sortorder": 18,
+                    "sortorder": 20,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6442,7 +6442,7 @@
                         "en": "Covering Material"
                     },
                     "node_id": "b334ddf4-4e87-11eb-87b4-f875a44e0e11",
-                    "sortorder": 19,
+                    "sortorder": 21,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000012"
                 },
@@ -6464,7 +6464,7 @@
                         "en": "Covering Material Metatype"
                     },
                     "node_id": "b334dde9-4e87-11eb-a3fe-f875a44e0e11",
-                    "sortorder": 20,
+                    "sortorder": 22,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6486,7 +6486,7 @@
                         "en": "Construction Method"
                     },
                     "node_id": "b334dde0-4e87-11eb-a30e-f875a44e0e11",
-                    "sortorder": 21,
+                    "sortorder": 23,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6508,7 +6508,7 @@
                         "en": "Construction Technique"
                     },
                     "node_id": "b334ddf2-4e87-11eb-8be7-f875a44e0e11",
-                    "sortorder": 23,
+                    "sortorder": 25,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6530,7 +6530,7 @@
                         "en": "Construction Technique Metatype"
                     },
                     "node_id": "b334ddf3-4e87-11eb-bd7a-f875a44e0e11",
-                    "sortorder": 24,
+                    "sortorder": 26,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6552,7 +6552,7 @@
                         "en": "Construction Phase Type"
                     },
                     "node_id": "b33504fa-4e87-11eb-8c38-f875a44e0e11",
-                    "sortorder": 25,
+                    "sortorder": 2,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6574,7 +6574,7 @@
                         "en": "Construction Phase Metatype"
                     },
                     "node_id": "b33504fb-4e87-11eb-a795-f875a44e0e11",
-                    "sortorder": 26,
+                    "sortorder": 3,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -12779,7 +12779,7 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
-                    "id": "62216233-3f78-4c13-84c4-3ec4da60447f"
+                    "id": "956f09e6-d280-4657-ab2f-80785df42ddf"
                 }
             ],
             "graphid": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
@@ -22844,8 +22844,8 @@
             "publication": {
                 "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                 "notes": null,
-                "publicationid": "1df1cf7e-2e38-11ef-bbef-0242ac130006",
-                "published_time": "2024-06-19T13:33:22.720"
+                "publicationid": "d186c3ae-2ee3-11ef-9bd4-0242ac130006",
+                "published_time": "2024-06-20T10:02:27.949"
             },
             "relatable_resource_model_ids": [],
             "resource_2_resource_constraints": [],
