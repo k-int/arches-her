@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+    archesher:
+      container_name: archesher
+      image: he/arches_her:dev_build
+      build:
+        args:
+          - "PROJ_NAME=arches_her"
+          - "DOCKER_PATH=./arches-containers/projects/arches_her/docker"
+        context: ../../..
+        dockerfile: ./arches-containers/projects/arches_her/Dockerfile
+      command: create_project
+      volumes:
+        - ../../..:/web_root
+      env_file:
+        - ./docker/env_file.env
+      ports:
+        - 8002:8000
+        - 5678:5678
+      stdin_open: true
+      tty: true
