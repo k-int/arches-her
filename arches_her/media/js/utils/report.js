@@ -1,7 +1,9 @@
 define([
     'arches',
-    'knockout'
-], function(arches, ko) {
+    'knockout',
+    'view-data',
+    'utils/resource',
+], function(arches, ko, viewdata, resourceUtil) {
     const standardizeNode = (obj) => {
         if(obj){
             const keys = Object.keys(obj);
@@ -91,6 +93,32 @@ define([
         } else {
             return '--';
         }
+    };
+
+    const getResourceGraph = (resourceId) => {
+        let graphData = {};
+
+        Object.defineProperty(graphData, "iconClass", {value: ko.observable()});
+        Object.defineProperty(graphData, "graphId", {value: ko.observable()});
+
+        resourceUtil.lookupResourceInstanceData(resourceId)
+            .then(function (resourceInstanceData) {
+                if (resourceInstanceData) {
+                    graphData.graphId(resourceInstanceData["_source"].graph_id);
+
+                    for (data of viewdata.createableResources) {
+                        if (data.graphid == resourceInstanceData["_source"].graph_id) {
+                            graphData.iconClass(data.iconclass || 'fa fa-question');
+                    }};
+
+                    return graphData;
+                }
+            }, function(err){
+                      console.error(err);
+                      graphData.graphId = "";
+                      graphData.iconClass = 'fa fa-question';
+                      return graphData;
+            }); 
     };
 
     return {
@@ -220,6 +248,8 @@ define([
 
         // see if there's any node with a valid displayable value.  If yes, return true.
         // potentially useful for deeply nested resources
-        nestedDataExists: checkNestedData
+        nestedDataExists: checkNestedData,
+
+        getResourceGraph: getResourceGraph,
     } 
 });

@@ -196,26 +196,11 @@ function (_, ko, arches, reportUtils, viewdata, ResourcesTemplate) {
                             var resource = [];
                                 for (const element of x[key]['instance_details']) {
                                 if (element) {
-                                    var resourceDescriptors = arches.urls.resource_descriptors + element.resourceId;
-                                    $.ajax({
-                                        url: resourceDescriptors,
-                                        dataType: 'json',
-                                        async: false,
-                                        success: function(resp) {
-                                            self.graphUrl = resp.graphid;
-                                        }
-                                    });
-                                    
-                                    for (data of viewdata.createableResources) {
-                                        if (data.graphid == self.graphUrl) {
-                                            self.graphIcon = data.iconclass;
-                                            break;
-                                    }}
-                                    
+
                                     resource.push({
                                         resourceName: self.getNodeValue(element),
                                         resourceUrl: self.getResourceLink(element),
-                                        graphIcon: self.graphIcon
+                                        resourceId: element.resourceId
                                     });
                                 }
                             }
