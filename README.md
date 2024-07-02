@@ -56,6 +56,25 @@ The **arches_her/install/requirements.txt** file will also need to be edited in 
 
 
 
+## Running Arches in a Docker Development Environment
+
+You can also run Arches in a Docker development environment. To do this, pull the `arches` repo and use the two compose files `docker-compose-dependencies.yml` and `docker-compose.yml`.
+
+- Clone the [`arches`](https://github.com/archesproject/arches.git) repository
+- Navigate to the folder where the compose files exist, then execute:
+  ```bash
+  docker compose -f docker-compose-dependencies.yml up -d
+  docker compose -f docker-compose.yml up -d
+  ```
+  The first time you compose up - the database, Elastic indices and package data will get created and loaded. Be patient. Once complete, navigate to [`http://localhost:8002`](http://localhost:8002). 
+
+When finished, compose down:
+  ```bash
+  docker compose -f docker-compose.yml down
+  docker compose -f docker-compose-dependencies.yml down
+  ```
+
+
 ## How Do I Configure Arches for HERs
 
 Administrators of an instance of Arches for HERs can configure their implementation having installed the out-of-the-box version.  Ways in which you can configure and customise an instance include:
