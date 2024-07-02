@@ -36,7 +36,7 @@ services:
 
     elasticsearch-archesher:
       container_name: elasticsearch-archesher
-      image: elasticsearch:8.5.0
+      image: elasticsearch:8.10.4
       volumes:
         #- ../../../elasticsearch_data_arches_her:/usr/share/elasticsearch/data
         - ../../../arches_her-elasticsearch-data:/usr/share/elasticsearch/data
