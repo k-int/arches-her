@@ -166,10 +166,10 @@ run_setup_db() {
 	echo ""
 	echo "----- RUNNING SETUP_DB -----"
 	echo ""
-	if [[ -d ${WEB_ROOT}/${ARCHES_PROJECT}/pkg ]];then
+	cd ${WEB_ROOT}/${ARCHES_PROJECT}
+	if [[ -d ${APP_ROOT}/${ARCHES_PROJECT}/pkg ]];then
 		python3 manage.py packages -o load_package -s ${ARCHES_PROJECT}/pkg -db -dev -y
 	else
-		cd ${WEB_ROOT}/${ARCHES_PROJECT}
 		python3 manage.py setup_db --force
 	fi
 }
