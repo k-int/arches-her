@@ -1287,7 +1287,7 @@
                 {
                     "card_id": "7db89892-8490-11ea-8777-f875a44e0e11",
                     "config": {
-                        "acceptedFiles": "Any File Type",
+                        "acceptedFiles": "",
                         "defaultValue": [],
                         "label": "File",
                         "maxFilesize": "200",
