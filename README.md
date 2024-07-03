@@ -67,10 +67,11 @@ You can also run Arches in a Docker development environment. To do this, pull th
   ```
   As mentioned before, ensure the `arches` repo has `dev/7.5.x` checked-out.
 
-- Navigate to the folder where the compose files exist, then execute:
+- Navigate to the folder where the compose files exist, then compose up:
   ```bash
-  docker compose -f docker-compose-dependencies.yml up -d
-  docker compose -f docker-compose.yml up -d
+  /workspace $ cd arches_her/docker/arches_her
+  /workspace/arches_her/docker/arches_her $ docker compose -f docker-compose-dependencies.yml up -d
+  /workspace/arches_her/docker/arches_her $ docker compose -f docker-compose.yml up -d
   ```
   The first time you compose up - the database, Elastic indices and package data will get created and loaded. Be patient. Once complete, navigate to [`http://localhost:8002`](http://localhost:8002). 
 
