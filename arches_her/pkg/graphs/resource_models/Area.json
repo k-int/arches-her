@@ -1,33 +1,26 @@
 {
     "graph": [
         {
-            "author": " Phil Carlisle",
+            "author": "Philip Carlisle - Historic England",
             "cards": [
                 {
                     "active": true,
                     "cardid": "0f577ac1-1860-11eb-b8e8-f875a44e0e11",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "0f577ac1-1860-11eb-b8e8-f875a44e0e11",
-                            "constraintid": "844e66dd-57ba-4eb4-8b7c-50cfd04697c3",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
@@ -42,26 +35,19 @@
                     "cardid": "12e7c585-1864-11eb-8846-f875a44e0e11",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "12e7c585-1864-11eb-8846-f875a44e0e11",
-                            "constraintid": "01cbf426-2e8e-4e5c-8290-6afe5befd9c0",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
@@ -76,26 +62,19 @@
                     "cardid": "15f240f9-5cf4-11ec-9d6e-a87eeabdefba",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "15f240f9-5cf4-11ec-9d6e-a87eeabdefba",
-                            "constraintid": "95d20298-6771-4937-a0a0-888bd3c8a7af",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
@@ -110,28 +89,21 @@
                     "cardid": "1c25ee15-efaa-11eb-b1c0-a87eeabdefba",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "1c25ee15-efaa-11eb-b1c0-a87eeabdefba",
-                            "constraintid": "6d9c8ade-9ac2-4590-a17c-ebd20c132476",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Bibliographic Source Citation"
                     },
@@ -144,26 +116,19 @@
                     "cardid": "22748133-51b2-11eb-87fa-f875a44e0e11",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "22748133-51b2-11eb-87fa-f875a44e0e11",
-                            "constraintid": "f3c9f2d7-0a0b-48fb-8d26-0acf53fd2d7a",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
@@ -178,26 +143,19 @@
                     "cardid": "3202cb8f-1865-11eb-840f-f875a44e0e11",
                     "component_id": "4e40b397-d6bc-4660-a398-4a72c90dba07",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "3202cb8f-1865-11eb-840f-f875a44e0e11",
-                            "constraintid": "b2c6743d-6c07-49d6-b469-a4750c25f7be",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
@@ -218,20 +176,20 @@
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Coordinate System"
                     },
                     "nodegroup_id": "64be0911-3ee5-11eb-87f4-f875a44e0e11",
-                    "sortorder": null,
+                    "sortorder": 4,
                     "visible": true
                 },
                 {
@@ -245,20 +203,20 @@
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Spatial Record Authorization"
                     },
                     "nodegroup_id": "64be0914-3ee5-11eb-bd86-f875a44e0e11",
-                    "sortorder": null,
+                    "sortorder": 2,
                     "visible": true
                 },
                 {
@@ -272,20 +230,20 @@
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Spatial Record Compilation"
                     },
                     "nodegroup_id": "64be0917-3ee5-11eb-a36b-f875a44e0e11",
-                    "sortorder": null,
+                    "sortorder": 0,
                     "visible": true
                 },
                 {
@@ -299,20 +257,20 @@
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Capture Scale"
                     },
                     "nodegroup_id": "64be2fd5-3ee5-11eb-880e-f875a44e0e11",
-                    "sortorder": null,
+                    "sortorder": 3,
                     "visible": true
                 },
                 {
@@ -326,20 +284,20 @@
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Spatial Record Update"
                     },
                     "nodegroup_id": "64be2fd8-3ee5-11eb-94b5-f875a44e0e11",
-                    "sortorder": null,
+                    "sortorder": 1,
                     "visible": true
                 },
                 {
@@ -383,15 +341,15 @@
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Geometry"
                     },
@@ -410,20 +368,20 @@
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Spatial Metadata Descriptions"
                     },
                     "nodegroup_id": "64be2fde-3ee5-11eb-9d0c-f875a44e0e11",
-                    "sortorder": null,
+                    "sortorder": 7,
                     "visible": true
                 },
                 {
@@ -437,20 +395,20 @@
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Current Base Map"
                     },
                     "nodegroup_id": "64be2fe1-3ee5-11eb-a44b-f875a44e0e11",
-                    "sortorder": null,
+                    "sortorder": 5,
                     "visible": true
                 },
                 {
@@ -464,20 +422,20 @@
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Spatial Accuracy Qualifier"
                     },
                     "nodegroup_id": "64be2fe4-3ee5-11eb-9634-f875a44e0e11",
-                    "sortorder": null,
+                    "sortorder": 6,
                     "visible": true
                 },
                 {
@@ -504,7 +462,7 @@
                         "en": "Addresses"
                     },
                     "nodegroup_id": "68a0374d-ee29-11eb-add7-a87eeabdefba",
-                    "sortorder": 5,
+                    "sortorder": 4,
                     "visible": true
                 },
                 {
@@ -512,28 +470,21 @@
                     "cardid": "8a7fd821-ee34-11eb-a001-a87eeabdefba",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "8a7fd821-ee34-11eb-a001-a87eeabdefba",
-                            "constraintid": "dbf78acf-bb98-45d1-82dc-227d717a4ec9",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "External Cross References"
                     },
@@ -546,28 +497,21 @@
                     "cardid": "8dca12b1-edeb-11eb-a6e2-a87eeabdefba",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "8dca12b1-edeb-11eb-a6e2-a87eeabdefba",
-                            "constraintid": "f61f6c71-b39d-407d-afab-4b832db74907",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "System Reference Numbers"
                     },
@@ -580,23 +524,16 @@
                     "cardid": "93163dc9-12e8-11eb-80bb-f875a44e0e11",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "93163dc9-12e8-11eb-80bb-f875a44e0e11",
-                            "constraintid": "4e493b1a-875f-470d-9e0d-ae01cc0e169c",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
                         "en": "Records the type of the resource model for interoperability purposes only."
@@ -614,26 +551,19 @@
                     "cardid": "94f78437-f119-11eb-a0f0-a87eeabdefba",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "94f78437-f119-11eb-a0f0-a87eeabdefba",
-                            "constraintid": "eeb22e1b-e10a-4964-805d-98e1fa0270bf",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
@@ -657,28 +587,21 @@
                         "selectText": "",
                         "zoom": "9"
                     },
-                    "constraints": [
-                        {
-                            "card_id": "a4a816e5-efa9-11eb-9441-a87eeabdefba",
-                            "constraintid": "e406f75f-7016-4e5a-b421-d2d04509e710",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
                         "en": "Use to record any designation or protection regimes directly associated with the application area."
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Designation and Protection Assignment"
                     },
@@ -691,14 +614,7 @@
                     "cardid": "b334ddde-4e87-11eb-ab31-f875a44e0e11",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "b334ddde-4e87-11eb-ab31-f875a44e0e11",
-                            "constraintid": "0b7db144-d8db-4545-ad33-c1a082cff1f5",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
@@ -710,7 +626,7 @@
                         "en": "Chronological guide for recording sites and monuments (Periods List)"
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
@@ -725,28 +641,21 @@
                     "cardid": "c34e0739-1863-11eb-8f9b-f875a44e0e11",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "c34e0739-1863-11eb-8f9b-f875a44e0e11",
-                            "constraintid": "e83d618e-d7d5-41ff-9368-fa8a5e37ab95",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Associated People and Organizations"
                     },
@@ -759,26 +668,19 @@
                     "cardid": "c7a42db9-51b1-11eb-b503-f875a44e0e11",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "c7a42db9-51b1-11eb-b503-f875a44e0e11",
-                            "constraintid": "92eaa809-ae44-47b5-a827-a6e33b1c051b",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
@@ -793,32 +695,19 @@
                     "cardid": "c9628180-12e8-11eb-a97d-f875a44e0e11",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "c9628180-12e8-11eb-a97d-f875a44e0e11",
-                            "constraintid": "bea9b500-fff3-42e9-aff1-65a0aa389e9c",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        },
-                        {
-                            "card_id": "c9628180-12e8-11eb-a97d-f875a44e0e11",
-                            "constraintid": "ab41ba15-dc46-443a-9857-17edf5b1c6fa",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": null,
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
@@ -839,15 +728,15 @@
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Location Descriptions"
                     },
@@ -868,20 +757,20 @@
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
                         "en": "National Grid references, map names, and other common location identifiers for the resource"
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "National Grid References"
                     },
                     "nodegroup_id": "d17a5386-28cd-11eb-972b-f875a44e0e11",
-                    "sortorder": 5,
+                    "sortorder": 1,
                     "visible": true
                 },
                 {
@@ -895,20 +784,20 @@
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Area Assignments"
                     },
                     "nodegroup_id": "d17a5389-28cd-11eb-9670-f875a44e0e11",
-                    "sortorder": 12,
+                    "sortorder": 5,
                     "visible": true
                 },
                 {
@@ -924,20 +813,20 @@
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
                         "en": "Administrative, geopolitical areas, localities, and other areas (e.g.: Research or zoning areas)  "
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Localities/Administrative Areas"
                     },
                     "nodegroup_id": "d17a538c-28cd-11eb-bb61-f875a44e0e11",
-                    "sortorder": 4,
+                    "sortorder": 2,
                     "visible": true
                 },
                 {
@@ -951,15 +840,15 @@
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Location Data"
                     },
@@ -980,20 +869,20 @@
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Land Use Classification Assignment"
                     },
                     "nodegroup_id": "d17a5392-28cd-11eb-9b38-f875a44e0e11",
-                    "sortorder": null,
+                    "sortorder": 6,
                     "visible": true
                 },
                 {
@@ -1001,26 +890,19 @@
                     "cardid": "e35a3470-1863-11eb-b6e1-f875a44e0e11",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "e35a3470-1863-11eb-b6e1-f875a44e0e11",
-                            "constraintid": "2f4df9a0-2a38-4007-a673-eb750be5de5b",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
@@ -1035,26 +917,19 @@
                     "cardid": "ed6c28b9-1861-11eb-bca1-f875a44e0e11",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "ed6c28b9-1861-11eb-bca1-f875a44e0e11",
-                            "constraintid": "2e7b867d-3dc8-437a-a793-6fa9bcd9b42d",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
@@ -1069,23 +944,16 @@
                     "cardid": "ee9f3f46-efab-11eb-9579-a87eeabdefba",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "ee9f3f46-efab-11eb-9579-a87eeabdefba",
-                            "constraintid": "54737661-838a-44f7-84e5-3d79c858283e",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
                         "en": "Summary of the data relating to the creation and amendment of the record."
@@ -1103,28 +971,21 @@
                     "cardid": "f3cc1683-185b-11eb-ae09-f875a44e0e11",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "f3cc1683-185b-11eb-ae09-f875a44e0e11",
-                            "constraintid": "23b5fe46-2f0a-44b4-bec3-566832623dbc",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Descriptions"
                     },
@@ -1137,14 +998,7 @@
                     "cardid": "f45dbbe5-80b7-11ea-9d39-f875a44e0e11",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "f45dbbe5-80b7-11ea-9d39-f875a44e0e11",
-                            "constraintid": "a447df4a-2206-4aca-be89-51b4c9613339",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": {
                         "en": "The name of a resource.Applies to Heritage Resource, Heritage Resource Group, Activity, and Historical Event.  Actors receive their 'names' from the Appellation branch."
@@ -1152,15 +1006,15 @@
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
                         "en": "Enter the resource name and its respective type."
                     },
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": {
                         "en": "Area Names"
                     },
@@ -1353,14 +1207,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Associated Monument, Area or Artefact (Mandatory)",
+                        "label": "Associated Monument, Area or Artefact",
                         "placeholder": {
                             "en": "Add new Relationship"
                         }
                     },
                     "id": "12e7c589-1864-11eb-8bbc-f875a44e0e11",
                     "label": {
-                        "en": "Associated Monument, Area or Artefact (Mandatory)"
+                        "en": "Associated Monument, Area or Artefact"
                     },
                     "node_id": "12e7c588-1864-11eb-ad10-f875a44e0e11",
                     "sortorder": 0,
@@ -1374,7 +1228,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Association Type (Required)",
+                        "label": "Association Type",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -1382,7 +1236,7 @@
                     },
                     "id": "12e7c58a-1864-11eb-a0c4-f875a44e0e11",
                     "label": {
-                        "en": "Association Type (Required)"
+                        "en": "Association Type"
                     },
                     "node_id": "12e7c586-1864-11eb-a0b3-f875a44e0e11",
                     "sortorder": 1,
@@ -1709,14 +1563,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Bibliographic Source (Mandatory)",
+                        "label": "Bibliographic Source",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "1c26049c-efaa-11eb-bb2d-a87eeabdefba",
                     "label": {
-                        "en": "Bibliographic Source (Mandatory)"
+                        "en": "Bibliographic Source"
                     },
                     "node_id": "1c25ee13-efaa-11eb-ba76-a87eeabdefba",
                     "sortorder": 0,
@@ -1735,7 +1589,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Source Number (Required)",
+                        "label": "Source Number",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -1745,7 +1599,7 @@
                     },
                     "id": "1c26049d-efaa-11eb-acf9-a87eeabdefba",
                     "label": {
-                        "en": "Source Number (Required)"
+                        "en": "Source Number"
                     },
                     "node_id": "1c260498-efaa-11eb-92dd-a87eeabdefba",
                     "sortorder": 1,
@@ -2011,12 +1865,12 @@
                 {
                     "card_id": "d17a5388-28cd-11eb-a9a7-f875a44e0e11",
                     "config": {
-                        "label": "National Grid Reference (Mandatory)",
+                        "label": "National Grid Reference",
                         "placeholder": "Enter the centre point map reference of the resource."
                     },
                     "id": "2032dfb7-efdd-11eb-b6b4-a87eeabdefba",
                     "label": {
-                        "en": "National Grid Reference (Mandatory)"
+                        "en": "National Grid Reference"
                     },
                     "node_id": "d17a7abb-28cd-11eb-81f8-f875a44e0e11",
                     "sortorder": null,
@@ -2030,14 +1884,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Digital File(s) (Mandatory)",
+                        "label": "Digital File(s)",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "22748134-51b2-11eb-a4f6-f875a44e0e11",
                     "label": {
-                        "en": "Digital File(s) (Mandatory)"
+                        "en": "Digital File(s)"
                     },
                     "node_id": "22748131-51b2-11eb-9840-f875a44e0e11",
                     "sortorder": 0,
@@ -2078,7 +1932,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Caption (Mandatory)",
+                        "label": "Caption",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -2088,7 +1942,7 @@
                     },
                     "id": "3202cb9d-1865-11eb-a2e9-f875a44e0e11",
                     "label": {
-                        "en": "Caption (Mandatory)"
+                        "en": "Caption"
                     },
                     "node_id": "3202cb92-1865-11eb-bb94-f875a44e0e11",
                     "sortorder": 1,
@@ -2208,14 +2062,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Copyright Holder (Mandatory)",
+                        "label": "Copyright Holder",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "3202f2d5-1865-11eb-a9ab-f875a44e0e11",
                     "label": {
-                        "en": "Copyright Holder (Mandatory)"
+                        "en": "Copyright Holder"
                     },
                     "node_id": "3202cb97-1865-11eb-8c51-f875a44e0e11",
                     "sortorder": 4,
@@ -2229,7 +2083,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Copyright Type (Mandatory)",
+                        "label": "Copyright Type",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -2237,7 +2091,7 @@
                     },
                     "id": "3202f2d6-1865-11eb-8d0c-f875a44e0e11",
                     "label": {
-                        "en": "Copyright Type (Mandatory)"
+                        "en": "Copyright Type"
                     },
                     "node_id": "3202cb98-1865-11eb-a7a2-f875a44e0e11",
                     "sortorder": 5,
@@ -2291,7 +2145,7 @@
                         "en": "Construction Phase Date Qualifier"
                     },
                     "node_id": "6c2b6c22-4e8a-11eb-82fe-f875a44e0e11",
-                    "sortorder": 5,
+                    "sortorder": 7,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -2313,7 +2167,7 @@
                         "en": "Construction Phase Date Qualifier Metatype"
                     },
                     "node_id": "6c2b6c1e-4e8a-11eb-944b-f875a44e0e11",
-                    "sortorder": 6,
+                    "sortorder": 8,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -2324,17 +2178,17 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Construction Phase End Date (Mandatory)",
+                        "label": "Construction Phase End Date",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "5fd08f99-4e8b-11eb-b26d-f875a44e0e11",
                     "label": {
-                        "en": "Construction Phase End Date (Mandatory)"
+                        "en": "Construction Phase End Date"
                     },
                     "node_id": "6c2b6c21-4e8a-11eb-95d9-f875a44e0e11",
-                    "sortorder": 4,
+                    "sortorder": 6,
                     "visible": true,
                     "widget_id": "adfd15ce-dbab-11e7-86d1-0fcf08612b27"
                 },
@@ -2345,17 +2199,17 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Construction Phase Start Date (Mandatory)",
+                        "label": "Construction Phase Start Date",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "5fd23d3b-4e8b-11eb-8ea8-f875a44e0e11",
                     "label": {
-                        "en": "Construction Phase Start Date (Mandatory)"
+                        "en": "Construction Phase Start Date"
                     },
                     "node_id": "6c2b6c20-4e8a-11eb-bd7f-f875a44e0e11",
-                    "sortorder": 3,
+                    "sortorder": 5,
                     "visible": true,
                     "widget_id": "adfd15ce-dbab-11e7-86d1-0fcf08612b27"
                 },
@@ -2384,7 +2238,7 @@
                         "en": "Construction Phase Display Date"
                     },
                     "node_id": "6c2b6c1f-4e8a-11eb-bc8b-f875a44e0e11",
-                    "sortorder": 7,
+                    "sortorder": 9,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 },
@@ -2468,7 +2322,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Feature Shape (Mandatory)",
+                        "label": "Feature Shape",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -2476,7 +2330,7 @@
                     },
                     "id": "64be7e16-3ee5-11eb-a37d-f875a44e0e11",
                     "label": {
-                        "en": "Feature Shape (Mandatory)"
+                        "en": "Feature Shape"
                     },
                     "node_id": "64be7e02-3ee5-11eb-8ff0-f875a44e0e11",
                     "sortorder": 2,
@@ -2495,7 +2349,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Compiler Name (Mandatory)",
+                        "label": "Compiler Name",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -2505,7 +2359,7 @@
                     },
                     "id": "64be7e17-3ee5-11eb-9474-f875a44e0e11",
                     "label": {
-                        "en": "Compiler Name (Mandatory)"
+                        "en": "Compiler Name"
                     },
                     "node_id": "64be7df6-3ee5-11eb-bc25-f875a44e0e11",
                     "sortorder": 0,
@@ -2952,7 +2806,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Capture Scale (Mandatory)",
+                        "label": "Capture Scale",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -2960,7 +2814,7 @@
                     },
                     "id": "64bea505-3ee5-11eb-995e-f875a44e0e11",
                     "label": {
-                        "en": "Capture Scale (Mandatory)"
+                        "en": "Capture Scale"
                     },
                     "node_id": "64be2fd5-3ee5-11eb-880e-f875a44e0e11",
                     "sortorder": 27,
@@ -3283,7 +3137,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Updater Name (Mandatory)",
+                        "label": "Updater Name",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -3293,7 +3147,7 @@
                     },
                     "id": "64bea514-3ee5-11eb-8525-f875a44e0e11",
                     "label": {
-                        "en": "Updater Name (Mandatory)"
+                        "en": "Updater Name"
                     },
                     "node_id": "64be56dc-3ee5-11eb-ae91-f875a44e0e11",
                     "sortorder": 0,
@@ -3506,7 +3360,7 @@
                     "config": {
                         "dateFormat": "YYYY-MM-DD",
                         "defaultValue": null,
-                        "label": "Date of Compilation (Mandatory)",
+                        "label": "Date of Compilation",
                         "maxDate": null,
                         "minDate": null,
                         "placeholder": "Enter date",
@@ -3514,7 +3368,7 @@
                     },
                     "id": "64bea51d-3ee5-11eb-aa7e-f875a44e0e11",
                     "label": {
-                        "en": "Date of Compilation (Mandatory)"
+                        "en": "Date of Compilation"
                     },
                     "node_id": "64be7dfd-3ee5-11eb-8a95-f875a44e0e11",
                     "sortorder": 7,
@@ -3744,7 +3598,7 @@
                     "config": {
                         "dateFormat": "YYYY-MM-DD",
                         "defaultValue": null,
-                        "label": "Date of Last Update (Mandatory)",
+                        "label": "Date of Last Update",
                         "maxDate": null,
                         "minDate": null,
                         "placeholder": "Enter date",
@@ -3752,7 +3606,7 @@
                     },
                     "id": "64bea528-3ee5-11eb-9bd9-f875a44e0e11",
                     "label": {
-                        "en": "Date of Last Update (Mandatory)"
+                        "en": "Date of Last Update"
                     },
                     "node_id": "64be56df-3ee5-11eb-9be0-f875a44e0e11",
                     "sortorder": 7,
@@ -4752,9 +4606,14 @@
                     "card_id": "8dca12b1-edeb-11eb-a6e2-a87eeabdefba",
                     "config": {
                         "defaultValue": null,
+                        "i18n_properties": [
+                            "placeholder"
+                        ],
                         "label": "ResourceID",
                         "maxLength": null,
-                        "placeholder": null,
+                        "placeholder": {
+                            "en": null
+                        },
                         "uneditable": false,
                         "width": "100%"
                     },
@@ -4794,14 +4653,25 @@
                     "config": {
                         "defaultValue": "",
                         "format": "",
+                        "i18n_properties": [
+                            "placeholder",
+                            "prefix",
+                            "suffix"
+                        ],
                         "label": "Primary Reference Number",
                         "max": "",
                         "min": "",
-                        "placeholder": "Enter number",
+                        "placeholder": {
+                            "en": "Enter number"
+                        },
                         "precision": "",
-                        "prefix": "",
+                        "prefix": {
+                            "en": ""
+                        },
                         "step": "",
-                        "suffix": "",
+                        "suffix": {
+                            "en": ""
+                        },
                         "uneditable": false,
                         "width": "100%"
                     },
@@ -4884,9 +4754,14 @@
                     "card_id": "8dca12b1-edeb-11eb-a6e2-a87eeabdefba",
                     "config": {
                         "defaultValue": "",
+                        "i18n_properties": [
+                            "placeholder"
+                        ],
                         "label": "LegacyID",
                         "maxLength": null,
-                        "placeholder": "Enter text",
+                        "placeholder": {
+                            "en": "Enter text"
+                        },
                         "uneditable": false,
                         "width": "100%"
                     },
@@ -5098,6 +4973,7 @@
                         "placeholder": {
                             "en": "Enter text"
                         },
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "94f79aac-f119-11eb-b4bd-a87eeabdefba",
@@ -5150,7 +5026,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Laboratory Reference (Mandatory)",
+                        "label": "Laboratory Reference",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -5160,7 +5036,7 @@
                     },
                     "id": "94f79aae-f119-11eb-87f4-a87eeabdefba",
                     "label": {
-                        "en": "Laboratory Reference (Mandatory)"
+                        "en": "Laboratory Reference"
                     },
                     "node_id": "94f79a94-f119-11eb-b2bb-a87eeabdefba",
                     "sortorder": 13,
@@ -5196,14 +5072,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Scientific Date End Date (Mandatory)",
+                        "label": "Scientific Date End Date",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "94f79ab0-f119-11eb-873e-a87eeabdefba",
                     "label": {
-                        "en": "Scientific Date End Date (Mandatory)"
+                        "en": "Scientific Date End Date"
                     },
                     "node_id": "94f79a97-f119-11eb-a523-a87eeabdefba",
                     "sortorder": 4,
@@ -5259,7 +5135,7 @@
                     "config": {
                         "dateFormat": "YYYY-MM-DD",
                         "defaultValue": "",
-                        "label": "When Determined Start Date (Mandatory)",
+                        "label": "When Determined Start Date",
                         "maxDate": false,
                         "minDate": false,
                         "placeholder": "Enter date",
@@ -5267,7 +5143,7 @@
                     },
                     "id": "94f7aea5-f119-11eb-81da-a87eeabdefba",
                     "label": {
-                        "en": "When Determined Start Date (Mandatory)"
+                        "en": "When Determined Start Date"
                     },
                     "node_id": "94f79aa9-f119-11eb-ac96-a87eeabdefba",
                     "sortorder": 16,
@@ -5347,14 +5223,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Associated Construction Phase (Mandatory)",
+                        "label": "Associated Construction Phase",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "94f7aea9-f119-11eb-aac4-a87eeabdefba",
                     "label": {
-                        "en": "Associated Construction Phase (Mandatory)"
+                        "en": "Associated Construction Phase"
                     },
                     "node_id": "94f79aab-f119-11eb-958f-a87eeabdefba",
                     "sortorder": 0,
@@ -5410,7 +5286,7 @@
                     "config": {
                         "dateFormat": "YYYY-MM-DD",
                         "defaultValue": "",
-                        "label": "When Determined End Date (Mandatory)",
+                        "label": "When Determined End Date",
                         "maxDate": false,
                         "minDate": false,
                         "placeholder": "Enter date",
@@ -5418,7 +5294,7 @@
                     },
                     "id": "94f7b11c-f119-11eb-9082-a87eeabdefba",
                     "label": {
-                        "en": "When Determined End Date (Mandatory)"
+                        "en": "When Determined End Date"
                     },
                     "node_id": "94f79a9c-f119-11eb-b5fa-a87eeabdefba",
                     "sortorder": 17,
@@ -5498,7 +5374,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Dating Method (Mandatory)",
+                        "label": "Dating Method",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -5506,7 +5382,7 @@
                     },
                     "id": "94f7b120-f119-11eb-a413-a87eeabdefba",
                     "label": {
-                        "en": "Dating Method (Mandatory)"
+                        "en": "Dating Method"
                     },
                     "node_id": "94f79a9f-f119-11eb-a567-a87eeabdefba",
                     "sortorder": 1,
@@ -5520,7 +5396,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Scientific Date Qualifier (Mandatory)",
+                        "label": "Scientific Date Qualifier",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -5528,7 +5404,7 @@
                     },
                     "id": "94f7b121-f119-11eb-b005-a87eeabdefba",
                     "label": {
-                        "en": "Scientific Date Qualifier (Mandatory)"
+                        "en": "Scientific Date Qualifier"
                     },
                     "node_id": "94f79a95-f119-11eb-8ef5-a87eeabdefba",
                     "sortorder": 5,
@@ -5564,14 +5440,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Scientific Date Start Date (Mandatory)",
+                        "label": "Scientific Date Start Date",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "94f7b123-f119-11eb-8cf9-a87eeabdefba",
                     "label": {
-                        "en": "Scientific Date Start Date (Mandatory)"
+                        "en": "Scientific Date Start Date"
                     },
                     "node_id": "94f79a98-f119-11eb-a564-a87eeabdefba",
                     "sortorder": 3,
@@ -5585,7 +5461,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "When Determined Date Qualifier (Mandatory)",
+                        "label": "When Determined Date Qualifier",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -5593,7 +5469,7 @@
                     },
                     "id": "94f7b124-f119-11eb-9187-a87eeabdefba",
                     "label": {
-                        "en": "When Determined Date Qualifier (Mandatory)"
+                        "en": "When Determined Date Qualifier"
                     },
                     "node_id": "94f79a93-f119-11eb-a945-a87eeabdefba",
                     "sortorder": 18,
@@ -5639,6 +5515,7 @@
                         "placeholder": {
                             "en": "Enter text"
                         },
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "94f7b126-f119-11eb-9926-a87eeabdefba",
@@ -5689,7 +5566,7 @@
                         "en": "Confidence of Dating Metatype"
                     },
                     "node_id": "f5711baa-4e8a-11eb-b98a-f875a44e0e11",
-                    "sortorder": 9,
+                    "sortorder": 11,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -5745,7 +5622,7 @@
                         "en": "Confidence of Dating"
                     },
                     "node_id": "f5711ba7-4e8a-11eb-97c3-f875a44e0e11",
-                    "sortorder": 8,
+                    "sortorder": 10,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000009"
                 },
@@ -5823,7 +5700,7 @@
                     "config": {
                         "dateFormat": "YYYY-MM-DD",
                         "defaultValue": null,
-                        "label": "Designation Amendment Date (Mandatory)",
+                        "label": "Designation Amendment Date",
                         "maxDate": null,
                         "minDate": null,
                         "placeholder": "Enter date",
@@ -5831,7 +5708,7 @@
                     },
                     "id": "a4a82c0b-efa9-11eb-ba01-a87eeabdefba",
                     "label": {
-                        "en": "Designation Amendment Date (Mandatory)"
+                        "en": "Designation Amendment Date"
                     },
                     "node_id": "a4a816e7-efa9-11eb-a160-a87eeabdefba",
                     "sortorder": 15,
@@ -5864,7 +5741,7 @@
                     "config": {
                         "dateFormat": "YYYY-MM-DD",
                         "defaultValue": "",
-                        "label": "Designation Start Date (Mandatory)",
+                        "label": "Designation Start Date",
                         "maxDate": false,
                         "minDate": false,
                         "placeholder": "Enter date",
@@ -5872,7 +5749,7 @@
                     },
                     "id": "a4a82c0d-efa9-11eb-8637-a87eeabdefba",
                     "label": {
-                        "en": "Designation Start Date (Mandatory)"
+                        "en": "Designation Start Date"
                     },
                     "node_id": "a4a816f5-efa9-11eb-94fc-a87eeabdefba",
                     "sortorder": 12,
@@ -5930,7 +5807,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Grade (Mandatory)",
+                        "label": "Grade",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -5938,7 +5815,7 @@
                     },
                     "id": "a4a82c10-efa9-11eb-bf83-a87eeabdefba",
                     "label": {
-                        "en": "Grade (Mandatory)"
+                        "en": "Grade"
                     },
                     "node_id": "a4a816f0-efa9-11eb-969d-a87eeabdefba",
                     "sortorder": 8,
@@ -6025,7 +5902,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Designation Name Use Type (Mandatory)",
+                        "label": "Designation Name Use Type",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -6033,7 +5910,7 @@
                     },
                     "id": "a4a82c14-efa9-11eb-b118-a87eeabdefba",
                     "label": {
-                        "en": "Designation Name Use Type (Mandatory)"
+                        "en": "Designation Name Use Type"
                     },
                     "node_id": "a4a816f1-efa9-11eb-9f4a-a87eeabdefba",
                     "sortorder": 4,
@@ -6047,7 +5924,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Designation or Protection Type (Mandatory)",
+                        "label": "Designation or Protection Type",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -6055,7 +5932,7 @@
                     },
                     "id": "a4a82c15-efa9-11eb-84e8-a87eeabdefba",
                     "label": {
-                        "en": "Designation or Protection Type (Mandatory)"
+                        "en": "Designation or Protection Type"
                     },
                     "node_id": "a4a816e6-efa9-11eb-b0de-a87eeabdefba",
                     "sortorder": 6,
@@ -6096,7 +5973,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Designation Name (Mandatory)",
+                        "label": "Designation Name",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -6106,7 +5983,7 @@
                     },
                     "id": "a4a82c17-efa9-11eb-8159-a87eeabdefba",
                     "label": {
-                        "en": "Designation Name (Mandatory)"
+                        "en": "Designation Name"
                     },
                     "node_id": "a4a816f8-efa9-11eb-a2d1-a87eeabdefba",
                     "sortorder": 0,
@@ -6118,7 +5995,7 @@
                     "config": {
                         "dateFormat": "YYYY-MM-DD",
                         "defaultValue": "",
-                        "label": "Designation End Date (Mandatory)",
+                        "label": "Designation End Date",
                         "maxDate": false,
                         "minDate": false,
                         "placeholder": "Enter date",
@@ -6126,7 +6003,7 @@
                     },
                     "id": "a4a82c18-efa9-11eb-b76a-a87eeabdefba",
                     "label": {
-                        "en": "Designation End Date (Mandatory)"
+                        "en": "Designation End Date"
                     },
                     "node_id": "a4a816fa-efa9-11eb-8dc3-a87eeabdefba",
                     "sortorder": 13,
@@ -6162,7 +6039,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Local Heritage List Criteria Type (Required)",
+                        "label": "Local Heritage List Criteria Type",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -6170,7 +6047,7 @@
                     },
                     "id": "a4a82c1a-efa9-11eb-9fed-a87eeabdefba",
                     "label": {
-                        "en": "Local Heritage List Criteria Type (Required)"
+                        "en": "Local Heritage List Criteria Type"
                     },
                     "node_id": "a4a82b58-efa9-11eb-88ae-a87eeabdefba",
                     "sortorder": 10,
@@ -6239,7 +6116,7 @@
                         "en": "Construction Phase Evidence Metatype"
                     },
                     "node_id": "b334ddef-4e87-11eb-94ea-f875a44e0e11",
-                    "sortorder": 14,
+                    "sortorder": 16,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6261,7 +6138,7 @@
                         "en": "Construction Phase Evidence Type"
                     },
                     "node_id": "b334ddf0-4e87-11eb-9f89-f875a44e0e11",
-                    "sortorder": 13,
+                    "sortorder": 15,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000012"
                 },
@@ -6272,17 +6149,17 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Cultural Period (Mandatory)",
+                        "label": "Cultural Period",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "b3350505-4e87-11eb-be54-f875a44e0e11",
                     "label": {
-                        "en": "Cultural Period (Mandatory)"
+                        "en": "Cultural Period"
                     },
                     "node_id": "b334dde5-4e87-11eb-9576-f875a44e0e11",
-                    "sortorder": 2,
+                    "sortorder": 4,
                     "visible": true,
                     "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
                 },
@@ -6304,7 +6181,7 @@
                         "en": "Construction Method Metatype"
                     },
                     "node_id": "b33504fd-4e87-11eb-bbd5-f875a44e0e11",
-                    "sortorder": 22,
+                    "sortorder": 24,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6315,7 +6192,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Area Type (Mandatory)",
+                        "label": "Area Type",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -6323,7 +6200,7 @@
                     },
                     "id": "b3350508-4e87-11eb-b885-f875a44e0e11",
                     "label": {
-                        "en": "Area Type (Mandatory)"
+                        "en": "Area Type"
                     },
                     "node_id": "b334dde6-4e87-11eb-a67c-f875a44e0e11",
                     "sortorder": 0,
@@ -6369,6 +6246,7 @@
                         "placeholder": {
                             "en": "Enter text"
                         },
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "b335050c-4e87-11eb-8f30-f875a44e0e11",
@@ -6376,7 +6254,7 @@
                         "en": "Phase Description"
                     },
                     "node_id": "b3350500-4e87-11eb-8d87-f875a44e0e11",
-                    "sortorder": 10,
+                    "sortorder": 12,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000005"
                 },
@@ -6398,7 +6276,7 @@
                         "en": "Phase Description Type"
                     },
                     "node_id": "b334dde1-4e87-11eb-9b8a-f875a44e0e11",
-                    "sortorder": 11,
+                    "sortorder": 13,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6420,7 +6298,7 @@
                         "en": "Phase Desctiption Metatype"
                     },
                     "node_id": "b334ddeb-4e87-11eb-80d4-f875a44e0e11",
-                    "sortorder": 12,
+                    "sortorder": 14,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6476,7 +6354,7 @@
                         "en": "Confidence of Interpretation"
                     },
                     "node_id": "b334dddf-4e87-11eb-830e-f875a44e0e11",
-                    "sortorder": 15,
+                    "sortorder": 17,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000009"
                 },
@@ -6498,7 +6376,7 @@
                         "en": "Confidence of Interpretation Metatype"
                     },
                     "node_id": "b334ddea-4e87-11eb-b9a1-f875a44e0e11",
-                    "sortorder": 16,
+                    "sortorder": 18,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6520,7 +6398,7 @@
                         "en": "Main Construction Material"
                     },
                     "node_id": "b334dde8-4e87-11eb-845e-f875a44e0e11",
-                    "sortorder": 17,
+                    "sortorder": 19,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000012"
                 },
@@ -6542,7 +6420,7 @@
                         "en": "Main Construction Material Metatype"
                     },
                     "node_id": "b334dded-4e87-11eb-a39b-f875a44e0e11",
-                    "sortorder": 18,
+                    "sortorder": 20,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6564,7 +6442,7 @@
                         "en": "Covering Material"
                     },
                     "node_id": "b334ddf4-4e87-11eb-87b4-f875a44e0e11",
-                    "sortorder": 19,
+                    "sortorder": 21,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000012"
                 },
@@ -6586,7 +6464,7 @@
                         "en": "Covering Material Metatype"
                     },
                     "node_id": "b334dde9-4e87-11eb-a3fe-f875a44e0e11",
-                    "sortorder": 20,
+                    "sortorder": 22,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6608,7 +6486,7 @@
                         "en": "Construction Method"
                     },
                     "node_id": "b334dde0-4e87-11eb-a30e-f875a44e0e11",
-                    "sortorder": 21,
+                    "sortorder": 23,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6630,7 +6508,7 @@
                         "en": "Construction Technique"
                     },
                     "node_id": "b334ddf2-4e87-11eb-8be7-f875a44e0e11",
-                    "sortorder": 23,
+                    "sortorder": 25,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6652,7 +6530,7 @@
                         "en": "Construction Technique Metatype"
                     },
                     "node_id": "b334ddf3-4e87-11eb-bd7a-f875a44e0e11",
-                    "sortorder": 24,
+                    "sortorder": 26,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6674,7 +6552,7 @@
                         "en": "Construction Phase Type"
                     },
                     "node_id": "b33504fa-4e87-11eb-8c38-f875a44e0e11",
-                    "sortorder": 25,
+                    "sortorder": 2,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6696,7 +6574,7 @@
                         "en": "Construction Phase Metatype"
                     },
                     "node_id": "b33504fb-4e87-11eb-a795-f875a44e0e11",
-                    "sortorder": 26,
+                    "sortorder": 3,
                     "visible": false,
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 },
@@ -6729,14 +6607,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Person or Organization (Mandatory)",
+                        "label": "Person or Organization",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "c34e2e6d-1863-11eb-a45b-f875a44e0e11",
                     "label": {
-                        "en": "Person or Organization (Mandatory)"
+                        "en": "Person or Organization"
                     },
                     "node_id": "c34e073b-1863-11eb-9bdb-f875a44e0e11",
                     "sortorder": 0,
@@ -6750,7 +6628,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Role Type (Mandatory)",
+                        "label": "Role Type",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -6758,7 +6636,7 @@
                     },
                     "id": "c34e2e6e-1863-11eb-b606-f875a44e0e11",
                     "label": {
-                        "en": "Role Type (Mandatory)"
+                        "en": "Role Type"
                     },
                     "node_id": "c34e073c-1863-11eb-a02f-f875a44e0e11",
                     "sortorder": 3,
@@ -6845,7 +6723,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Date Qualifier (Required)",
+                        "label": "Date Qualifier",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -6853,7 +6731,7 @@
                     },
                     "id": "c34e2e72-1863-11eb-9a8d-f875a44e0e11",
                     "label": {
-                        "en": "Date Qualifier (Required)"
+                        "en": "Date Qualifier"
                     },
                     "node_id": "c34e0740-1863-11eb-8846-f875a44e0e11",
                     "sortorder": 8,
@@ -6865,7 +6743,7 @@
                     "config": {
                         "dateFormat": "YYYY-MM-DD",
                         "defaultValue": null,
-                        "label": "Association Start Date (Required)",
+                        "label": "Association Start Date",
                         "maxDate": null,
                         "minDate": null,
                         "placeholder": "Enter date",
@@ -6873,7 +6751,7 @@
                     },
                     "id": "c34e2e73-1863-11eb-bace-f875a44e0e11",
                     "label": {
-                        "en": "Association Start Date (Required)"
+                        "en": "Association Start Date"
                     },
                     "node_id": "c34e2e6a-1863-11eb-95d7-f875a44e0e11",
                     "sortorder": 6,
@@ -6885,7 +6763,7 @@
                     "config": {
                         "dateFormat": "YYYY-MM-DD",
                         "defaultValue": null,
-                        "label": "Association End Date (Required)",
+                        "label": "Association End Date",
                         "maxDate": null,
                         "minDate": null,
                         "placeholder": "Enter date",
@@ -6893,7 +6771,7 @@
                     },
                     "id": "c34e2e74-1863-11eb-9100-f875a44e0e11",
                     "label": {
-                        "en": "Association End Date (Required)"
+                        "en": "Association End Date"
                     },
                     "node_id": "c34e2e6b-1863-11eb-98e2-f875a44e0e11",
                     "sortorder": 7,
@@ -6929,14 +6807,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Consultation (Mandatory)",
+                        "label": "Consultation",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "c7a42dba-51b1-11eb-a7e9-f875a44e0e11",
                     "label": {
-                        "en": "Consultation (Mandatory)"
+                        "en": "Consultation"
                     },
                     "node_id": "c7a42db7-51b1-11eb-b9ac-f875a44e0e11",
                     "sortorder": 0,
@@ -6982,6 +6860,7 @@
                         "placeholder": {
                             "en": "Enter text"
                         },
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "d17aefee-28cd-11eb-a71e-f875a44e0e11",
@@ -7194,7 +7073,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Land Use Classification (Mandatory)",
+                        "label": "Land Use Classification",
                         "options": [],
                         "placeholder": {
                             "en": "Use to record a particular status associated with the Area."
@@ -7202,7 +7081,7 @@
                     },
                     "id": "d17aeff8-28cd-11eb-a8fe-f875a44e0e11",
                     "label": {
-                        "en": "Land Use Classification (Mandatory)"
+                        "en": "Land Use Classification"
                     },
                     "node_id": "d17ac908-28cd-11eb-aafc-f875a44e0e11",
                     "sortorder": 0,
@@ -7292,6 +7171,7 @@
                         "placeholder": {
                             "en": "Enter text"
                         },
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "d17b16de-28cd-11eb-9bff-f875a44e0e11",
@@ -7685,7 +7565,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Area Name (Mandatory)",
+                        "label": "Area Name",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -7693,7 +7573,7 @@
                     },
                     "id": "d17b16f0-28cd-11eb-adb2-f875a44e0e11",
                     "label": {
-                        "en": "Area Name (Mandatory)"
+                        "en": "Area Name"
                     },
                     "node_id": "d17a7ab2-28cd-11eb-8ab9-f875a44e0e11",
                     "sortorder": 0,
@@ -7707,7 +7587,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Area Type (Mandatory)",
+                        "label": "Area Type",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -7715,7 +7595,7 @@
                     },
                     "id": "d17b16f1-28cd-11eb-8a79-f875a44e0e11",
                     "label": {
-                        "en": "Area Type (Mandatory)"
+                        "en": "Area Type"
                     },
                     "node_id": "d17a7aca-28cd-11eb-bf31-f875a44e0e11",
                     "sortorder": 3,
@@ -7839,14 +7719,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Activity (Mandatory)",
+                        "label": "Activity",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "e35a3471-1863-11eb-afee-f875a44e0e11",
                     "label": {
-                        "en": "Activity (Mandatory)"
+                        "en": "Activity"
                     },
                     "node_id": "e35a0d5d-1863-11eb-aa4d-f875a44e0e11",
                     "sortorder": null,
@@ -7870,6 +7750,7 @@
                         "placeholder": {
                             "en": "Enter text"
                         },
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "ed6c28ca-1861-11eb-b8b0-f875a44e0e11",
@@ -7888,7 +7769,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Use Phase Date Qualifier (Mandatory)",
+                        "label": "Use Phase Date Qualifier",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -7896,7 +7777,7 @@
                     },
                     "id": "ed6c28cb-1861-11eb-9993-f875a44e0e11",
                     "label": {
-                        "en": "Use Phase Date Qualifier (Mandatory)"
+                        "en": "Use Phase Date Qualifier"
                     },
                     "node_id": "ed6c28c5-1861-11eb-8dbe-f875a44e0e11",
                     "sortorder": 4,
@@ -7961,7 +7842,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Functional Type (Mandatory)",
+                        "label": "Functional Type",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -7969,7 +7850,7 @@
                     },
                     "id": "ed6c28ce-1861-11eb-8190-f875a44e0e11",
                     "label": {
-                        "en": "Functional Type (Mandatory)"
+                        "en": "Functional Type"
                     },
                     "node_id": "ed6c28c2-1861-11eb-9f92-f875a44e0e11",
                     "sortorder": 6,
@@ -8071,7 +7952,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Evidence Type (Mandatory)",
+                        "label": "Evidence Type",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -8079,7 +7960,7 @@
                     },
                     "id": "ed6c28d3-1861-11eb-9485-f875a44e0e11",
                     "label": {
-                        "en": "Evidence Type (Mandatory)"
+                        "en": "Evidence Type"
                     },
                     "node_id": "ed6c28c8-1861-11eb-8f34-f875a44e0e11",
                     "sortorder": 8,
@@ -8093,14 +7974,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Use Phase Start Date (Mandatory)",
+                        "label": "Use Phase Start Date",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "ed6c28d4-1861-11eb-a057-f875a44e0e11",
                     "label": {
-                        "en": "Use Phase Start Date (Mandatory)"
+                        "en": "Use Phase Start Date"
                     },
                     "node_id": "ed6c28be-1861-11eb-bd76-f875a44e0e11",
                     "sortorder": 1,
@@ -8114,14 +7995,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Use Phase Period (Mandatory)",
+                        "label": "Use Phase Period",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "ed6c28d5-1861-11eb-a1f5-f875a44e0e11",
                     "label": {
-                        "en": "Use Phase Period (Mandatory)"
+                        "en": "Use Phase Period"
                     },
                     "node_id": "ed6c28c3-1861-11eb-9f6e-f875a44e0e11",
                     "sortorder": 0,
@@ -8135,14 +8016,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Use Phase End Date (Mandatory)",
+                        "label": "Use Phase End Date",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "ed6c28d6-1861-11eb-bd35-f875a44e0e11",
                     "label": {
-                        "en": "Use Phase End Date (Mandatory)"
+                        "en": "Use Phase End Date"
                     },
                     "node_id": "ed6c28c0-1861-11eb-a85e-f875a44e0e11",
                     "sortorder": 2,
@@ -8450,6 +8331,7 @@
                         "placeholder": {
                             "en": "Enter text"
                         },
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "ee9f53f1-efab-11eb-b9ce-a87eeabdefba",
@@ -8833,16 +8715,17 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Description (Mandatory)",
+                        "label": "Description",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
                         },
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "f3cc3db7-185b-11eb-8338-f875a44e0e11",
                     "label": {
-                        "en": "Description (Mandatory)"
+                        "en": "Description"
                     },
                     "node_id": "f3cc1684-185b-11eb-9a07-f875a44e0e11",
                     "sortorder": 1,
@@ -8875,9 +8758,14 @@
                     "card_id": "f45dbbe5-80b7-11ea-9d39-f875a44e0e11",
                     "config": {
                         "defaultValue": "",
+                        "i18n_properties": [
+                            "placeholder"
+                        ],
                         "label": "Name",
                         "maxLength": null,
-                        "placeholder": "Enter text",
+                        "placeholder": {
+                            "en": "Enter text"
+                        },
                         "uneditable": false,
                         "width": "100%"
                     },
@@ -8902,7 +8790,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Area Name (Mandatory)",
+                        "label": "Area Name",
                         "maxLength": null,
                         "placeholder": {
                             "en": "Enter text"
@@ -8912,7 +8800,7 @@
                     },
                     "id": "f45dbbea-80b7-11ea-8e7a-f875a44e0e11",
                     "label": {
-                        "en": "Area Name (Mandatory)"
+                        "en": "Area Name"
                     },
                     "node_id": "f45dbbe8-80b7-11ea-b325-f875a44e0e11",
                     "sortorder": 0,
@@ -8970,14 +8858,14 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "Parent Area (Required)",
+                        "label": "Parent Area",
                         "placeholder": {
                             "en": ""
                         }
                     },
                     "id": "f5078bc1-f119-11eb-8b7f-a87eeabdefba",
                     "label": {
-                        "en": "Parent Area (Required)"
+                        "en": "Parent Area"
                     },
                     "node_id": "c961971c-12e8-11eb-96c5-f875a44e0e11",
                     "sortorder": 0,
@@ -12891,12 +12779,12 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
-                    "id": "96ecd530-40fa-11ee-bca0-0242ac130008"
+                    "id": "956f09e6-d280-4657-ab2f-80785df42ddf"
                 }
             ],
             "graphid": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
             "iconclass": "fa fa-map-marker",
-            "is_editable": false,
+            "is_editable": true,
             "isresource": true,
             "jsonldcontext": null,
             "name": {
@@ -20597,7 +20485,9 @@
                 },
                 {
                     "alias": "national_grid_reference",
-                    "config": {},
+                    "config": {
+                        "en": ""
+                    },
                     "datatype": "bngcentrepoint",
                     "description": null,
                     "exportable": true,
@@ -20827,10 +20717,10 @@
                         },
                         "options": [
                             {
-                                "id": "3620365b-6294-4356-93c0-52f53a2e4a49",
+                                "id": "d2d9a694-f6b0-4a41-9331-25a1d77ee1da",
                                 "selected": false,
                                 "text": {
-                                    "en": "Low"
+                                    "en": "High"
                                 }
                             },
                             {
@@ -20841,10 +20731,10 @@
                                 }
                             },
                             {
-                                "id": "d2d9a694-f6b0-4a41-9331-25a1d77ee1da",
+                                "id": "3620365b-6294-4356-93c0-52f53a2e4a49",
                                 "selected": false,
                                 "text": {
-                                    "en": "High"
+                                    "en": "Low"
                                 }
                             }
                         ]
@@ -21227,10 +21117,10 @@
                         },
                         "options": [
                             {
-                                "id": "f2e9e1b9-8493-4f43-9f49-b6c3ce8be8d9",
+                                "id": "91c9d738-2306-4f87-8300-0facfa417f0e",
                                 "selected": false,
                                 "text": {
-                                    "en": "Public"
+                                    "en": "State"
                                 }
                             },
                             {
@@ -21241,10 +21131,10 @@
                                 }
                             },
                             {
-                                "id": "91c9d738-2306-4f87-8300-0facfa417f0e",
+                                "id": "f2e9e1b9-8493-4f43-9f49-b6c3ce8be8d9",
                                 "selected": false,
                                 "text": {
-                                    "en": "State"
+                                    "en": "Public"
                                 }
                             }
                         ]
@@ -22954,8 +22844,8 @@
             "publication": {
                 "graph_id": "979aaf0b-7042-11ea-9674-287fcf6a5e72",
                 "notes": null,
-                "publicationid": "b4d58b8c-ccf0-11ee-8a65-0242ac130003",
-                "published_time": "2024-02-16T11:27:49.317"
+                "publicationid": "d186c3ae-2ee3-11ef-9bd4-0242ac130006",
+                "published_time": "2024-06-20T10:02:27.949"
             },
             "relatable_resource_model_ids": [],
             "resource_2_resource_constraints": [],
@@ -22986,5 +22876,11 @@
             "template_id": "c6f163ca-3ca5-4c50-b398-bee406fe059d",
             "version": ""
         }
-    ]
+    ],
+    "metadata": {
+        "db": "PostgreSQL 14.5 (Debian 14.5-1.pgdg110+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit",
+        "git hash": "32a7ce75e 2024-06-14 08:59:44 +0000",
+        "os": "Linux",
+        "os version": "5.15.153.1-microsoft-standard-WSL2"
+    }
 }
