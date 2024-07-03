@@ -38,7 +38,6 @@ services:
       container_name: elasticsearch-archesher
       image: elasticsearch:8.10.4
       volumes:
-        #- ../../../elasticsearch_data_arches_her:/usr/share/elasticsearch/data
         - ../../../arches_her-elasticsearch-data:/usr/share/elasticsearch/data
       ports:
         - "9201:9200"

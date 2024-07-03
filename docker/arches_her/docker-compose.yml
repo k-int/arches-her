@@ -2,14 +2,12 @@ version: '3.8'
 services:
   archesher:
     container_name: archesher
-    image: he/arches_her:dev_build
+    image: aher/arches_her:dev_build
     build:
       args:
         - "PROJ_NAME=arches_her"
-        # - "DOCKER_PATH=./arches-containers/projects/arches_her/docker"
         - "DOCKER_PATH=./arches_her/docker/arches_her/docker"
       context: ../../..
-      # dockerfile: ./arches-containers/projects/arches_her/Dockerfile
       dockerfile: ./arches_her/docker/arches_her/Dockerfile
     command: run_arches
     volumes:
@@ -26,33 +24,11 @@ services:
     stdin_open: true
     tty: true
 
-  ## - possible 
-  #archesher-bash:
-  #  profiles:
-  #    - livereload
-  #  container_name: archesher-bash
-  #  image: he/arches_her:dev_build
-  #  command: ["bash"]
-  #  volumes:
-  #    - ../../../arches:/web_root/arches
-  #    - ../../../arches_her:/web_root/arches_her
-  #    - ./docker:/web_root/docker
-  #    - ../../../arches_her-package:/web_root/arches_her_package
-  #    - ../../../arches_her-data:/web_root/arches_her_data
-  #  env_file:
-  #    - ./docker/env_file.env
-  #  ports:
-  #    - 35729:35729      
-  #  depends_on:
-  #      - archesher
-  #  stdin_open: true
-  #  tty: true
-
   archesher-livereload:
     profiles:
       - livereload
     container_name: archesher-livereload
-    image: he/arches_her:dev_build
+    image: aher/arches_her:dev_build
     command: run_livereload
     volumes:
       - ../../../arches:/web_root/arches
@@ -68,7 +44,7 @@ services:
 
   archesher-webpack:
     container_name: archesher-webpack
-    image: he/arches_her:dev_build
+    image: aher/arches_her:dev_build
     command: run_webpack
     volumes:
       - ../../../arches:/web_root/arches
