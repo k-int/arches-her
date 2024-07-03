@@ -50,10 +50,36 @@ If you are setting up a development enviornment then please see the Arches docum
 
    https://arches.readthedocs.io/en/latest/installing/installation/
 
-You will need to use the dev/7.5.x branch for the arches repository.
+You will need to use the `dev/7.5.x` branch for the arches repository.
 
 The **arches_her/install/requirements.txt** file will also need to be edited in order to remove the `arches==7.5.1` requirement, as you will have cloned and installed the arches core code seperately.
 
+
+
+## Running Arches for HERs in a Docker Development Environment
+
+You can also run Arches in a Docker development environment. To do this, pull the `arches` repo and use the two compose files `docker-compose-dependencies.yml` and `docker-compose.yml`.
+
+- Clone both the [`arches`](https://github.com/archesproject/arches.git) and  [`arches-her`](https://github.com/archesproject/arches-her.git) repository:
+  ```bash
+  /workspace $ git clone https://github.com/archesproject/arches.git
+  /workspace $ git clone https://github.com/archesproject/arches-her.git arches_her
+  ```
+  As mentioned before, ensure the `arches` repo has `dev/7.5.x` checked-out.
+
+- Navigate to the folder where the compose files exist, then compose up:
+  ```bash
+  /workspace $ cd arches_her/docker/arches_her
+  /workspace/arches_her/docker/arches_her $ docker compose -f docker-compose-dependencies.yml up -d
+  /workspace/arches_her/docker/arches_her $ docker compose -f docker-compose.yml up -d
+  ```
+  The first time you compose up - the database, Elastic indices and package data will get created and loaded. Be patient. Once complete, navigate to [`http://localhost:8002`](http://localhost:8002). 
+
+When finished, compose down:
+  ```bash
+  docker compose -f docker-compose.yml down
+  docker compose -f docker-compose-dependencies.yml down
+  ```
 
 
 ## How Do I Configure Arches for HERs
