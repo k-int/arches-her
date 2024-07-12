@@ -3,10 +3,9 @@ define([
     'knockout', 
     'arches', 
     'utils/report',
-    'view-data',
     'templates/views/components/reports/scenes/resources.htm', 
     'bindings/datatable'], 
-function (_, ko, arches, reportUtils, viewdata, ResourcesTemplate) {
+function (_, ko, arches, reportUtils, ResourcesTemplate) {
     return ko.components.register('views/components/reports/scenes/resources', {
         viewModel: function (params) {
             const self = this;
@@ -202,8 +201,6 @@ function (_, ko, arches, reportUtils, viewdata, ResourcesTemplate) {
                                     (async function(){
                                         const returnedGraphData = await self.getResourceGraph(element.resourceId);
                                         if (returnedGraphData) {
-                                            console.log("ret",returnedGraphData);       
-                                            console.log(returnedGraphData.iconClass()) 
                                             cssIcon(returnedGraphData.iconClass())                                
                                         }
                                     })()
