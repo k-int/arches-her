@@ -196,11 +196,23 @@ function (_, ko, arches, reportUtils, viewdata, ResourcesTemplate) {
                             var resource = [];
                                 for (const element of x[key]['instance_details']) {
                                 if (element) {
+                                    
+                                    var cssIcon = ko.observable("fa fa-question");
+                                    
+                                    (async function(){
+                                        const returnedGraphData = await self.getResourceGraph(element.resourceId);
+                                        if (returnedGraphData) {
+                                            console.log("ret",returnedGraphData);       
+                                            console.log(returnedGraphData.iconClass()) 
+                                            cssIcon(returnedGraphData.iconClass())                                
+                                        }
+                                    })()
 
                                     resource.push({
                                         resourceName: self.getNodeValue(element),
                                         resourceUrl: self.getResourceLink(element),
-                                        resourceId: element.resourceId
+                                        resourceId: element.resourceId,
+                                        cssIcon: cssIcon
                                     });
                                 }
                             }

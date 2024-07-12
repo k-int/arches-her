@@ -95,13 +95,13 @@ define([
         }
     };
 
-    const getResourceGraph = (resourceId) => {
+    const getResourceGraph = async (resourceId) => {
         let graphData = {};
 
         Object.defineProperty(graphData, "iconClass", {value: ko.observable()});
         Object.defineProperty(graphData, "graphId", {value: ko.observable()});
 
-        resourceUtil.lookupResourceInstanceData(resourceId)
+        await resourceUtil.lookupResourceInstanceData(resourceId)
             .then(function (resourceInstanceData) {
                 if (resourceInstanceData) {
                     graphData.graphId(resourceInstanceData["_source"].graph_id);
@@ -110,15 +110,9 @@ define([
                         if (data.graphid == resourceInstanceData["_source"].graph_id) {
                             graphData.iconClass(data.iconclass || 'fa fa-question');
                     }};
-
-                    return graphData;
                 }
-            }, function(err){
-                      console.error(err);
-                      graphData.graphId = "";
-                      graphData.iconClass = 'fa fa-question';
-                      return graphData;
             }); 
+            return graphData
     };
 
     return {
