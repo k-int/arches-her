@@ -1,7 +1,7 @@
 {
     "graph": [
         {
-            "author": "",
+            "author": "Philip Carlisle - Historic England",
             "cards": [
                 {
                     "active": true,
@@ -14,20 +14,20 @@
                     "graph_id": "b1d2b794-f446-11eb-9eee-a87eeabdefba",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Capture Scale"
                     },
                     "nodegroup_id": "b1d3340a-f446-11eb-a61b-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 3,
                     "visible": true
                 },
                 {
@@ -41,20 +41,20 @@
                     "graph_id": "b1d2b794-f446-11eb-9eee-a87eeabdefba",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Spatial Record Compilation"
                     },
                     "nodegroup_id": "b1d32059-f446-11eb-86c6-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 0,
                     "visible": true
                 },
                 {
@@ -68,20 +68,20 @@
                     "graph_id": "b1d2b794-f446-11eb-9eee-a87eeabdefba",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Spatial Record Authorization"
                     },
                     "nodegroup_id": "b1d2f709-f446-11eb-a268-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 2,
                     "visible": true
                 },
                 {
@@ -95,20 +95,20 @@
                     "graph_id": "b1d2b794-f446-11eb-9eee-a87eeabdefba",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Spatial Record Update"
                     },
                     "nodegroup_id": "b1d30c17-f446-11eb-9cf1-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 1,
                     "visible": true
                 },
                 {
@@ -122,20 +122,20 @@
                     "graph_id": "b1d2b794-f446-11eb-9eee-a87eeabdefba",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Spatial Accuracy Qualifier"
                     },
                     "nodegroup_id": "b1d2f71a-f446-11eb-b0e3-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 6,
                     "visible": true
                 },
                 {
@@ -149,20 +149,20 @@
                     "graph_id": "b1d2b794-f446-11eb-9eee-a87eeabdefba",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Current Base Map"
                     },
                     "nodegroup_id": "b1d32064-f446-11eb-bdbe-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 5,
                     "visible": true
                 },
                 {
@@ -176,20 +176,20 @@
                     "graph_id": "b1d2b794-f446-11eb-9eee-a87eeabdefba",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Coordinate System"
                     },
                     "nodegroup_id": "b1d2f716-f446-11eb-95de-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 4,
                     "visible": true
                 },
                 {
@@ -203,20 +203,20 @@
                     "graph_id": "b1d2b794-f446-11eb-9eee-a87eeabdefba",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Spatial Metadata Descriptions"
                     },
                     "nodegroup_id": "b1d3205b-f446-11eb-a9f0-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 7,
                     "visible": true
                 },
                 {
@@ -232,10 +232,10 @@
                     "graph_id": "b1d2b794-f446-11eb-9eee-a87eeabdefba",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
                         "en": "Administrative, geopolitical areas, localities, and other areas (e.g.: Research or zoning areas)  "
@@ -245,7 +245,7 @@
                         "en": "Localities/Administrative Areas"
                     },
                     "nodegroup_id": "b1d2b795-f446-11eb-b779-a87eeabdefba",
-                    "sortorder": 4,
+                    "sortorder": 2,
                     "visible": true
                 },
                 {
@@ -261,20 +261,20 @@
                     "graph_id": "b1d2b794-f446-11eb-9eee-a87eeabdefba",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Land Use Classification Assignment"
                     },
                     "nodegroup_id": "b1d2cb52-f446-11eb-855d-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 6,
                     "visible": true
                 },
                 {
@@ -297,13 +297,13 @@
                     "graph_id": "b1d2b794-f446-11eb-9eee-a87eeabdefba",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
@@ -324,10 +324,10 @@
                     "graph_id": "b1d2b794-f446-11eb-9eee-a87eeabdefba",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
                         "en": "Used to record offshore areas where an activity took place."
@@ -337,7 +337,7 @@
                         "en": "Named Locations"
                     },
                     "nodegroup_id": "b1d2cd10-f446-11eb-afa1-a87eeabdefba",
-                    "sortorder": null,
+                    "sortorder": 7,
                     "visible": true
                 },
                 {
@@ -351,20 +351,20 @@
                     "graph_id": "b1d2b794-f446-11eb-9eee-a87eeabdefba",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
                         "en": "Area Assignments"
                     },
                     "nodegroup_id": "b1d2cd13-f446-11eb-8e20-a87eeabdefba",
-                    "sortorder": 12,
+                    "sortorder": 5,
                     "visible": true
                 },
                 {
@@ -391,7 +391,7 @@
                         "en": "Addresses"
                     },
                     "nodegroup_id": "b1d2cd16-f446-11eb-bebb-a87eeabdefba",
-                    "sortorder": 5,
+                    "sortorder": 4,
                     "visible": true
                 },
                 {
@@ -405,13 +405,13 @@
                     "graph_id": "b1d2b794-f446-11eb-9eee-a87eeabdefba",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
@@ -434,10 +434,10 @@
                     "graph_id": "b1d2b794-f446-11eb-9eee-a87eeabdefba",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
                         "en": "National Grid references, map names, and other common location identifiers for the resource"
@@ -447,7 +447,7 @@
                         "en": "National Grid References"
                     },
                     "nodegroup_id": "b1d2cd1c-f446-11eb-9718-a87eeabdefba",
-                    "sortorder": 5,
+                    "sortorder": 1,
                     "visible": true
                 },
                 {
@@ -463,13 +463,13 @@
                     "graph_id": "b1d2b794-f446-11eb-9eee-a87eeabdefba",
                     "helpenabled": false,
                     "helptext": {
-                        "en": null
+                        "en": ""
                     },
                     "helptitle": {
-                        "en": null
+                        "en": ""
                     },
                     "instructions": {
-                        "en": null
+                        "en": ""
                     },
                     "is_editable": true,
                     "name": {
@@ -520,6 +520,7 @@
                         "placeholder": {
                             "en": "Enter text"
                         },
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "b1d3355b-f446-11eb-828a-a87eeabdefba",
@@ -901,6 +902,7 @@
                         "placeholder": {
                             "en": "Enter text"
                         },
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "b1d3356c-f446-11eb-b969-a87eeabdefba",
@@ -2288,6 +2290,7 @@
                         "placeholder": {
                             "en": "Enter text"
                         },
+                        "uneditable": false,
                         "width": "100%"
                     },
                     "id": "b1d34a46-f446-11eb-9b87-a87eeabdefba",
@@ -6158,10 +6161,10 @@
                         },
                         "options": [
                             {
-                                "id": "91c9d738-2306-4f87-8300-0facfa417f0e",
+                                "id": "f2e9e1b9-8493-4f43-9f49-b6c3ce8be8d9",
                                 "selected": false,
                                 "text": {
-                                    "en": "State"
+                                    "en": "Public"
                                 }
                             },
                             {
@@ -6172,10 +6175,10 @@
                                 }
                             },
                             {
-                                "id": "f2e9e1b9-8493-4f43-9f49-b6c3ce8be8d9",
+                                "id": "91c9d738-2306-4f87-8300-0facfa417f0e",
                                 "selected": false,
                                 "text": {
-                                    "en": "Public"
+                                    "en": "State"
                                 }
                             }
                         ]
@@ -6367,10 +6370,10 @@
                         },
                         "options": [
                             {
-                                "id": "d2d9a694-f6b0-4a41-9331-25a1d77ee1da",
+                                "id": "3620365b-6294-4356-93c0-52f53a2e4a49",
                                 "selected": false,
                                 "text": {
-                                    "en": "High"
+                                    "en": "Low"
                                 }
                             },
                             {
@@ -6381,10 +6384,10 @@
                                 }
                             },
                             {
-                                "id": "3620365b-6294-4356-93c0-52f53a2e4a49",
+                                "id": "d2d9a694-f6b0-4a41-9331-25a1d77ee1da",
                                 "selected": false,
                                 "text": {
-                                    "en": "Low"
+                                    "en": "High"
                                 }
                             }
                         ]
@@ -7213,7 +7216,9 @@
                 },
                 {
                     "alias": "national_grid_reference",
-                    "config": {},
+                    "config": {
+                        "en": ""
+                    },
                     "datatype": "bngcentrepoint",
                     "description": null,
                     "exportable": true,
@@ -9277,5 +9282,11 @@
             "template_id": "50000000-0000-0000-0000-000000000002",
             "version": ""
         }
-    ]
+    ],
+    "metadata": {
+        "db": "PostgreSQL 14.5 (Debian 14.5-1.pgdg110+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit",
+        "git hash": "32a7ce75e 2024-06-14 08:59:44 +0000",
+        "os": "Linux",
+        "os version": "5.15.153.1-microsoft-standard-WSL2"
+    }
 }
