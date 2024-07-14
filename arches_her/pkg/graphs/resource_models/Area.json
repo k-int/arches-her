@@ -20736,6 +20736,13 @@
                                 "text": {
                                     "en": "Low"
                                 }
+                            },
+                            {
+                                "id": "e8d04473-da05-4cda-95f4-ebfd0ff28122",
+                                "selected": false,
+                                "text": {
+                                    "en": "N/A"
+                                }
                             }
                         ]
                     },
