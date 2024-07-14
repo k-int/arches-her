@@ -10,16 +10,15 @@ else
 	PACKAGE_JSON_FOLDER=${ARCHES_ROOT}
 fi
 
+# SET DEFAULT WORKING DIRECTORY
+cd ${APP_FOLDER}
+
 YARN_MODULES_FOLDER=${PACKAGE_JSON_FOLDER}/$(awk \
 	-F '--install.modules-folder' '{print $2}' ${PACKAGE_JSON_FOLDER}/.yarnrc \
 	| awk '{print $1}' \
 	| tr -d $'\r' \
 	| tr -d '"' \
 	| sed -e "s/^\.\///g")
-
-# Environmental Variables
-export DJANGO_PORT=${DJANGO_PORT:-8000}
-COUCHDB_URL="http://$COUCHDB_USER:$COUCHDB_PASS@$COUCHDB_HOST:$COUCHDB_PORT"
 
 #Utility functions that check db status
 wait_for_db() {
@@ -28,7 +27,7 @@ wait_for_db() {
 	do
         psql --host=${PGHOST} --port=${PGPORT} --user=${PGUSERNAME} --dbname=postgres -c "select 1" >&/dev/null
 		return_code=$?
-		sleep 1
+		sleep 3
 	done
 	echo "Database server is up"
 
@@ -37,7 +36,7 @@ wait_for_db() {
     do
         curl -s "http://${ESHOST}:${ESPORT}/_cluster/health?wait_for_status=green&timeout=60s" >&/dev/null
         return_code=$?
-        sleep 1
+        sleep 3
     done
     echo "Elasticsearch is up"
 }
@@ -56,26 +55,70 @@ db_exists() {
 
 	# Return 0 (= true) if database exists
 	if [[ ${count} > 0 ]]; then
-		return 0
+		echo "Checking if database is setup "${PGDBNAME}"..."
+		tcount=`psql --host=${PGHOST} --port=${PGPORT} --user=${PGUSERNAME} --dbname=${PGDBNAME} -Atc "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'nodes'"`
+		# Check if returned value is a number and not some error message
+		re='^[0-9]+$'
+		if ! [[ ${tcount} =~ $re ]] ; then
+		echo "Error: Something went wrong when checking if tables exists in database "${PGDBNAME}"..." >&2;
+		echo "Exiting..."
+		exit 1
+		fi
+
+		# Return 0 (= true) if table exists
+		if [[ ${tcount} > 0 ]]; then
+			return 0
+		else
+			return 1
+		fi
 	else
 		return 1
 	fi
 }
 
+
 #### Install
 init_arches() {
 	echo "Checking if Arches project "${ARCHES_PROJECT}" exists..."
-	if [[ ! -d ${APP_FOLDER} ]] || [[ ! "$(ls ${APP_FOLDER})" ]]; then
+	if [[ ! -d ${APP_FOLDER}/${ARCHES_PROJECT} ]] || [[ ! "$(ls ${APP_FOLDER}/${ARCHES_PROJECT})" ]]; then
 		echo ""
 		echo "----- Custom Arches project '${ARCHES_PROJECT}' does not exist. -----"
+		#echo "----- Use the "create_project" command to create the project and then restart the container -----"
+		echo ""
+		create_arches_project
+	else
+		echo "Custom Arches project '${ARCHES_PROJECT}' exists."
+	fi
+
+	wait_for_db
+	if db_exists; then
+		echo "Database ${PGDBNAME} already exists."
+		echo "Skipping Package Loading"
+	else
+		echo "Database ${PGDBNAME} does not exists yet."
+		run_setup_db #change to run_load_package if preferred 
+	fi
+}
+
+create_arches_project_only(){
+	echo ""
+	echo "----- Creating '${ARCHES_PROJECT}'... -----"
+	echo ""
+
+	cd ${WEB_ROOT}
+	python3 ${WEB_ROOT}/arches/arches/install/arches-project create ${ARCHES_PROJECT}
+	APP_FOLDER=${WEB_ROOT}/${ARCHES_PROJECT}
+}
+
+create_arches_project() {
+	echo "Checking if Arches project "${ARCHES_PROJECT}" exists..."
+	if [[ ! -d ${APP_FOLDER}/${ARCHES_PROJECT} ]] || [[ ! "$(ls ${APP_FOLDER}/${ARCHES_PROJECT})" ]]; then
+		echo ""
 		echo "----- Creating '${ARCHES_PROJECT}'... -----"
 		echo ""
-
-		cd ${WEB_ROOT}
-
-		arches-project create ${ARCHES_PROJECT}
+		create_arches_project_only
+		copy_settings_local
 		run_setup_db
-		setup_couchdb
 
 		exit_code=$?
 		if [[ ${exit_code} != 0 ]]; then
@@ -85,49 +128,30 @@ init_arches() {
 		fi
 	else
 		echo "Custom Arches project '${ARCHES_PROJECT}' exists."
-		wait_for_db
-		if db_exists; then
-			echo "Database ${PGDBNAME} already exists."
-			echo "Skipping Package Loading"
-		else
-			echo "Database ${PGDBNAME} does not exists yet."
-			run_load_package #change to run_load_package if preferred 
-			setup_couchdb
-		fi
 	fi
-}
-
-# Setup Couchdb (when should this happen?)
-setup_couchdb() {
-    echo "Running: Creating couchdb system databases"
-    curl -X PUT ${COUCHDB_URL}/_users
-    curl -X PUT ${COUCHDB_URL}/_global_changes
-    curl -X PUT ${COUCHDB_URL}/_replicator
 }
 
 # Yarn
 install_yarn_components() {
-
-		cd ${APP_FOLDER}
+	if [[ ! -d ${YARN_MODULES_FOLDER} ]] || [[ ! "$(ls ${YARN_MODULES_FOLDER})" ]]; then
+		echo "Yarn modules do not exist, installing..."
+		cd ${PACKAGE_JSON_FOLDER}
 		yarn install
+	fi
 }
 
 #### Misc
 copy_settings_local() {
 	# The settings_local.py in ${ARCHES_ROOT}/arches/ gets ignored if running manage.py from a custom Arches project instead of Arches core app
-	echo "Copying ${APP_FOLDER}/docker/settings_docker.py to ${APP_FOLDER}/${ARCHES_PROJECT}/settings_docker.py..."
-	cp ${APP_FOLDER}/docker/settings_docker.py ${APP_FOLDER}/${ARCHES_PROJECT}/settings_docker.py
-
-	# Copy settings_local if it does not exist
-	cp -n ${APP_FOLDER}/docker/settings_local.py ${APP_FOLDER}/${ARCHES_PROJECT}/settings_local.py
-
+	echo "Copying ${WEB_ROOT}/docker/settings_local.py to ${APP_FOLDER}/${ARCHES_PROJECT}/settings_local.py..."
+	yes | cp ${WEB_ROOT}/docker/settings_local.py ${APP_FOLDER}/${ARCHES_PROJECT}/settings_local.py
 }
 
 #### Run commands
 
 start_celery_supervisor() {
-	cd ${APP_FOLDER}
-	supervisord -c docker/aher-supervisor.conf
+	cd ${WEB_ROOT}
+	supervisord -c docker/supervisor.conf
 }
 
 run_migrations() {
@@ -142,8 +166,12 @@ run_setup_db() {
 	echo ""
 	echo "----- RUNNING SETUP_DB -----"
 	echo ""
-	cd ${APP_FOLDER}
-	python3 manage.py setup_db --force
+	cd ${WEB_ROOT}/${ARCHES_PROJECT}
+	if [[ -d ${APP_ROOT}/${ARCHES_PROJECT}/pkg ]];then
+		python3 manage.py packages -o load_package -s ${ARCHES_PROJECT}/pkg -db -dev -y
+	else
+		python3 manage.py setup_db --force
+	fi
 }
 
 run_load_package() {
@@ -151,7 +179,9 @@ run_load_package() {
 	echo "----- *** LOADING PACKAGE: ${ARCHES_PROJECT} *** -----"
 	echo ""
 	cd ${APP_FOLDER}
-	python3 manage.py packages -o load_package -s ${ARCHES_PROJECT}/pkg -db -dev -y
+	if [[ -d ${ARCHES_PROJECT}/pkg ]];then
+		python3 manage.py packages -o load_package -s ${ARCHES_PROJECT}/pkg -db -dev -y
+	fi
 }
 
 # "exec" means that it will finish building???
@@ -189,6 +219,15 @@ run_livereload() {
 	run_livereload_server
 }
 
+run_webpack() {
+	echo ""
+	echo "----- *** RUNNING WEBPACK DEVELOPMENT SERVER *** -----"
+	echo ""
+	cd ${APP_FOLDER}
+    echo "Running Webpack"
+	exec sh -c "wait-for-it archesher:${DJANGO_PORT} -t 1200 && cd /web_root/arches_her/arches_her && yarn install && yarn start"
+}
+
 ### Starting point ###
 
 # trying not to use virtualenv???
@@ -201,6 +240,8 @@ run_livereload() {
 
 # If no arguments are supplied, assume the server needs to be run
 if [[ $#  -eq 0 ]]; then
+	echo "No arguments supplied, running Arches server..."
+	copy_settings_local
 	start_celery_supervisor
 	wait_for_db
 	run_arches
@@ -215,19 +256,16 @@ do
 
 	case ${key} in
 		run_arches)
-			start_celery_supervisor
 			copy_settings_local
 			wait_for_db
+			start_celery_supervisor
 			run_arches
 		;;
 		run_livereload)
 			run_livereload_server
 		;;
-		setup_arches)
-			start_celery_supervisor
-			copy_settings_local
-			wait_for_db
-			setup_arches
+		run_webpack)
+			run_webpack
 		;;
 		run_tests)
 			copy_settings_local
@@ -239,8 +277,8 @@ do
 			wait_for_db
 			run_migrations
 		;;
-		install_yarn_components)
-			install_yarn_components
+		create_project)
+			create_arches_project_only
 		;;
 		help|-h)
 			display_help
