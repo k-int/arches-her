@@ -4856,7 +4856,7 @@
                         "i18n_properties": [
                             "placeholder"
                         ],
-                        "label": "AdviceType",
+                        "label": "Advice Type",
                         "options": [],
                         "placeholder": {
                             "en": "Select an option"
@@ -4864,7 +4864,7 @@
                     },
                     "id": "898a0581-06fa-11eb-9607-f875a44e0e11",
                     "label": {
-                        "en": "AdviceType"
+                        "en": "Advice Type"
                     },
                     "node_id": "56fa335d-06fa-11eb-8328-f875a44e0e11",
                     "sortorder": 0,
