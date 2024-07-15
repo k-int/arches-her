@@ -290,7 +290,6 @@ function (_, ko, arches, reportUtils, LocationTemplate) {
                 }
 
                 const namedLocationsNode = self.getRawNodeValue(locationNode, self.dataConfig.namedLocations);
-                console.log(namedLocationsNode)
                 const placename = self.getNodeValue(namedLocationsNode, 'named location');
                 const tileid = self.getTileId(namedLocationsNode);
                 if (placename && placename !== '--') {
