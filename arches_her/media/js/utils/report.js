@@ -113,7 +113,7 @@ define([
             paging: false,
             searching: false,
             scrollCollapse: true,
-            info: false,
+            info: true,
             columnDefs: [{
                 orderable: false,
                 targets: -1,
@@ -147,6 +147,13 @@ define([
                 if(tile){
                     tile.selected(true);
                 }
+            }
+        },
+
+        // Can be used to check if current page is in report mode or resource manager mode
+        checkCardsAvailable: function(cards){
+            if(Object.keys(cards).length > 0){
+                return true;
             }
         },
 
