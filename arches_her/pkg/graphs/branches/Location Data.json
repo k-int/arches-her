@@ -6370,6 +6370,13 @@
                         },
                         "options": [
                             {
+                                "id": "e8d04473-da05-4cda-95f4-ebfd0ff28122",
+                                "selected": false,
+                                "text": {
+                                    "en": "N/A"
+                                }
+                            },
+                            {
                                 "id": "3620365b-6294-4356-93c0-52f53a2e4a49",
                                 "selected": false,
                                 "text": {
@@ -7512,23 +7519,6 @@
                 {
                     "alias": "shine_form",
                     "config": {
-                        "options": [
-                            {
-                                "id": "3620365b-6294-4356-93c0-52f53a2e4a49",
-                                "selected": false,
-                                "text": "Low"
-                            },
-                            {
-                                "id": "bc85f924-4079-4ecc-9ebe-8bc7ba57abbf",
-                                "selected": false,
-                                "text": "Medium"
-                            },
-                            {
-                                "id": "d2d9a694-f6b0-4a41-9331-25a1d77ee1da",
-                                "selected": false,
-                                "text": "High"
-                            }
-                        ],
                         "rdmCollection": "e2c1ea37-02dd-43ba-a3e4-38920cf68419"
                     },
                     "datatype": "concept",
