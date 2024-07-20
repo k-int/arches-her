@@ -108,8 +108,10 @@ define([
             self.adviceTableConfig = {
                 ...self.defaultTableConfig,
                 "columns": [
-                    { "width": "70%" },
+                    { "width": "40%" },
                     { "width": "20%" },
+                    { "width": "15%" },
+                    { "width": "15%" },
                    null,
                 ]
             };
@@ -225,8 +227,10 @@ define([
                 self.advice(adviceNode.map(node => {
                     const advice = self.getRawNodeValue(node, 'advice text', '@display_value');
                     const adviceType = self.getNodeValue(node, 'advice type');
+                    const adviceStartDate = self.getNodeValue(node, 'advice assignment', 'advice timespan', 'date advice applied', '@display_value');
+                    const adviceEndDate = self.getNodeValue(node, 'advice assignment', 'advice timespan', 'advice applied end date', '@display_value');
                     const tileid = self.getTileId(node);
-                    return {advice, adviceType, tileid};
+                    return {advice, adviceType, adviceStartDate, adviceEndDate, tileid};
                 }));
             };
 

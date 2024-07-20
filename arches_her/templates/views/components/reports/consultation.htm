@@ -330,6 +330,8 @@
                                             <tr>
                                                 <th>{% trans "Advice" %}</th>
                                                 <th>{% trans "Advice Type" %}</th>
+                                                <th>{% trans "Advice Start Date" %}</th>
+                                                <th>{% trans "Advice End Date" %}</th>
                                                 <th class="aher-table-control all">{% trans "Actions" %}</th>
                                             </tr>
                                         </thead>
@@ -338,6 +340,8 @@
                                             <tr>
                                                 <td data-bind="html: advice"></td>
                                                 <td data-bind="text: adviceType"></td>
+                                                <td data-bind="text: adviceStartDate"></td>
+                                                <td data-bind="text: adviceEndDate"></td>
                                                 <td class="aher-table-control">
                                                     <div data-bind="if: $parent.cards.advice">
                                                         <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: function() {$parent.editTile(tileid, $parent.cards.advice)}">
