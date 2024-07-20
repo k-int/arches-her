@@ -19466,7 +19466,7 @@
                     "nodegroup_id": "99cfca45-381d-11e8-968a-dca90488358a",
                     "nodeid": "dffd2e88-4684-11ef-93c6-00155d72fe3c",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P141_assigned",
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P42_assigned",
                     "sortorder": 0,
                     "sourcebranchpublication_id": null
                 },
