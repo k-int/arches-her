@@ -108,10 +108,10 @@ define([
             self.adviceTableConfig = {
                 ...self.defaultTableConfig,
                 "columns": [
-                    { "width": "40%" },
+                    { "width": "50%" },
                     { "width": "20%" },
-                    { "width": "15%" },
-                    { "width": "15%" },
+                    { "width": "10%" },
+                    { "width": "10%" },
                    null,
                 ]
             };
