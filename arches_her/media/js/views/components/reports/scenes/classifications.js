@@ -31,7 +31,7 @@ function(_, ko, arches, reportUtils, ClassificationsTemplate) {
 
             self.artefactProdTableConfiguration= {
                 ...self.defaultTableConfig,
-                columns: Array(13).fill(null)
+                columns: Array(14).fill(null)
             };
             // Components Table
             self.componentsTableConfig = {
@@ -171,6 +171,7 @@ function(_, ko, arches, reportUtils, ClassificationsTemplate) {
                         const phaseDescription = self.getNodeValue(node, 'phase classification', 'phase classification description', 'phase description');
                         const phaseEvidence = self.getNodeValue(node, 'phase classification', 'phase evidence type');
                         const startDate = self.getNodeValue(node, 'production time span', 'from date');
+                        const artefactTypeConfidence = self.getNodeValue(node, 'phase classification', 'artefact type certainty')
                         const tileid = self.getTileId(node);
 
                         return {
@@ -189,6 +190,7 @@ function(_, ko, arches, reportUtils, ClassificationsTemplate) {
                             phaseEvidence,
                             productionTechnique,
                             startDate,
+                            artefactTypeConfidence,
                             tileid
                         };
                     }))
