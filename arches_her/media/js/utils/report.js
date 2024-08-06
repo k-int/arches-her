@@ -1,9 +1,8 @@
 define([
     'arches',
     'knockout',
-    'view-data',
     'utils/resource',
-], function(arches, ko, viewdata, resourceUtil) {
+], function(arches, ko, resourceUtil) {
     const standardizeNode = (obj) => {
         if(obj){
             const keys = Object.keys(obj);
@@ -95,24 +94,50 @@ define([
         }
     };
 
-    const getResourceGraph = async (resourceId) => {
+    const getGraphs = () => {
+        return $.ajax({
+            url: arches.urls.graphs_api,
+            context: this,
+        }).then(function(graphsResponse) {
+            graphs = ko.unwrap(graphsResponse);
+
+            const filteredGraphs = graphs.filter((x) => {
+                return x.isresource === true;
+            }) || [];
+            
+            return filteredGraphs;
+        }).fail(function() {
+            // error
+        });
+
+    }
+
+    const getResourceGraph = (resourceId) => {
         let graphData = {};
 
         Object.defineProperty(graphData, "iconClass", {value: ko.observable()});
         Object.defineProperty(graphData, "graphId", {value: ko.observable()});
 
-        await resourceUtil.lookupResourceInstanceData(resourceId)
-            .then(function (resourceInstanceData) {
-                if (resourceInstanceData) {
-                    graphData.graphId(resourceInstanceData["_source"].graph_id);
+        return Promise.all([getGraphs(), resourceUtil.lookupResourceInstanceData(resourceId)]).then((values) => {
+            const graphs = values[0]
+            const resourceInstanceData = values[1]
+            if (graphs && resourceInstanceData) {
+                graphData.graphId(resourceInstanceData["_source"].graph_id);
+                for (data of graphs) {
+                    if (data.graphid == resourceInstanceData["_source"].graph_id) {
+                        graphData.iconClass(data.iconclass || 'fa fa-question');
+                        break;
+                }};
+                return graphData
+            }
+        });
+    };
 
-                    for (data of viewdata.createableResources) {
-                        if (data.graphid == resourceInstanceData["_source"].graph_id) {
-                            graphData.iconClass(data.iconclass || 'fa fa-question');
-                    }};
-                }
-            }); 
-            return graphData
+    const reassignCssIcon = async (resourceId, cssIconVariable) => {
+        const returnedGraphData = await getResourceGraph(resourceId);
+        if (returnedGraphData) {
+            cssIconVariable(returnedGraphData.iconClass())
+        }
     };
 
     return {
@@ -244,6 +269,10 @@ define([
         // potentially useful for deeply nested resources
         nestedDataExists: checkNestedData,
 
+        getGraphs: getGraphs,
+
         getResourceGraph: getResourceGraph,
+
+        reassignCssIcon: reassignCssIcon
     } 
 });

@@ -197,13 +197,11 @@ function (_, ko, arches, reportUtils, ResourcesTemplate) {
                                 if (element) {
                                     
                                     var cssIcon = ko.observable("fa fa-question");
-                                    
-                                    (async function(){
-                                        const returnedGraphData = await self.getResourceGraph(element.resourceId);
+                                    self.getResourceGraph(element.resourceId).then((returnedGraphData) => {
                                         if (returnedGraphData) {
-                                            cssIcon(returnedGraphData.iconClass())                                
+                                            cssIcon(returnedGraphData.iconClass());
                                         }
-                                    })()
+                                    });
 
                                     resource.push({
                                         resourceName: self.getNodeValue(element),
