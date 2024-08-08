@@ -5,7 +5,7 @@
 {% block body %}
 <!-- Copyright section -->
 <div class="aher-report-section" data-bind="visible: !!dataConfig.copyright">
-    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.copyright)}, onReportSectionToggleAria: visible.copyright, sectionName: '{% trans "Copyrights" %}'" class="fa toggle">" class="fa toggle"></i> {% trans "Copyrights" %}</h2>
+    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.copyright)}, onReportSectionToggleAria: visible.copyright, sectionName: '{% trans "Copyrights" %}'" class="fa toggle"></i> {% trans "Copyrights" %}</h2>
     <a href="#" data-bind="{if: cards.copyright, click: function(){addNewTile(cards.copyright)}}"  class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Copyright" %}</a>
 
     <!-- Collapsible content -->

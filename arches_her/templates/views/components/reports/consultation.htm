@@ -602,7 +602,7 @@
             </div>
             <!-- Site Visit Tab -->
             <div id="tabcontent_sitevisits" class="aher-report-page" data-bind="if: activeSection() === 'sitevisits'" aria-live="polite">
-                <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.siteVisits)}, onReportSectionToggleAria: visible.siteVisits, sectionName: '{% trans "Site Visits" %}'" class="fa toggle">" class="fa toggle"></i> {% trans "Site Visits" %}</h2>
+                <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.siteVisits)}, onReportSectionToggleAria: visible.siteVisits, sectionName: '{% trans "Site Visits" %}'" class="fa toggle"></i> {% trans "Site Visits" %}</h2>
                 <a data-bind="{if: cards['site visits'], click: function(){ addNewTile(cards['site visits']) }}" class="aher-report-a">
                     <i class="fa fa-mail-reply"></i>
                     <span data-bind="if: cards['site visits'].tiles().length">{% trans "Edit Site Visits" %}</span>
@@ -889,7 +889,7 @@
 
 
 
-    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.contacts)}, onReportSectionToggleAria: visible.contacts, sectionName: '{% trans "Contacts" %}'" class="fa toggle">" class="fa toggle"></i> {% trans "Contacts" %}</h2>
+    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.contacts)}, onReportSectionToggleAria: visible.contacts, sectionName: '{% trans "Contacts" %}'" class="fa toggle"></i> {% trans "Contacts" %}</h2>
     <a href="#" data-bind="{if: cards.contacts, click: function(){ addNewTile(cards.contacts) }}" class="aher-report-a" href="#">
             <i class="fa fa-mail-reply"></i>
             <span data-bind="if: cards.contacts.tiles().length">{% trans "Edit Contacts" %}</span>

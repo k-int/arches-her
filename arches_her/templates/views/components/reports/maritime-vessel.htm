@@ -80,7 +80,7 @@
                     }
                 }"></div>
                 <div class="aher-report-section">
-                    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.nationalities)}, onReportSectionToggleAria: visible.nationalities, sectionName: '{% trans "Nationalities" %}'" class="fa toggle">" class="fa toggle"></i> {% trans "Nationalities" %}</h2>
+                    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.nationalities)}, onReportSectionToggleAria: visible.nationalities, sectionName: '{% trans "Nationalities" %}'" class="fa toggle"></i> {% trans "Nationalities" %}</h2>
                     <a class="aher-report-a" data-bind="{if: cards.nationalities, event:{ mousedown:function(d, e){addNewTile(cards.nationalities, e)}}}"><i class="fa fa-mail-reply"></i> <span data-bind="if: nationalities().length">{% trans "Edit Nationality" %}</span><span data-bind="ifnot: nationalities().length">{% trans "Add Nationality" %}</span></a>
 
                     <!-- Collapsible content -->
@@ -128,7 +128,7 @@
                     </div>
                 </div>
                 <div class="aher-report-section">
-                    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.owners)}, onReportSectionToggleAria: visible.owners, sectionName: '{% trans "Owners" %}'" class="fa toggle">" class="fa toggle"></i> {% trans "Owners" %}</h2>
+                    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.owners)}, onReportSectionToggleAria: visible.owners, sectionName: '{% trans "Owners" %}'" class="fa toggle"></i> {% trans "Owners" %}</h2>
                     <a class="aher-report-a" data-bind="{if: cards.owners, event:{ mousedown:function(d, e){addNewTile(cards.owners, e)}}}"><i class="fa fa-mail-reply"></i> <span data-bind="if: owners().length">{% trans "Edit Owner" %}</span><span data-bind="ifnot: owners().length">{% trans "Add Owner" %}</span></a>
 
                     <!-- Collapsible content -->
@@ -188,7 +188,7 @@
             <!-- Journeys -->
             <div id="tabcontent_journey" class="aher-report-page" data-bind="if: activeSection() === 'journey'" aria-live="polite">
                 <div class="aher-report-section">
-                    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.voyages)}, onReportSectionToggleAria: visible.voyages, sectionName: '{% trans "Voyages" %}'" class="fa toggle">" class="fa toggle"></i> {% trans "Voyages" %}</h2>
+                    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.voyages)}, onReportSectionToggleAria: visible.voyages, sectionName: '{% trans "Voyages" %}'" class="fa toggle"></i> {% trans "Voyages" %}</h2>
                     <a class="aher-report-a" data-bind="{if: cards.voyages, event:{ mousedown:function(d, e){addNewTile(cards.voyages, e)}}}"><i class="fa fa-mail-reply"></i> <span>{% trans "Add Voyage" %}</span></a>
 
                     <!-- Collapsible content -->
