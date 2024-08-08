@@ -8,17 +8,17 @@ define([
         update: function(element, valueAccessor, allBindings) {
             var value = ko.utils.unwrapObservable(valueAccessor());
             var sectionName = allBindings.get('sectionName') || '';
-
-            if (value) {
+            $(element).attr('role', 'button');
+            if (value) { // section is expanded
                 $(element).attr('aria-expanded', 'true');
-                $(element).attr('aria-label', sectionName + ' section expanded. Click to collapse section');
+                $(element).attr('aria-label', 'Section ' + sectionName + ' expanded');
                 $(element).addClass('fa-angle-double-right');
                 $(element).removeClass('fa-angle-double-up');
 
 
-            } else {
+            } else { //collapsed
                 $(element).attr('aria-expanded', 'false');
-                $(element).attr('aria-label', sectionName + ' section collapsed. Click to expand section');
+                $(element).attr('aria-label', 'Section ' + sectionName + ' collapsed');
                 $(element).removeClass('fa-angle-double-right');
                 $(element).addClass('fa-angle-double-up');
             }
