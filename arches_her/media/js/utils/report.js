@@ -133,12 +133,6 @@ define([
         });
     };
 
-    const reassignCssIcon = async (resourceId, cssIconVariable) => {
-        const returnedGraphData = await getResourceGraph(resourceId);
-        if (returnedGraphData) {
-            cssIconVariable(returnedGraphData.iconClass())
-        }
-    };
 
     return {
         // default table configuration - used for display
@@ -271,8 +265,6 @@ define([
 
         getGraphs: getGraphs,
 
-        getResourceGraph: getResourceGraph,
-
-        reassignCssIcon: reassignCssIcon
+        getResourceGraph: getResourceGraph
     } 
 });
