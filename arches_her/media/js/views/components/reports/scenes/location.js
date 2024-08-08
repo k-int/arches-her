@@ -4,7 +4,8 @@ define([
     'arches', 
     'utils/report',
     'templates/views/components/reports/scenes/location.htm',
-    'bindings/datatable', 
+    'bindings/datatable',
+    'bindings/reports', 
     'views/components/reports/scenes/map'], 
 function (_, ko, arches, reportUtils, LocationTemplate) {
     return ko.components.register('views/components/reports/scenes/location', {

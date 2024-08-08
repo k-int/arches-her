@@ -8,7 +8,8 @@ define([
     'templates/views/components/reports/organization.htm',
     'views/components/reports/scenes/name',
     'views/components/reports/scenes/contact',
-    'views/components/reports/scenes/json'
+    'views/components/reports/scenes/json',
+    'bindings/reports'
 ], function($, _, ko, arches, resourceUtils, reportUtils, OrganizationTemplate) {
     return ko.components.register('organization-report', {
         viewModel: function(params) {

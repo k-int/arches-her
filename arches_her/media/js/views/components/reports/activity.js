@@ -11,7 +11,8 @@ define([
     'views/components/reports/scenes/json',
     'views/components/reports/scenes/classifications',
     'views/components/reports/scenes/location',
-    'views/components/reports/scenes/protection'
+    'views/components/reports/scenes/protection',
+    'bindings/reports'
 ], function($, _, ko, arches, resourceUtils, reportUtils, ActivityTemplate) {
     return ko.components.register('activity-report', {
         viewModel: function(params) {

@@ -4,7 +4,8 @@ define([
     'arches', 
     'utils/report',
     'templates/views/components/reports/scenes/keyvalue.htm',
-    'bindings/datatable'], 
+    'bindings/datatable',
+    'bindings/reports'], 
 function(_, ko, arches, reportUtils, KeyValueTemplate) {
     return ko.components.register('views/components/reports/scenes/keyvalue', {
         // IMPORTANT:  this scene *requires* you to compile your own data.  Aboutness is too disparate across all models.

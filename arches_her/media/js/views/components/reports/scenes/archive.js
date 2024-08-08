@@ -4,7 +4,8 @@ define([
     'arches', 
     'utils/report',
     'templates/views/components/reports/scenes/archive.htm',
-    'bindings/datatable'], 
+    'bindings/datatable',
+    'bindings/reports'], 
 function(_, ko, arches, reportUtils, ArchiveTemplate) {
     return ko.components.register('views/components/reports/scenes/archive', {
         viewModel: function(params) {

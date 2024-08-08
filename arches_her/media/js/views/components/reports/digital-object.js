@@ -8,7 +8,8 @@ define([
     'templates/views/components/reports/digital-object.htm',
     'views/components/reports/scenes/name',
     'views/components/reports/scenes/copyright',
-    'views/components/reports/scenes/json'
+    'views/components/reports/scenes/json',
+    'bindings/reports'
 ], function($, _, ko, arches, resourceUtils, reportUtils, DigitalObjectTemplate) {
     return ko.components.register('digital-object-report', {
         viewModel: function(params) {

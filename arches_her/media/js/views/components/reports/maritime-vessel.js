@@ -7,7 +7,8 @@ define([
     'utils/report',
     'templates/views/components/reports/maritime-vessel.htm',
     'views/components/reports/scenes/name',
-    'views/components/reports/scenes/json'
+    'views/components/reports/scenes/json',
+    'bindings/reports'
 ], function($, _, ko, arches, resourceUtils, reportUtils, MaritimeVesselTemplate) {
     return ko.components.register('maritime-vessel-report', {
         viewModel: function(params) {
