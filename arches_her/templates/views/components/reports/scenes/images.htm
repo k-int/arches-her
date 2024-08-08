@@ -52,7 +52,7 @@
 </div>
 
 <div class="aher-report-section">
-    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.images)}</i> {% trans "Images" %}</h2>
+    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.images)}, onReportSectionToggleAria: visible.images, sectionName: '{% trans "Images" %}'" class="fa toggle"></i> {% trans "Images" %}</h2>
     <a href="#" data-bind="{if: cards.images, click: function(){addNewTile(cards.images)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add Photo" %}</a>
 
     <!-- Collapsible content -->
