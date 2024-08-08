@@ -4,7 +4,7 @@
 
 {% block body %}
 <div class="aher-report-section">
-    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.contact)}, css: {'fa-angle-double-right': visible.contact(), 'fa-angle-double-up': !visible.contact()}" class="fa toggle"></i> {% trans "Contact Details" %}</h2>
+    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.contact)}, onReportSectionToggleAria: visible.contact, sectionName: '{% trans "Contact Details" %}'" class="fa toggle">" class="fa toggle"></i> {% trans "Contact Details" %}</h2>
     <span data-bind="if: cards.contact && (!contact().length || cards.contact.cardinality == 'n')">
         <a class="aher-report-a" data-bind="click: function(){add(cards.contact)}"><i class="fa fa-mail-reply"></i> {% trans "Add Contact Details" %}</a>
     </span>
