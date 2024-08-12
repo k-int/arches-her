@@ -8,11 +8,11 @@
 <!-- Collapsible content -->
 <div data-bind="visible: visible.referencedBy" class="aher-report-collapsible-container pad-lft">
 
-    <!-- ko ifnot: getRelatedResources() -->
+    <!-- ko if: relations().length == 0 -->
     <div class="aher-nodata-note">{% trans "No resource referenced by for this resource" %}</div>
     <!-- /ko -->
 
-    <!-- ko if: relations().length -->
+    <!-- ko if: relations().length > 0 -->
     <div class="aher-report-subsection">
         <div class="firstchild-container">
             <div class="aher-table">
