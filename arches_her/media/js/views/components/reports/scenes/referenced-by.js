@@ -70,6 +70,8 @@ define([
                         // error
                     });
             };
+
+            self.getRelatedResources();
         },
         template: ReferencedByTemplate
     });
