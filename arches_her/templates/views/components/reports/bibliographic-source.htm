@@ -180,8 +180,9 @@
                 <!-- Bibliographic Source Creation section -->
                 <div class="aher-report-section">
                     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.sourceCreation)}, css: {'fa-angle-double-right': visible.sourceCreation(), 'fa-angle-double-up': !visible.sourceCreation()}"  class="fa toggle"></i> {% trans "Source Creation" %}</h2>
+                    <!-- ko if: checkCardsAvailable($data.cards) -->
                     <a href="#" data-bind="{if: cards.sourceCreation, click: function(){addNewTile(cards.sourceCreation)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add Source Creation" %}</a>
-
+                    <!-- /ko -->
                     <!-- Collapsible content -->
                     <div data-bind="visible: visible.sourceCreation" class="aher-report-collapsible-container pad-lft">
 
