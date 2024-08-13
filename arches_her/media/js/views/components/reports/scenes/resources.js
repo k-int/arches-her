@@ -39,6 +39,8 @@ function (_, ko, arches, reportUtils, ResourcesTemplate) {
 
             self.applicationAreaTableConfig = {
                 ...self.defaultTableConfig,
+                paging: true,
+                searching: true,
                 columns: Array(2).fill(null)
             };
 
