@@ -5,6 +5,7 @@
 {% block body %}
 <!-- Geometry/Map -->
 <div class="aher-report-section" data-bind="if: !!dataConfig.geometry">
+    <p class="sr-only" data-bind="text: document.querySelector('.aher-report-anchors li.active').innerText + ' tab now displayed'"></p>
     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.coordinates)}, css: {'fa-angle-double-right': visible.coordinates(), 'fa-angle-double-up': !visible.coordinates()}" class="fa toggle"></i> {% trans "Geospatial Coordinates" %}</h2>
     <a class="aher-report-a" data-bind="{if: cards.locationGeometry && !coordinateData || locationRoot, click: function(){addNewTile(cards.locationGeometry || locationRoot)}}">
         <i class="fa fa-mail-reply"></i> {% trans "Add Geometry" %}

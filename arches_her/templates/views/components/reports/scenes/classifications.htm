@@ -17,6 +17,7 @@
 }"></div>
 <!-- Construction Phases -->
 <div class="aher-report-section" data-bind="if: !!dataConfig.artefactProduction">
+    <p class="sr-only" data-bind="text: document.querySelector('.aher-report-anchors li.active').innerText + ' tab now displayed'"></p>
     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.production)}" class="fa fa-angle-double-right toggle"></i> {% trans "Production Phases" %}</h2>
     <!-- ko if: checkCardsAvailable($data.cards) -->
      <a href="#" class="aher-report-a" data-bind="if: cards.production, click: function(){addNewTile(cards.production)}"><i class="fa fa-mail-reply"></i> {% trans "Add Phase" %}</a>

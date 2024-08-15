@@ -5,6 +5,7 @@
 {% block body %}
 <!-- Copyright section -->
 <div class="aher-report-section" data-bind="visible: !!dataConfig.copyright">
+    <p class="sr-only" data-bind="text: document.querySelector('.aher-report-anchors li.active').innerText + ' tab now displayed'"></p>
     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.copyright)}, css: {'fa-angle-double-right': visible.copyright(), 'fa-angle-double-up': !visible.copyright()}" class="fa toggle"></i> {% trans "Copyrights" %}</h2>
     <!-- ko if: checkCardsAvailable($data.cards) -->
      <a href="#" data-bind="{if: cards.copyright, click: function(){addNewTile(cards.copyright)}}"  class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Copyright" %}</a>
