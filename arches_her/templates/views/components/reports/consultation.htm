@@ -81,6 +81,7 @@
             <!-- Planning Reference Tab -->
             <div id="tabcontent_references" class="aher-report-page" data-bind="if: activeSection() === 'references'" aria-live="polite">
                 <div class="aher-report-section">
+                    <p class="sr-only">{% trans "Planning references tab now displayed" %}</p>
                     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.references)}, css: {'fa-angle-double-right': visible.references(), 'fa-angle-double-up': !visible.references()}"  class="fa toggle"></i> {% trans "External Cross References" %}</h2>
                     <a data-bind="{if: cards['external cross references'], click: function(){addNewTile(cards['external cross references'])}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add external cross references" %}</a>
 
@@ -183,6 +184,7 @@
             </div>
             <!-- Contacts Tab -->
             <div id="tabcontent_contacts" class="aher-report-page" data-bind="if: activeSection() === 'contacts'" aria-live="polite">
+                <p class="sr-only">{% trans "Contacts tab now displayed" %}</p>
                 <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.contacts)}, css: {'fa-angle-double-right': visible.contacts(), 'fa-angle-double-up': !visible.contacts()}" class="fa toggle"></i> {% trans "Contacts" %}</h2>
                 <!-- ko if: checkCardsAvailable($data.cards) -->
                 <a href="#" data-bind="{if: cards.contacts, click: function(){ addNewTile(cards.contacts) }}" class="aher-report-a">
@@ -267,6 +269,7 @@
             <!-- Consultation Progression Tab -->
             <div id="tabcontent_progression" class="aher-report-page" data-bind="if: activeSection() === 'progression'" aria-live="polite">
                 <div class="aher-report-section">
+                    <p class="sr-only">{% trans "Consultation progression tab now displayed" %}</p>
                     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.proposal)}, css: {'fa-angle-double-right': visible.proposal(), 'fa-angle-double-up': !visible.proposal()}"  class="fa toggle"></i> {% trans "Proposal" %}</h2>
                     <!-- ko if: checkCardsAvailable($data.cards) -->
                     <a href="#" data-bind="{if: cards.proposal, click: function(){addNewTile(cards.proposal)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add proposal" %}</a>
@@ -499,6 +502,7 @@
             <!-- Correspondence Tab -->
             <div id="tabcontent_correspondence" class="aher-report-page" data-bind="if: activeSection() === 'correspondence'" aria-live="polite">
                 <div class="aher-report-section">
+                    <p class="sr-only">{% trans "Correspondence tab now displayed" %}</p>
                     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.correspondence)}, css: {'fa-angle-double-right': visible.correspondence(), 'fa-angle-double-up': !visible.correspondence()}"  class="fa toggle"></i> {% trans "Correspondence" %}</h2>
                     <!-- ko if: checkCardsAvailable($data.cards) -->
                      <a href="#" data-bind="{if: cards.correspondence, click: function(){addNewTile(cards.correspondence)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add Correspondence" %}</a>
@@ -609,6 +613,7 @@
             </div>
             <!-- Site Visit Tab -->
             <div id="tabcontent_sitevisits" class="aher-report-page" data-bind="if: activeSection() === 'sitevisits'" aria-live="polite">
+                <p class="sr-only">{% trans "Site visits tab now displayed" %}</p>
                 <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.siteVisits)}, css: {'fa-angle-double-right': visible.siteVisits(), 'fa-angle-double-up': !visible.siteVisits()}" class="fa toggle"></i> {% trans "Site Visits" %}</h2>
                 <a data-bind="{if: cards['site visits'], click: function(){ addNewTile(cards['site visits']) }}" class="aher-report-a">
                     <i class="fa fa-mail-reply"></i>
