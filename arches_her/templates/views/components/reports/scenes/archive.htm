@@ -6,7 +6,9 @@
 
 <!-- Bibliographic Source Creation section -->
 <div class="aher-report-section" data-bind="visible: !!dataConfig.sourceCreation">
-    <p class="sr-only" data-bind="text: document.querySelector('.aher-report-anchors li.active').innerText + ' tab now displayed'"></p>
+    <p class="sr-only" data-bind="let: {tabTitleText: document.querySelector('.aher-report-anchors li.active').innerText + ' tab now displayed'}">
+        <span data-bind="text: {% trans "tabTitleText" %}"></span>
+    </p>
     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.sourceCreation)}, css: {'fa-angle-double-right': visible.sourceCreation(), 'fa-angle-double-up': !visible.sourceCreation()}"  class="fa toggle"></i> {% trans "Source Creation" %}</h2>
     <!-- ko if: checkCardsAvailable($data.cards) -->
      <a href="#" data-bind="{if: cards.sourceCreation, click: function(){addNewTile(cards.sourceCreation)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add Source Creation" %}</a>

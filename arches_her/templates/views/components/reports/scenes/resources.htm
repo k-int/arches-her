@@ -5,6 +5,9 @@
 {% block body %}
 <!-- Associated Activities section -->
 <div class="aher-report-section" data-bind="visible: !!dataConfig.activities">
+    <p class="sr-only" data-bind="let: {tabTitleText: document.querySelector('.aher-report-anchors li.active').innerText + ' tab now displayed'}">
+        <span data-bind="text: {% trans "tabTitleText" %}"></span>
+    </p>
     <h2 class="aher-report-section-title">
         <i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.activities)}, css: {'fa-angle-double-right': visible.activities(), 'fa-angle-double-up': !visible.activities()}, attr: {'aria-expanded': visible.activities() ? 'false' : 'true' }" class="fa toggle" aria-label="Expand/collapse Associated Activities section"></i>
         {% trans "Associated Activities" %}
