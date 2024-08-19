@@ -5,9 +5,6 @@
 {% block body %}
 <!-- Associated Actors -->
 <div class="aher-report-section">
-    <p class="sr-only" data-bind="let: {tabTitleText: document.querySelector('.aher-report-anchors li.active').innerText + ' tab now displayed'}">
-        <span data-bind="text: {% trans "tabTitleText" %}"></span>
-    </p>
     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.people)}, css: {'fa-angle-double-right': visible.people(), 'fa-angle-double-up': !visible.people()}" class="fa toggle"></i> {% trans "Associated People and Organizations" %}</h2>
     <!-- ko if: checkCardsAvailable($parent.cards) -->
         <a href="#" data-bind="{if: cards.people, click: function(){addNewTile(cards.people)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add People/Organizations" %}</a>

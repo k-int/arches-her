@@ -5,9 +5,6 @@
 {% block body %}
 <!-- Geometry/Map -->
 <div class="aher-report-section" data-bind="if: !!dataConfig.protection">
-    <p class="sr-only" data-bind="let: {tabTitleText: document.querySelector('.aher-report-anchors li.active').innerText + ' tab now displayed'}">
-        <span data-bind="text: {% trans "tabTitleText" %}"></span>
-    </p>
     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.geospatial)}, css: {'fa-angle-double-right': visible.geospatial(), 'fa-angle-double-up': !visible.geospatial()}" class="fa toggle"></i> {% trans "Designation/Protection " %}</h2>
     <!-- ko if: checkCardsAvailable($data.cards) -->
      <a href="#" class="aher-report-a" data-bind="{if: cards.designations, click: function(){addNewTile(cards.designations)}}">
