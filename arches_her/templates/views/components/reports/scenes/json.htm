@@ -6,8 +6,6 @@
 <!-- JSON section -->
 <div class="aher-report-section aher-flex-col">
     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.json)}, css: {'fa-angle-double-right': visible.json(), 'fa-angle-double-up': !visible.json()}" class="fa toggle"></i> {% trans "Resource JSON" %}</h2>
-    
-
     <!-- Collapsible content -->
     <div data-bind="visible: visible.json" class="aher-report-collapsible-container pad-lft">
         <a href="#" class="aher-report-a" data-bind="click: function(){setSelectedJson('json')}">
