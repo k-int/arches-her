@@ -376,6 +376,10 @@
         <i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.applicationArea)}, onReportSectionToggleAria: visible.applicationArea, sectionName: '{% trans "Related Application Areas" %}'" class="fa toggle"></i>
         {% trans "Related Application Areas" %}
     </h2>
+    <!-- ko if: cards.relatedApplicationArea -->
+    <a href="#" data-bind="click: function(){addNewTile(cards.relatedApplicationArea)}"  class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add Application Area" %}</a>
+    <!-- /ko -->
+
     <!-- Collapsible content -->
     <div data-bind="visible: visible.applicationArea" class="aher-report-collapsible-container pad-lft">
         <!-- ko ifnot: applicationArea().length -->
@@ -407,6 +411,9 @@
                                     <div data-bind="if: $parent.cards.relatedApplicationArea">
                                         <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: function() {$parent.editTile(tileid, $parent.cards.relatedApplicationArea)}">
                                             <i class="fa fa-mail-reply"></i>
+                                        </a>
+                                        <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.relatedApplicationArea)">
+                                            <i class="fa fa-trash"></i>
                                         </a>
                                     </div>
                                 </td>

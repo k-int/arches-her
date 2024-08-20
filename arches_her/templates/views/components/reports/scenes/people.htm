@@ -29,12 +29,12 @@
                                 <th>{% trans "End of Role" %}</th>
                                 <th class="none">{% trans "Display Date" %}</th>
                                 <th class="none">{% trans "Date Qualifier" %}</th>
-                                <th class="aher-table-control all"></th>
+                                <td class="aher-table-control all"></td>
                             </tr>
                         </thead>
                         <tbody data-bind="dataTablesForEach: { data: people, dataTableOptions: peopleTableConfig}">
                             <tr>
-                                <td data-bind="text: actor"><a href="" class="aher-table-link"></a></td>
+                                <td data-bind="text: actor"><a href="#" class="aher-table-link"></a></td>
                                 <td data-bind="text: role"></td>
                                 <td data-bind="text: startOfRole"></td>
                                 <td data-bind="text: endOfRole"></td>

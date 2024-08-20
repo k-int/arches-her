@@ -110,7 +110,9 @@
 <!-- Audience section -->
 <div class="aher-report-section" data-bind="visible: !!dataConfig.audience">
     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.audience)}, onReportSectionToggleAria: visible.audience, sectionName: '{% trans "Audience" %}'" class="fa toggle"></i> {% trans "Audience" %}</h2>
-    <a href="#" data-bind="{if: cards.audience, click: function(){addNewTile(cards.audience)}}"  class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add Audience" %}</a>
+    <!-- ko if: checkCardsAvailable($data.cards) -->
+     <a href="#" data-bind="{if: cards.audience, click: function(){addNewTile(cards.audience)}}"  class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add Audience" %}</a>
+    <!-- /ko -->
 
     <!-- Collapsible content -->
     <div data-bind="visible: visible.audience" class="aher-report-collapsible-container pad-lft">

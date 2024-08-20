@@ -71,6 +71,8 @@ function($, _, ko, arches, reportUtils, ReferencedByTemplate) {
                         // error
                     });
             };
+
+            self.getRelatedResources();
         },
         template: ReferencedByTemplate
     });

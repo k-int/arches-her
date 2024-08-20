@@ -60,7 +60,7 @@ define([
             self.resourcesDataConfig = {
                 assets: 'related monuments and areas',
                 files: 'file(s)',
-                relatedApplicationArea: undefined,
+                relatedApplicationArea: 'consultation area',
                 consultation: 'associated consultations',
                 actors: undefined,
                 archive: undefined,
