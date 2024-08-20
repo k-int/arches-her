@@ -63,9 +63,6 @@
             </div>
             <!-- Location Tab -->
             <div id="tabcontent_location" class="aher-report-page" data-bind="if: activeSection() === 'location'" aria-live="polite" role="tabpanel">
-                <p class="sr-only" data-bind="let: {tabTitleText: document.querySelector('.aher-report-anchors li.active').innerText + ' tab now displayed'}">
-                    <span data-bind="text: {% trans "tabTitleText" %}"></span>
-                </p>
                 <div data-bind="component: {
                     name: 'views/components/reports/scenes/default',
                     params: {
@@ -83,9 +80,6 @@
             </div>
             <!-- Planning Reference Tab -->
             <div id="tabcontent_references" class="aher-report-page" data-bind="if: activeSection() === 'references'" aria-live="polite" role="tabpanel">
-                <p class="sr-only" data-bind="let: {tabTitleText: document.querySelector('.aher-report-anchors li.active').innerText + ' tab now displayed'}">
-                    <span data-bind="text: {% trans "tabTitleText" %}"></span>
-                </p>
                 <div class="aher-report-section">
                     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.references)}, css: {'fa-angle-double-right': visible.references(), 'fa-angle-double-up': !visible.references()}"  class="fa toggle"></i> {% trans "External Cross References" %}</h2>
                     <a data-bind="{if: cards['external cross references'], click: function(){addNewTile(cards['external cross references'])}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add external cross references" %}</a>
@@ -273,7 +267,6 @@
             <!-- Consultation Progression Tab -->
             <div id="tabcontent_progression" class="aher-report-page" data-bind="if: activeSection() === 'progression'" aria-live="polite" role="tabpanel">
                 <div class="aher-report-section">
-                    <p class="sr-only">{% trans "Consultation progression tab now displayed" %}</p>
                     <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.proposal)}, css: {'fa-angle-double-right': visible.proposal(), 'fa-angle-double-up': !visible.proposal()}"  class="fa toggle"></i> {% trans "Proposal" %}</h2>
                     <!-- ko if: checkCardsAvailable($data.cards) -->
                     <a href="#" data-bind="{if: cards.proposal, click: function(){addNewTile(cards.proposal)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add proposal" %}</a>
