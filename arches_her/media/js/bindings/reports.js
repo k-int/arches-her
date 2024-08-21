@@ -8,7 +8,6 @@ define([
         update: function(element, valueAccessor, allBindings) {
             var value = ko.utils.unwrapObservable(valueAccessor());
             var sectionName = allBindings.get('sectionName') || '';
-            $(element).attr('role', 'button');
             if (value) { // section is expanded
                 $(element).attr('aria-expanded', 'true');
                 $(element).attr('aria-label', 'Section ' + sectionName + ' expanded');
