@@ -83,13 +83,13 @@ When finished, compose down:
 
 ## How Do I Configure Arches for HERs
 
-Administrators of an instance of Arches for HERs can configure their implementation having installed the out-of-the-box version.  Ways in which you can configure and customise an instance include:
+Administrators of an instance of Arches for HERs should configure their implementation having installed the out-of-the-box version.  Ways in which you can configure and customise an instance include:
 
+- The homepage provided (`arches_her/arches_her/templates/index.htm`) is a template that requires modification to suit the implementation. This should include branding, images, and replacing the highlighted content with appropriate information. A bespoke homepage can be created by replacing the contents of `index.htm`.
 - Configuring functions against specific graphs.  The initial installation of Arches for HERs includes the following functions:
     - BNG Point to GeoJSON function
     - GeoJSON to BNG Point function
     - Consultation Status function
-- Branding and the highlighted content and images on the landing page of the instance
 - Branding emails sent by the application
 - Setting Accessibility mode to be on
 - Configuring basemaps available in your Arches for HERs instance (using the instructions in the [Core Arches Documentation](https://arches.readthedocs.io/en/latest/administering/managing-map-layers/#basemaps-and-overlays)).
