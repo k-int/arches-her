@@ -4,7 +4,8 @@ define([
     'arches', 
     'utils/report',
     'templates/views/components/reports/scenes/default.htm',
-    'bindings/datatable', 
+    'bindings/datatable',
+    'bindings/reports', 
     'views/components/reports/scenes/keyvalue'], 
 function(_, ko, arches, reportUtils, DefaultTemplate) {
     return ko.components.register('views/components/reports/scenes/default', {

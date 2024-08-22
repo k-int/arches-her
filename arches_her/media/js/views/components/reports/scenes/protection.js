@@ -5,6 +5,7 @@ define([
     'utils/report',
     'templates/views/components/reports/scenes/protection.htm',
     'bindings/datatable',
+    'bindings/reports',
     'views/components/reports/scenes/map'], 
 function(_, ko, arches, reportUtils, ProtectionTemplate) {
     return ko.components.register('views/components/reports/scenes/protection', {

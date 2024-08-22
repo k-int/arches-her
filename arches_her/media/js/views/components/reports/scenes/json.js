@@ -4,7 +4,8 @@ define([
     'arches',
     'templates/views/components/reports/scenes/json.htm',
     'viewmodels/widget',
-    'bindings/codemirror'
+    'bindings/codemirror',
+    'bindings/reports'
 ], function(ko, reportUtils, arches, JsonTemplate) {
     return ko.components.register('views/components/reports/scenes/json', {
         viewModel: function(params) {

@@ -63,7 +63,7 @@
             <!-- File Tab -->
             <div id="tabcontent_file" class="aher-report-page" data-bind="if: activeSection() === 'file'" aria-live="polite" role="tabpanel">
                 <div class="aher-report-section">
-                    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.files)}, css: {'fa-angle-double-right': visible.files(), 'fa-angle-double-up': !visible.files()}"  class="fa toggle"></i> {% trans "Files" %}</h2>
+                    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.files)}, onReportSectionToggleAria: visible.files, sectionName: '{% trans "Files" %}'" class="fa toggle"></i> {% trans "Files" %}</h2>
                     <a data-bind="{if: cards['file'], click: function(){addNewTile(cards['file'])}}" class="aher-report-a">
                         <i class="fa fa-mail-reply"></i>
                         <span data-bind="if: cards.file.tiles().length">{% trans "Edit Files" %}</span>

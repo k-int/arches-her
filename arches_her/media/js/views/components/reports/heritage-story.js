@@ -7,7 +7,8 @@ define([
     'utils/report',
     'templates/views/components/reports/heritage-story.htm',
     'views/components/reports/scenes/name',
-    'views/components/reports/scenes/json'
+    'views/components/reports/scenes/json',
+    'bindings/reports'
 ], function($, _, ko, arches, resourceUtils, reportUtils, HeritageStoryTemplate) {
     return ko.components.register('heritage-story-report', {
         viewModel: function(params) {

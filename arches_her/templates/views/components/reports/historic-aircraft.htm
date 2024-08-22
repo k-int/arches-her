@@ -103,7 +103,7 @@
             <!-- Journeys -->
             <div id="tabcontent_journey" class="aher-report-page" data-bind="if: activeSection() === 'journey'" aria-live="polite" role="tabpanel">
                 <div class="aher-report-section">
-                    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.flights)}, css: {'fa-angle-double-right': visible.flights(), 'fa-angle-double-up': !visible.flights()}" class="fa toggle"></i> {% trans "Flights" %}</h2>
+                    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.flights)}, onReportSectionToggleAria: visible.flights, sectionName: '{% trans "Flights" %}'" class="fa toggle"></i> {% trans "Flights" %}</h2>
                     <a class="aher-report-a" data-bind="{if: cards.flights, event:{ mousedown:function(d, e){addNewTile(cards.flights, e)}}}"><i class="fa fa-mail-reply"></i> <span data-bind="if: flights().length">{% trans "Edit Flight" %}</span><span data-bind="ifnot: flights().length">{% trans "Add Flight" %}</span></a>
 
                     <!-- Collapsible content -->
@@ -172,7 +172,7 @@
                 </div>
 
                 <div class="aher-report-section">
-                    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.lastFlight)}, css: {'fa-angle-double-right': visible.lastFlight(), 'fa-angle-double-up': !visible.lastFlight()}" class="fa toggle"></i> {% trans "Last Flight" %}</h2>
+                    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.lastFlight)}, onReportSectionToggleAria: visible.lastFlight, sectionName: '{% trans "Last Flight" %}'" class="fa toggle"></i> {% trans "Last Flight" %}</h2>
                     <a class="aher-report-a" data-bind="{if: cards.lastFlight, event:{ mousedown:function(d, e){addNewTile(cards.lastFlight, e)}}}"><i class="fa fa-mail-reply"></i> <span data-bind="if: lastFlight().length">{% trans "Edit Last Flight" %}</span><span data-bind="ifnot: lastFlight().length">{% trans "Add Flight" %}</span></a>
 
                     <!-- Collapsible content -->

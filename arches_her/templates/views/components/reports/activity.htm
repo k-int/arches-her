@@ -107,7 +107,7 @@
             <!-- Archive Holding Tab -->
             <div id="tabcontent_archive" class="aher-report-page" data-bind="if: activeSection() === 'archive'" aria-live="polite" role="tabpanel">
                 <div class="aher-report-section">
-                    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.activityArchive)}, css: {'fa-angle-double-right': visible.activityArchive(), 'fa-angle-double-up': !visible.activityArchive()}"  class="fa toggle"></i> {% trans "Activity Archive Material" %}</h2>
+                    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.activityArchive)}, onReportSectionToggleAria: visible.activityArchive, sectionName: '{% trans "Activity Archive Material" %}'" class="fa toggle"></i> {% trans "Activity Archive Material" %}</h2>
                     <!-- ko if: checkCardsAvailable($data.cards) -->
                         <a href="#" data-bind="{if: cards.activityArchive, click: function(){addNewTile(cards.activityArchive)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add Archive Material" %}</a>
                     <!-- /ko -->

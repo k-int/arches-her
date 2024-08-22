@@ -12,7 +12,8 @@ define([
     'views/components/reports/scenes/people',
     'views/components/reports/scenes/people',
     'views/components/reports/scenes/resources',
-    'views/components/reports/scenes/json'
+    'views/components/reports/scenes/json',
+    'bindings/reports'
 ], function($, _, ko, arches, resourceUtils, reportUtils, AreaTemplate) {
     return ko.components.register('area-report', {
         viewModel: function(params) {

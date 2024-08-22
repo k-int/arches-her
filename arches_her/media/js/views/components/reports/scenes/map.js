@@ -7,7 +7,8 @@ define([
     'views/components/cards/select-feature-layers', 
     'views/components/map',
     'templates/views/components/reports/scenes/map.htm',
-    'bindings/datatable'], 
+    'bindings/datatable',
+    'bindings/reports'], 
 function(_, ko, arches, reportUtils, geojsonExtent, selectFeatureLayersFactory, MapComponentViewModel, MapTemplate) {
     return ko.components.register('views/components/reports/scenes/map', {
         viewModel: function(params) {
