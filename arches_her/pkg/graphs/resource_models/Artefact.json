@@ -12142,11 +12142,11 @@
                 },
                 {
                     "description": null,
-                    "domainnode_id": "546b162d-3ba4-11eb-9ef2-f875a44e0e11",
+                    "domainnode_id": "546b1630-3ba4-11eb-9030-f875a44e0e11",
                     "edgeid": "f0506d8a-f91b-491a-a43c-839d66c9da95",
                     "graph_id": "343cc20c-2c5a-11e8-90fa-0242ac120005",
                     "name": null,
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P141_assigned",
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
                     "rangenode_id": "dffd2e88-4684-11ef-93c6-00155d72fe3c"
                 },
                 {
@@ -19466,7 +19466,7 @@
                     "nodegroup_id": "99cfca45-381d-11e8-968a-dca90488358a",
                     "nodeid": "dffd2e88-4684-11ef-93c6-00155d72fe3c",
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P42_assigned",
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
                     "sortorder": 0,
                     "sourcebranchpublication_id": null
                 },
