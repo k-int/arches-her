@@ -14,7 +14,7 @@ You can find out more about Arches for HERs at [https://www.archesproject.org/ar
    pip install -r ./arches_her/arches_her/install/requirements.txt
    ```
 
-   If you are installing Arches for HERs on Windows, follow the [instructions relating to the GDAL_LIBRARY_PATH](https://arches.readthedocs.io/en/latest/installing/installation/#common-errors) detailed in the Installing Core Arches documentation.  
+   If you are installing Arches for HERs on Windows, follow the [instructions relating to the GDAL_LIBRARY_PATH](https://arches.readthedocs.io/en/latest/installing/installation/#create-a-project) detailed in the Installing Core Arches documentation.  
 
 1. Set up your database and load the package with the following command in the arches_her directory:
 
