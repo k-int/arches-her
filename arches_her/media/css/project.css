@@ -824,7 +824,7 @@ table.report-tabular-card {
     margin-top: 10px;
 }
 
-.tabbed-workflow-step-body .workbench-card-sidepanel .install-buttons {
+.tabbed-workflow-step-body .workbench-card-sidepanel .install-buttons:not(.tabbed-workflow-step-body .workbench-card-sidepanel .create-resource-instance-card-component .install-buttons) {
     display: none;
 }
 
@@ -1055,4 +1055,10 @@ span.rp-tile-title {
 
 .ep-notifs-panel{
     height: 100%;
+}
+
+/* Ensures Consultation > Related Application Area > Create new application area ... - displays correctly */
+
+.workbench-card-sidebar {
+    z-index: 245;
 }
