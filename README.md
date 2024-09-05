@@ -47,9 +47,9 @@ If you are setting up a development enviornment then please see the Arches docum
 
    https://arches.readthedocs.io/en/latest/installing/installation/
 
-You will need to use the `dev/7.5.x` branch for the arches repository.
+You will need to use the `dev/7.5.4` branch for the arches repository.
 
-The **arches_her/install/requirements.txt** file will also need to be edited in order to remove the `arches==7.5.1` requirement, as you will have cloned and installed the arches core code seperately.
+The **arches_her/install/requirements.txt** file will also need to be edited in order to remove the `arches==7.5.4` requirement, as you will have cloned and installed the arches core code seperately.
 
 ## Running Arches for HERs in a Docker Development Environment
 
@@ -62,7 +62,7 @@ You can also run Arches in a Docker development environment. To do this, pull th
   /workspace $ git clone https://github.com/archesproject/arches-her.git arches_her
   ```
 
-  As mentioned before, ensure the `arches` repo has `dev/7.5.x` checked-out.
+  As mentioned before, ensure the `arches` repo has `dev/7.5.4` checked-out.
 
 - Navigate to the folder where the compose files exist, then compose up:
 
