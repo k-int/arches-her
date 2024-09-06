@@ -87,15 +87,18 @@ define([
                             'tileid': ko.unwrap(self.tile().tileid),
                             'transaction_id': self.workflowId,
                         },
-                    }).done(function(response) {
-                        console.log("Digital related resource updated");
                     })
+                        .done(function(response) {
+                            console.log("Digital related resource updated");
+                        })
                         .fail(function(response) {
+                            params.pageVm.loading(false);
                             console.log("Updating digital related resource failed: \n", response);
                         });
 
                     nameTemplate["resourceinstance_id"] = data.tile.resourceinstance_id;
                     nameTemplate["nodegroup_id"] = 'c61ab163-9513-11ea-9bb6-f875a44e0e11';
+                    
                     $.ajax({ //get consultation name
                         url: arches.urls.api_resources(ko.unwrap(self.tile().resourceinstance_id)),
                         type: 'GET',
@@ -103,38 +106,46 @@ define([
                         data: {
                             'format': 'json'
                         }
-                    }).done(function(data) {
-                        let today = new Date().toLocaleDateString();
-                        today = today.replaceAll("/", "_");
-                        nameTemplate.data["c61ab16c-9513-11ea-89a4-f875a44e0e11"] = self.createI18nString(today + " Letter for " + data.displayname);
-
-                        $.ajax({ //saving the digital resource name
-                            url: arches.urls.api_tiles(uuid.generate()),
-                            type: 'POST',
-                            dataType: 'json',
-                            data: {
-                                "data": JSON.stringify(nameTemplate),
-                                'transaction_id': self.workflowId
-                            },
-                        }).done(function(response) {
-                            self.saveValues();
-                            if (self.completeOnSave === true) { self.complete(true); }
-                            params.pageVm.loading(false);
-                        })
-                            .fail(function(response) {
-                                console.log("Adding the digital object name failed: \n", response);
-                            });
                     })
+                        .done(function(data) {
+                            let today = new Date().toLocaleDateString();
+                            today = today.replaceAll("/", "_");
+                            nameTemplate.data["c61ab16c-9513-11ea-89a4-f875a44e0e11"] = self.createI18nString(today + " Letter for " + data.displayname);
+
+                            $.ajax({ //saving the digital resource name
+                                url: arches.urls.api_tiles(uuid.generate()),
+                                type: 'POST',
+                                dataType: 'json',
+                                data: {
+                                    "data": JSON.stringify(nameTemplate),
+                                    'transaction_id': self.workflowId
+                                },
+                            })
+                                .done(function(response) {
+                                    self.saveValues();
+                                    if (self.completeOnSave === true) { self.complete(true); }
+                                })
+                                .fail(function(response) {
+                                    console.log("Adding the digital object name failed: \n", response);
+                                })
+                                .always(function(){
+                                    params.pageVm.loading(false);
+                                });
+                                
+                        })
                         .fail(function(response) {
+                            params.pageVm.loading(false);
                             console.log("Getting consultation name failed: \n", response);
                         });
+                                  
                 })
                 .fail(function(response) {
                     if (response.statusText !== 'abort') {
                         params.form.error(new Error(response.responseText));
+                        params.pageVm.loading(false);
                         params.pageVm.alert(new AlertViewModel('ep-alert-red', arches.requestFailed.title, response.responseText));
                     }
-                });
+                })
         };
 
         params.form.save = function() {
