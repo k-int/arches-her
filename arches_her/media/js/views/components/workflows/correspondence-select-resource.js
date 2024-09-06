@@ -74,7 +74,7 @@ define([
                         'resourceXresourceId': ''
                     }];
 
-                    params.pageVm.alert(new AlertViewModel('ep-alert-blue', 'Linking Correspondence', "Linking the digital object to the consultation's letter node."));
+                    params.pageVm.loading('Linking letter to consultation...')
 
                     $.ajax({ //saving the realted resource (digital object) to the Letter node (consultation)
                         url: arches.urls.api_node_value,
@@ -119,7 +119,7 @@ define([
                         }).done(function(response) {
                             self.saveValues();
                             if (self.completeOnSave === true) { self.complete(true); }
-                            params.pageVm.alert().close()
+                            params.pageVm.loading(false);
                         })
                             .fail(function(response) {
                                 console.log("Adding the digital object name failed: \n", response);
