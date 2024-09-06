@@ -74,7 +74,7 @@ define([
                         'resourceXresourceId': ''
                     }];
 
-                    params.pageVm.loading('Linking letter to consultation...')
+                    params.pageVm.loading('Generating correspondence for consultation...')
 
                     $.ajax({ //saving the realted resource (digital object) to the Letter node (consultation)
                         url: arches.urls.api_node_value,
