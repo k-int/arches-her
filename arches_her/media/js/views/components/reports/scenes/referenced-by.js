@@ -5,8 +5,9 @@ define([
     'arches',
     'utils/report',
     'templates/views/components/reports/scenes/referenced-by.htm',
-    'bindings/datatable'
-], function($, _, ko, arches, reportUtils, ReferencedByTemplate) {
+    'bindings/datatable',
+    'bindings/reports'], 
+function($, _, ko, arches, reportUtils, ReferencedByTemplate) {
     return ko.components.register('views/components/reports/scenes/referenced-by', {
         viewModel: function(params) {
             const self = this;
@@ -70,6 +71,8 @@ define([
                         // error
                     });
             };
+
+            self.getRelatedResources();
         },
         template: ReferencedByTemplate
     });

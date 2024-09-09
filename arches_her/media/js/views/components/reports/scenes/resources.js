@@ -4,7 +4,8 @@ define([
     'arches', 
     'utils/report',
     'templates/views/components/reports/scenes/resources.htm', 
-    'bindings/datatable'], 
+    'bindings/datatable',
+    'bindings/reports'], 
 function (_, ko, arches, reportUtils, ResourcesTemplate) {
     return ko.components.register('views/components/reports/scenes/resources', {
         viewModel: function (params) {
@@ -39,6 +40,8 @@ function (_, ko, arches, reportUtils, ResourcesTemplate) {
 
             self.applicationAreaTableConfig = {
                 ...self.defaultTableConfig,
+                paging: true,
+                searching: true,
                 columns: Array(2).fill(null)
             };
 

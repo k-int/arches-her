@@ -96,16 +96,17 @@ class BNGCentreDataType(BaseDataType):
             "TV",
             "TW",
         ]
-        try:
-            # CS - Validation for datatype.  Replicates functionality in widget which will be removed once datatype validation is fixed.
-            firstTwoCharacters = value[0:2]
-            numberElement = value[2:]
+        if value is not None:
+            try:
+                # CS - Validation for datatype.  Replicates functionality in widget which will be removed once datatype validation is fixed.
+                firstTwoCharacters = value[0:2]
+                numberElement = value[2:]
 
-            firstTwoCharacters in gridSquareArray
-            isinstance(int(numberElement), int)
-            len(value) == 12
-        except Exception:
-            errors.append({"type": "ERROR", "message": "Issue with input data"})
+                firstTwoCharacters in gridSquareArray
+                isinstance(int(numberElement), int)
+                len(value) == 12
+            except Exception:
+                errors.append({"type": "ERROR", "message": "Issue with input data"})
 
         return errors
 

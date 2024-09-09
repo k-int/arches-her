@@ -4,7 +4,8 @@ define([
     'arches', 
     'utils/report',
     'templates/views/components/reports/scenes/copyright.htm',
-    'bindings/datatable'], 
+    'bindings/datatable',
+    'bindings/reports'], 
 function(_, ko, arches, reportUtils, CopyrightTemplate) {
     return ko.components.register('views/components/reports/scenes/copyright', {
         viewModel: function(params) {

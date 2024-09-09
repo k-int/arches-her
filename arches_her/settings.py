@@ -286,6 +286,7 @@ PREFERRED_COORDINATE_SYSTEMS = (
     },
     {"name": "LatLong", "srid": "4326", "proj4": "+proj=longlat +datum=WGS84 +no_defs", "default": False},  # Required
 )
+ANALYSIS_COORDINATE_SYSTEM_SRID=27700 # Comment out if using LatLong/WGS84
 
 # Europe/London set as the default time zone.  To revert to "America/Chicago," comment out the time zone setting below
 

@@ -9,7 +9,8 @@ define([
     'views/components/reports/scenes/name',
     'views/components/reports/scenes/audit',
     'views/components/reports/scenes/default',
-    'views/components/reports/scenes/json'
+    'views/components/reports/scenes/json',
+    'bindings/reports'
 ], function($, _, ko, arches, resourceUtils, reportUtils, BibliographicSourceTemplate) {
     return ko.components.register('bibliographic-source-report', {
         viewModel: function(params) {

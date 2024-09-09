@@ -8,7 +8,8 @@ define([
     'templates/views/components/reports/artefact.htm',
     'views/components/reports/scenes/name',
     'views/components/reports/scenes/json',
-    'views/components/reports/scenes/archive'
+    'views/components/reports/scenes/archive',
+    'bindings/reports'
 ], function($, _, ko, arches, resourceUtils, reportUtils, ArtefactTemplate) {
     return ko.components.register('artefact-report', {
         viewModel: function(params) {

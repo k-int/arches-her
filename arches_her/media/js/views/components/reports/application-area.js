@@ -8,7 +8,8 @@ define([
     'templates/views/components/reports/application-area.htm',
     'views/components/reports/scenes/name',
     'views/components/reports/scenes/referenced-by',
-    'views/components/reports/scenes/json'
+    'views/components/reports/scenes/json',
+    'bindings/reports'
 ], function($, _, ko, arches, resourceUtils, reportUtils, ApplicationAreaTemplate) {
     return ko.components.register('application-area-report', {
         viewModel: function(params) {

@@ -7,7 +7,8 @@ define([
     'utils/report',
     'templates/views/components/reports/historic-aircraft.htm',
     'views/components/reports/scenes/name',
-    'views/components/reports/scenes/json'
+    'views/components/reports/scenes/json',
+    'bindings/reports'
 ], function($, _, ko, arches, resourceUtils, reportUtils, HistoricAircraftTemplate) {
     return ko.components.register('historic-aircraft-report', {
         viewModel: function(params) {

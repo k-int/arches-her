@@ -5,7 +5,7 @@
 {% block body %}
 <!-- Associated Actors -->
 <div class="aher-report-section">
-    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.people)}, css: {'fa-angle-double-right': visible.people(), 'fa-angle-double-up': !visible.people()}" class="fa toggle"></i> {% trans "Associated People and Organizations" %}</h2>
+    <h2 class="aher-report-section-title"><i tabindex="0" data-bind="onEnterkeyClick, onSpaceClick, click: function() {toggleVisibility(visible.people)}, onReportSectionToggleAria: visible.people, sectionName: '{% trans "Associated People and Organizations" %}'" class="fa toggle"></i> {% trans "Associated People and Organizations" %}</h2>
     <!-- ko if: checkCardsAvailable($parent.cards) -->
         <a href="#" data-bind="{if: cards.people, click: function(){addNewTile(cards.people)}}" class="aher-report-a"><i class="fa fa-mail-reply"></i> {% trans "Add People/Organizations" %}</a>
     <!-- /ko -->
@@ -29,12 +29,12 @@
                                 <th>{% trans "End of Role" %}</th>
                                 <th class="none">{% trans "Display Date" %}</th>
                                 <th class="none">{% trans "Date Qualifier" %}</th>
-                                <th class="aher-table-control all"></th>
+                                <td class="aher-table-control all"></td>
                             </tr>
                         </thead>
                         <tbody data-bind="dataTablesForEach: { data: people, dataTableOptions: peopleTableConfig}">
                             <tr>
-                                <td data-bind="text: actor"><a href="" class="aher-table-link"></a></td>
+                                <td data-bind="text: actor"><a href="#" class="aher-table-link"></a></td>
                                 <td data-bind="text: role"></td>
                                 <td data-bind="text: startOfRole"></td>
                                 <td data-bind="text: endOfRole"></td>
