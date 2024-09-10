@@ -8,27 +8,105 @@ You can find out more about Arches for HERs at [https://www.archesproject.org/ar
 
 ## How do I get started with Arches for HERs
 
-1. Clone the arches-her repo, making sure to change the default target folder to **arches_her** and then run pip install:
+
+If you are setting up a development environment then please see the Arches documentation on how to do this:
+
+   https://arches.readthedocs.io/en/latest/installing/installation/
+
+If you are installing Arches for HERs on Windows,be sure to follow the [instructions relating to the GDAL_LIBRARY_PATH](https://arches.readthedocs.io/en/latest/installing/installation/#create-a-project) detailed in the Installing Core Arches documentation.
+
+1. Installing Arches for HERs. This step installs all Python dependencies including Arches.
+   - If installing for development, clone the arches-her repo, making sure to change the default target folder to **arches_her** and then run the following:
+
+      ```bash
+      pip install -e .
+      ```
+
+   - If not installing for development, simply run:
+
+      ```bash
+      pip install arches_her
+      ```
+2. If you don't already have an Arches project, you'll need to create one by running the following:
 
    ```bash
-   pip install -r ./arches_her/arches_her/install/requirements.txt
+   arches-admin startproject my_project
    ```
 
-   If you are installing Arches for HERs on Windows, follow the [instructions relating to the GDAL_LIBRARY_PATH](https://arches.readthedocs.io/en/latest/installing/installation/#create-a-project) detailed in the Installing Core Arches documentation.  
+3. Add the following to your project's settings.py file
 
-1. Set up your database and load the package with the following command in the arches_her directory:
+   ```python
+   DATATYPE_LOCATIONS.append('arches_her.datatypes')
+   FUNCTION_LOCATIONS.append('arches_her.functions')
+   SEARCH_COMPONENT_LOCATIONS.append('arches_her.search.components')
+   ```
+
+4. Add `arches_her` to your project's `INSTALLED_APPS` and `ARCHES_APPLICATIONS` settings in settings.py. Note that in `INSTALLED_APPS`, `arches_her` must be listed before your project:
+
+   ```python
+   INSTALLED_APPS = (
+      "webpack_loader",
+      "django.contrib.admin",
+      "django.contrib.auth",
+      "django.contrib.contenttypes",
+      "django.contrib.sessions",
+      "django.contrib.messages",
+      "django.contrib.staticfiles",
+      "django.contrib.gis",
+      "arches",
+      "arches.app.models",
+      "arches.management",
+      "guardian",
+      "captcha",
+      "revproxy",
+      "corsheaders",
+      "oauth2_provider",
+      "django_celery_results",
+      "compressor",
+      "arches_her",
+      "my_project",
+   )
+
+   ARCHES_APPLICATIONS = ("arches_her",)
+   ```
+
+5. If developing Arches for HERs, you'll need to add the HER_ROOT setting which indicates where on your file system your arches_her repository is located. You'll need to ajust the path according to where you have cloned the arches_her repo:
+
+   ```python
+   HER_ROOT = os.path.join(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe()) + '../../../')), 'arches-her', 'arches_her')
+   ```
+
+6. Next update your project's urls.py file to include the Arches for HERs urls like so:
+
+   ```python
+   urlpatterns = [
+      path("", include("arches.urls")),
+      path("", include("arches_her.urls")),
+   ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+   ```
+
+7. Add `arches_her` as a dependency in your project's `package.json` file:
+
+   ```javascript
+   "dependencies": {
+        "arches": "archesproject/arches#stable/7.5.4",
+        "arches_her": "archesproject/arches_her#stable/1.0.0"
+    },
+    ```
+
+7. Set up your database and load the package with the following command:
 
    ```bash
-   python manage.py packages -o load_package -s <path_to_arches_her_directory>/arches_her/arches_her/pkg -db -y
+   python manage.py packages -o load_package -a arches_her -db -y
    ```
 
-1. Start the Arches for HERs project
+8. Start the Arches for HERs project
 
    ```bash
    python manage.py runserver
    ```
 
-1. Install and build front-end dependencies
+9. Install and build front-end dependencies
 
    Before you can use browse the application you will need to build the front end asset bundle. From the directory containing the package.json file ([workspace]/arches_her/arches_her)
 
@@ -37,19 +115,9 @@ You can find out more about Arches for HERs at [https://www.archesproject.org/ar
    yarn build_development
    ```
 
-This will allow you to run the application locally, but is not suitable for running on a web server. Please see the guidance for deploying an Arches project like Arches for HERs into a server environment.
+This will allow you to run your Arches project locally, but is not suitable for running on a web server. Please see the guidance for deploying an Arches project like Arches for HERs into a server environment.
 
    https://arches.readthedocs.io/en/latest/deployment/
-
-### Setting up a development environment
-
-If you are setting up a development enviornment then please see the Arches documentation on how to do this:
-
-   https://arches.readthedocs.io/en/latest/installing/installation/
-
-You will need to use the `dev/7.5.4` branch for the arches repository.
-
-The **arches_her/install/requirements.txt** file will also need to be edited in order to remove the `arches==7.5.4` requirement, as you will have cloned and installed the arches core code seperately.
 
 ## Running Arches for HERs in a Docker Development Environment
 
@@ -62,7 +130,7 @@ You can also run Arches in a Docker development environment. To do this, pull th
   /workspace $ git clone https://github.com/archesproject/arches-her.git arches_her
   ```
 
-  As mentioned before, ensure the `arches` repo has `dev/7.5.4` checked-out.
+  Ensure the `arches` repo has `dev/7.5.x` checked-out.
 
 - Navigate to the folder where the compose files exist, then compose up:
 
