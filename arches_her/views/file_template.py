@@ -78,7 +78,7 @@ class FileTemplateView(View):
 
         template_name = self.get_template_path(template_id)
         filename, file_extension = os.path.splitext(template_name)
-        template_path = os.path.join(site.getsitepackages()[0], "arches_her", "docx")
+        template_path = os.path.join(site.getsitepackages()[0], "arches_her", "docx", template_name)
         if not os.path.exists(template_path):
             template_path = os.path.join(settings.HER_ROOT, "docx", template_name)
 
