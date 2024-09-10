@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "arches-her"
 readme = "README.md"
 authors = [
-    {name = "Getty Conservation Institute", email = "dev@fargeo.com"}
+    {name = "Getty Conservation Institute", email = "contact@archesproject.org"}
 ]
 license = {text = "GNU AGPL3"}
 classifiers = [
