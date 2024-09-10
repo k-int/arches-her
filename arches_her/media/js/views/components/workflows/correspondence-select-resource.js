@@ -74,7 +74,7 @@ define([
                         'resourceXresourceId': ''
                     }];
 
-                    params.pageVm.loading('Generating correspondence for consultation...')
+                    params.pageVm.loading('Generating correspondence for consultation...');
 
                     $.ajax({ //saving the realted resource (digital object) to the Letter node (consultation)
                         url: arches.urls.api_node_value,
@@ -145,11 +145,12 @@ define([
                         params.pageVm.loading(false);
                         params.pageVm.alert(new AlertViewModel('ep-alert-red', arches.requestFailed.title, response.responseText));
                     }
-                })
+                });
         };
 
         params.form.save = function() {
             self.tile().save().then(function(tile) {
+                self.saving(true);
                 self.retrieveFile(tile);
             });
         };
