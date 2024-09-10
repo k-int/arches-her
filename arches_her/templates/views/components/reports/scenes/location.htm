@@ -191,7 +191,7 @@
                                         <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: function() {$parent.editTile(tileid, $parent.cards.addresses)}">
                                             <i class="fa fa-mail-reply"></i>
                                         </a>
-                                        <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.addresses)">
+                                        <a href="#" data-bind="if: $parent.cards.addresses.cardinality == 'n', onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.addresses)">
                                             <i class="fa fa-trash"></i>
                                         </a>
                                     </div>
@@ -242,7 +242,7 @@
                                     <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: function() {$parent.editTile(tileid, $parent.cards.locationDescriptions)}">
                                         <i class="fa fa-mail-reply"></i>
                                     </a>
-                                    <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.locationDescriptions)">
+                                    <a href="#" data-bind="if: $parent.cards.locationDescriptions.cardinality == 'n', onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.locationDescriptions)">
                                         <i class="fa fa-trash"></i>
                                     </a>
                                 </td>
@@ -293,7 +293,7 @@
                                         <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: function() {$parent.editTile(tileid, $parent.cards.administrativeAreas)}">
                                             <i class="fa fa-mail-reply"></i>
                                         </a>
-                                        <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.administrativeAreas)">
+                                        <a href="#" data-bind="if: $parent.cards.administrativeAreas.cardinality == 'n', onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.administrativeAreas)">
                                             <i class="fa fa-trash"></i>
                                         </a>
                                     </div>
@@ -341,7 +341,7 @@
                                         <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: function() {$parent.editTile(tileid, $parent.cards.nationalGridReferences)}">
                                             <i class="fa fa-mail-reply"></i>
                                         </a>
-                                        <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.nationalGridReferences)">
+                                        <a href="#" data-bind="if: $parent.cards.nationalGridReferences.cardinality == 'n', onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.nationalGridReferences)">
                                             <i class="fa fa-trash"></i>
                                         </a>
                                     </div>
@@ -389,7 +389,7 @@
                                         <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: function() {$parent.editTile(tileid, $parent.cards.namedLocations)}">
                                             <i class="fa fa-mail-reply"></i>
                                         </a>
-                                        <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.namedLocations)">
+                                        <a href="#" data-bind="if: $parent.cards.namedLocations.cardinality == 'n', onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.namedLocations)">
                                             <i class="fa fa-trash"></i>
                                         </a>
                                     </div>

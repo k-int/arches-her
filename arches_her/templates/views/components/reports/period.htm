@@ -105,7 +105,7 @@
                                                         <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: function() {$parent.editTile(tileid, $parent.cards.name)}">
                                                             <i class="fa fa-mail-reply"></i>
                                                         </a>
-                                                        <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.name)">
+                                                        <a href="#" data-bind="if: $parent.cards.name.cardinality == 'n', onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.name)">
                                                             <i class="fa fa-trash"></i>
                                                         </a>
                                                     </div>
