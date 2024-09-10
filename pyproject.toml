@@ -29,7 +29,7 @@ dependencies = [
   "arches==7.5.4",
   "python-docx==1.1.0",
 ]
-version = "1.1.0a4"
+version = "1.0.0a1"
 
 [tool.setuptools]
 packages = ["arches_her"]
