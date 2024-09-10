@@ -90,7 +90,7 @@ If you are installing Arches for HERs on Windows,be sure to follow the [instruct
    ```javascript
    "dependencies": {
         "arches": "archesproject/arches#stable/7.5.4",
-        "arches_her": "archesproject/arches_her#stable/1.0.0"
+        "arches_her": "archesproject/arches_her#dev/1.0.x"
     },
     ```
 
