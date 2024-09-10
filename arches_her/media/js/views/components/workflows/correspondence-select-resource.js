@@ -74,7 +74,7 @@ define([
                         'resourceXresourceId': ''
                     }];
 
-                    params.pageVm.loading('Generating correspondence for consultation...');
+                    
 
                     $.ajax({ //saving the realted resource (digital object) to the Letter node (consultation)
                         url: arches.urls.api_node_value,
@@ -92,7 +92,6 @@ define([
                             console.log("Digital related resource updated");
                         })
                         .fail(function(response) {
-                            params.pageVm.loading(false);
                             console.log("Updating digital related resource failed: \n", response);
                         });
 
@@ -127,14 +126,10 @@ define([
                                 })
                                 .fail(function(response) {
                                     console.log("Adding the digital object name failed: \n", response);
-                                })
-                                .always(function(){
-                                    params.pageVm.loading(false);
                                 });
                                 
                         })
                         .fail(function(response) {
-                            params.pageVm.loading(false);
                             console.log("Getting consultation name failed: \n", response);
                         });
                                   
@@ -142,7 +137,6 @@ define([
                 .fail(function(response) {
                     if (response.statusText !== 'abort') {
                         params.form.error(new Error(response.responseText));
-                        params.pageVm.loading(false);
                         self.saving(false);
                         params.pageVm.alert(new AlertViewModel('ep-alert-red', response.responseText, ''));
                     }
