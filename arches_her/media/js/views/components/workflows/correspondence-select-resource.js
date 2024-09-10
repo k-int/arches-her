@@ -144,7 +144,7 @@ define([
                         params.form.error(new Error(response.responseText));
                         params.pageVm.loading(false);
                         self.saving(false);
-                        params.pageVm.alert(new AlertViewModel('ep-alert-red', arches.requestFailed.title, response.responseText));
+                        params.pageVm.alert(new AlertViewModel('ep-alert-red', response.responseText, ''));
                     }
                 });
         };
