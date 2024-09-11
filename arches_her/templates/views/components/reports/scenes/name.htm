@@ -42,7 +42,7 @@
                                         <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: function() {$parent.edit(tileid, $parent.cards.name)}">
                                             <i class="fa fa-mail-reply"></i>
                                         </a>
-                                        <a href="#" data-bind="if: $parent.cards.name.cardinality == 'n', onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.name)">
+                                        <a href="#" data-bind="if: $parent.cards.name.cardinality == 'n', onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.name, $parent.resource)">
                                             <i class="fa fa-trash"></i>
                                         </a>
                                     </div>
@@ -104,7 +104,7 @@
                                         <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: function(){$parent.editTile(tileid, $parent.cards.externalCrossReferences)}">
                                             <i class="fa fa-mail-reply"></i>
                                         </a>
-                                        <a href="#" data-bind="if: $parent.cards.externalCrossReferences.cardinality == 'n', onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.externalCrossReferences)">
+                                        <a href="#" data-bind="if: $parent.cards.externalCrossReferences.cardinality == 'n', onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.externalCrossReferences, $parent.resource)">
                                             <i class="fa fa-trash"></i>
                                         </a>
                                     </div>

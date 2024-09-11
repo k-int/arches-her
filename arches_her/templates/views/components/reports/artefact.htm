@@ -121,7 +121,7 @@
                                                         <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: function() {$parent.editTile(tileid, $parent.cards.discovery)}">
                                                             <i class="fa fa-mail-reply"></i>
                                                         </a>
-                                                        <a href="#" data-bind="if: $parent.cards.discovery.cardinality == 'n', onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.discovery)">
+                                                        <a href="#" data-bind="if: $parent.cards.discovery.cardinality == 'n', onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.discovery, $parent.resource)">
                                                             <i class="fa fa-trash"></i>
                                                         </a>
                                                     </div>
@@ -171,7 +171,7 @@
                                                         <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: function() {$parent.editTile(tileid, $parent.cards.finders)}">
                                                             <i class="fa fa-mail-reply"></i>
                                                         </a>
-                                                        <a href="#" data-bind="if: $parent.cards.finders.cardinality == 'n', onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.finders)">
+                                                        <a href="#" data-bind="if: $parent.cards.finders.cardinality == 'n', onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.finders, $parent.resource)">
                                                             <i class="fa fa-trash"></i>
                                                         </a>
                                                     </div>
