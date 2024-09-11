@@ -1,6 +1,8 @@
 from django.views.generic import View
 from django.db import connection
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
+from arches.app.models import models
+from arches.app.utils.permission_backend import get_restricted_instances
 
 
 class ApplicationAreas(View):
@@ -29,11 +31,11 @@ class ApplicationAreas(View):
                         ) AS geom,
                         1 AS total
                     FROM geojson_geometries
-                    WHERE nodeid = %s and and resourceinstanceid not in %s (geom && ST_TileEnvelope(%s, %s, %s))) AS tile;""",
+                    WHERE nodeid = %s and resourceinstanceid not in %s and (geom && ST_TileEnvelope(%s, %s, %s))) AS tile;""",
                     [zoom, x, y, nodeid, resource_ids, zoom, x, y],
                 )
                 result = bytes(cursor.fetchone()[0]) if result is None else result
             return HttpResponse(result, content_type="application/x-protobuf")
         
         except models.Node.DoesNotExist:
-            raise Http404()
+            return HttpResponse(status=503)
