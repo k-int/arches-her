@@ -24,6 +24,7 @@ function (_, ko, arches, reportUtils, LocationTemplate) {
             }
 
             self.cards = Object.assign({}, params.cards);
+            self.resource = params?.data || undefined;
             self.cardConfig = Object.assign({}, params.cards);
             self.selectedGeometry = params.selectedGeometry || ko.observable();
             self.edit = params.editTile || self.editTile;

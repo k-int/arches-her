@@ -140,7 +140,7 @@
                                         <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: function() {$parent.editTile(tileid, $parent.cards.audience)}">
                                             <i class="fa fa-mail-reply"></i>
                                         </a>
-                                        <a href="#" data-bind="onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.audience)">
+                                        <a href="#" data-bind="if: $parent.cards.audience.cardinality == 'n', onEnterkeyClick, onSpaceClick, click: $parent.deleteTile.bind($data, tileid, $parent.cards.audience, $parent.resource)">
                                             <i class="fa fa-trash"></i>
                                         </a>
                                     </div>

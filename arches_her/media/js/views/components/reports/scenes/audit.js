@@ -23,6 +23,7 @@ function(_, ko, arches, reportUtils, AuditTemplate) {
             }
 
             self.cards = Object.assign({}, params.cards);
+            self.resource = params?.data || undefined;
             self.edit = params.editTile || self.editTile;
             self.delete = params.deleteTile || self.deleteTile;
             self.add = params.addTile || self.addNewTile;
