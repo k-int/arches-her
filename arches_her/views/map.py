@@ -9,6 +9,9 @@ from arches.app.search.search_engine_factory import SearchEngineFactory
 class ApplicationAreas(View):
     def get(self, request, zoom, x, y):
         nodeid = '1909956f-3a3b-11eb-ae99-f875a44e0e11' 
+        if hasattr(request.user, "userprofile") is not True:
+            models.UserProfile.objects.create(user=request.user)
+        viewable_nodegroups = request.user.userprofile.viewable_nodegroups
         try:
             node = models.Node.objects.get(nodeid=nodeid, nodegroup_id__in=viewable_nodegroups)
             se = SearchEngineFactory().create()
