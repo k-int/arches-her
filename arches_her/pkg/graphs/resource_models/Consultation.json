@@ -52,7 +52,7 @@
                         "overviewzoom": 11,
                         "pointradius": 4,
                         "selectRelatedSource": "select-application-area",
-                        "selectRelatedSourceLayer": "",
+                        "selectRelatedSourceLayer": "app-area",
                         "selectSource": "",
                         "selectSourceLayer": "",
                         "selectioncolor": "#427AFF",
