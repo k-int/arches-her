@@ -40,12 +40,13 @@ define([
             return $.ajax({
                 type: "DELETE",
                 url: arches.urls.tile,
-                data: JSON.stringify(tile.getData())
-            }).success(() => {
-                const tiles = card.tiles();
-                const tileIndex = tiles.indexOf(tile);
-                tiles.splice(tileIndex, 1);
-                card.tiles(tiles);
+                data: JSON.stringify(tile.getData()),
+                success: () => {
+                    const tiles = card.tiles();
+                    const tileIndex = tiles.indexOf(tile);
+                    tiles.splice(tileIndex, 1);
+                    card.tiles(tiles);
+                }
             });
         }
         throw Error("Couldn't delete; tile was not found.")
@@ -93,6 +94,27 @@ define([
         }
     };
 
+    const removeTileFromResourceTree = (resourceObj, tileid) => {
+        const resourceKeys = Object.keys(resourceObj);
+        for(key of resourceKeys){
+            if(resourceObj[key]?.['@tile_id'] == tileid){
+                delete resourceObj[key];
+                break;
+            } else if(Array.isArray(resourceObj[key])){
+                for(item of resourceObj[key]){
+                    if(item?.['@tile_id'] == tileid){
+                        const itemIndex = resourceObj[key].indexOf(item);
+                        resourceObj[key].splice(itemIndex, 1);
+                        break;
+                    }
+                }
+            } else if(typeof resourceObj[key] === 'object'){
+                resourceObj = removeTileFromResource(resourceObj[key], tileid);
+            }
+        }
+        return resourceObj;
+    };
+
     return {
         // default table configuration - used for display
         defaultTableConfig: {
@@ -134,11 +156,20 @@ define([
                 console.log(e);
                 return;
             }
-            const eventTarget = params?.[1]?.target;
+            
+            const resource = params?.find(param => ko.isObservable(param) && Object.keys(ko.toJS(param)).some(key => ko.toJS(param)[key]?.['@tile_id'] == tileid));            
+            if(resource){
+                const resourceValue = ko.toJS(resource);
+                resource(removeTileFromResourceTree(resourceValue, tileid));
+            }
+            
+            const eventTarget = params?.find(param => param?.target)?.target;
             if(eventTarget) {
                 removedTiles.push(tileid);
                 $(eventTarget).closest("table").DataTable().row($(eventTarget).closest("tr")).remove().draw();
             }
+
+
         },
 
         editTile: function(tileid, card){
