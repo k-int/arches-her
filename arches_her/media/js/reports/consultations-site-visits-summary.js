@@ -1,6 +1,6 @@
 define([
     'knockout',
-    "text!templates/views/components/reports/consultations-site-visits-summary.htm"
+    "templates/views/components/reports/consultations-site-visits-summary.htm"
 ], function(ko, ConsultationSiteVisitsSummaryTemplate) {
     ko.components.register('consultations-site-visits-summary', {
         viewModel: function(params) {

@@ -7,6 +7,8 @@ celerybeat-schedule
 
 *.pyc
 *.log
+build
+arches_her.egg-info
 arches_her/logs
 arches_her/export_deliverables/*
 arches_her/cantaloupe/*
