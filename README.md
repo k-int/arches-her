@@ -70,7 +70,7 @@ If you are installing Arches for HERs on Windows,be sure to follow the [instruct
    ARCHES_APPLICATIONS = ("arches_her",)
    ```
 
-5. If developing Arches for HERs, you'll need to add the HER_ROOT setting which indicates where on your file system your arches_her repository is located. You'll need to ajust the path according to where you have cloned the arches_her repo:
+5. If developing Arches for HERs, you'll need to add the HER_ROOT setting which indicates where on your file system your arches_her repository is located. You'll need to adjust the path according to where you have cloned the arches_her repo:
 
    ```python
    HER_ROOT = os.path.join(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe()) + '../../../')), 'arches-her', 'arches_her')
@@ -89,7 +89,7 @@ If you are installing Arches for HERs on Windows,be sure to follow the [instruct
 
    ```javascript
    "dependencies": {
-        "arches": "archesproject/arches#stable/7.5.4",
+        "arches": "archesproject/arches#stable/7.5.5",
         "arches_her": "archesproject/arches_her#dev/1.0.x"
     },
     ```
@@ -132,7 +132,7 @@ You can also run Arches for HER for development in a Docker environment. To do t
    git clone https://github.com/archesproject/arches-her.git arches_her
    ```
 
-   Ensure the `arches` repo has branch `stable/7.5.4` checked-out. Currently arches-her is only compatable with 7.5, which is not accepting changes. Therefore you should not use dev/7.5.x.
+   Ensure the `arches` repo has branch `stable/7.5.5` checked-out. Currently arches-her is only compatable with 7.5, which is not accepting changes. Therefore you should not use dev/7.5.x.
 
 
 2. Create an arches project that will be used to host the arches-her app:
