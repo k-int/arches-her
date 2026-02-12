@@ -14,3 +14,5 @@ update graphs set templateid = '407019fd-69e4-4aa4-a054-1466acaf8687' where grap
 update graphs set templateid = '4c2ed0b0-c278-49e2-9ddf-ba44aa77a6f3' where graphid = 'f9045867-8861-11ea-b06f-f875a44e0e11'; -- Period
 update graphs set templateid = '9e9f8e55-3ea9-4bd3-8b11-c1a519fbcfcc' where graphid = '22477f01-1a44-11e9-b0a9-000d3ab1e588'; -- Person
 update graphs set templateid = '6b183add-a159-4d2b-a6b0-3f426d8c08a1' where graphid = '78b32d8c-b6f2-11ea-af42-f875a44e0e11'; -- Place
+
+UPDATE graphs SET templateid = '75e5968a-72cf-4a07-8e0d-1cc3e81d34c8' WHERE graphid = 'b07cfa6f-894d-11ea-82aa-f875a44e0e11'; 
